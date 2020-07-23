@@ -1,1 +1,0 @@
-This is the project for static site for Tekonika, using HTML5 and Bootstrap5.
