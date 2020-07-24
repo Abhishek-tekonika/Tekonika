@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const Home = () : JSX.Element => {
     return(
-        <h1>Tekonika Website</h1>
+        <>
+            <Header />
+            <h1>Tekonika Website</h1>
+        </>
     )
 }
 
