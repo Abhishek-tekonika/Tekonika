@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Col, Row } from "../Common/Grid";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
@@ -45,6 +45,10 @@ const useStyles = makeStyles({
     padding: "10px",
     cursor: "pointer",
   },
+  link: {
+    color: 'black',
+    textDecoration: 'none',
+  }
 });
 
 const Header = (): JSX.Element => {
@@ -82,8 +86,7 @@ const Header = (): JSX.Element => {
 
   return (
     <Box boxShadow={3} pl={0} pr={0}>
-      <Row style={{ background: "white" }} alignItems="center">
-        <Col xs={1} sm={1} md={1} lg={1}></Col>
+      <Row style={{ background: "white" }} justify="center" alignItems="center">
         <Col xs={1} sm={1} md={1} lg={1}>
           <Box
             bgcolor="white"
@@ -92,34 +95,44 @@ const Header = (): JSX.Element => {
             pl={"25px"}
             color="black"
           >
-            {/* <Link to="/"> */}
-            <h4>Tekonika</h4>
-            {/* </Link> */}
+            <Link className={classes.link} to="/">
+              <h4>Tekonika</h4>
+            </Link>
           </Box>
         </Col>
         <Col xs={7} sm={7} md={7} lg={7}>
           <Row justify="space-between">
             <Col xs={1} sm={1} md={1} lg={1}></Col>
             <Col xs={1} sm={1} md={1} lg={1}>
-              <span className="nav-items">HOME</span>
+              <Link className={classes.link} to="/">
+                <span className="nav-items">HOME</span>
+              </Link>
             </Col>
             <Col xs={2} sm={2} md={2} lg={2}>
-              <span className="nav-items">UI/UX DESIGN</span>
+              <Link className={classes.link} to="/ui-ux-design">
+                <span className="nav-items">UI/UX DESIGN</span>
+              </Link>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
-              <span className="nav-items">MOBILE APP DEVELOPMENT</span>
+              <Link className={classes.link} to="/mobile-app-dev">
+                <span className="nav-items">MOBILE APP DEVELOPMENT</span>
+              </Link>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
-              <span className="nav-items">WEB APP DEVELOPEMENT</span>
+              <Link className={classes.link} to="/web-app-dev">
+                <span className="nav-items">WEB APP DEVELOPEMENT</span>
+              </Link>
             </Col>
             <Col xs={1} sm={1} md={1} lg={1}></Col>
           </Row>
         </Col>
         <Col xs={2} sm={2} md={2} lg={2}>
           <Row alignItems="center" justify="space-evenly">
-            <Button variant="contained" color="primary">
-              START A PROJECT
-            </Button>
+            <Link style={{ textDecoration: 'none' }} to="/request-a-quote">
+              <Button variant="contained" color="primary">
+                START A PROJECT
+              </Button>
+            </Link>
             <React.Fragment key={"right"}>
               <MenuIcon
                 className={classes.menuIcon}
@@ -136,7 +149,6 @@ const Header = (): JSX.Element => {
             </React.Fragment>
           </Row>
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1}></Col>
       </Row>
     </Box>
   );
