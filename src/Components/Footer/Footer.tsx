@@ -14,7 +14,7 @@ import "./Footer.css";
 
 const Footer = () : JSX.Element => {
     return(
-        <Container>
+        <Container className="footer-container">
             <Row justify="space-between">
                 <Col xs={5} sm={5} md={5} lg={5} >
                     <Row>
