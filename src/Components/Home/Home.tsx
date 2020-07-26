@@ -7,6 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Header from "../Header/Header";
 import MidSection from "../MidSection/MidSection";
+
+
 import "./Home.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,7 +36,7 @@ const Home = (): JSX.Element => {
           style={{ padding: "20px", marginTop: "5%" }}
           justify="space-between"
         >
-          <Col xs={5} sm={5} md={5} lg={5}>
+          <Col xs={11} sm={11} md={5} lg={5}>
             <span style={{ fontSize: "20px" }}>
               SOFTWARE DESIGN AND DEVELOPMENT
             </span>
@@ -62,7 +64,7 @@ const Home = (): JSX.Element => {
             </Button>
           </Col>
 
-          <Col xs={5} sm={5} md={5} lg={5}>
+          <Col xs={11} sm={11} md={5} lg={5}>
             <Col
               style={{
                 borderRadius: "10px",

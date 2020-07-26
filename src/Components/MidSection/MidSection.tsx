@@ -5,6 +5,8 @@ import Node from "../../assets/node.svg";
 import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../../Components/Footer/Footer";
+import Slider from "../Slider/Slider";
+import Cards from "../Cards/Cards";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,14 +41,14 @@ const MidSection = (): JSX.Element => {
           style={{ padding: "20px", marginTop: "10%" }}
           justify="space-between"
         >
-          <Col style={{ width: "30%" }} xs="auto" sm="auto" md="auto" lg="auto">
+          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} alt="" src={Chart} />
               </div>
               <br />
               <i>
-                <span>Hello Frigma!</span>
+                <span>Hello Figma!</span>
               </i>
               <br />
               <span style={{ fontSize: "40px" }}>
@@ -62,7 +64,7 @@ const MidSection = (): JSX.Element => {
               interface and user experience design
             </p>
           </Col>
-          <Col style={{ width: "30%" }} xs="auto" sm="auto" md="auto" lg="auto">
+          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} src={Javascript} alt="" />
@@ -85,7 +87,7 @@ const MidSection = (): JSX.Element => {
               front-end web and mobile development.
             </p>
           </Col>
-          <Col style={{ width: "30%" }} xs="auto" sm="auto" md="auto" lg="auto">
+          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} alt="" src={Node} />
@@ -111,6 +113,8 @@ const MidSection = (): JSX.Element => {
           </Col>
         </Row>
       </Container>
+      <Slider />
+      <Cards />
       <Footer />
     </React.Fragment>
   );
