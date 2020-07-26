@@ -33,6 +33,63 @@
 
 .request-form {
     background-color: white;
-    height: 800px;
     border-radius: 10px;
+    padding: 40px;
+}
+
+.request-form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.label-text {
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea {
+    width: 95%;
+    border: none;
+    background-color: #f1f1f1;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.transparent {
+    color: transparent;
+    width: 95% !important;
+}
+
+.dropzone-text {
+    color: grey;
+    font-size: 13px;
 }

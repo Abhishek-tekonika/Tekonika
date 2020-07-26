@@ -69,7 +69,7 @@ const Header = (): JSX.Element => {
       </List>
       <List>
         {["Our Services", "Our Compnay"].map((text, index) => (
-          <ListItemText style={{ padding: "10px" }} primary={text} />
+          <ListItemText style={{ padding: "10px" }} key={index} primary={text} />
         ))}
       </List>
       <Divider className={classes.divider} />
