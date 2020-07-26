@@ -3,7 +3,8 @@ import Box from "@material-ui/core/Box";
 import { Link } from "react-router-dom";
 import { Col, Row } from "../Common/Grid";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Drawer from "@material-ui/core/Drawer";
 import MenuIcon from "@material-ui/icons/Menu";
 import List from "@material-ui/core/List";
@@ -21,7 +22,7 @@ import "./Header.css";
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 300,
     height: "100vh",
     background: "#3f51b5",
     color: "white",
@@ -34,7 +35,7 @@ const useStyles = makeStyles({
     backgroundColor: "transparent",
     opacity: "0.5",
     borderBottom: "1px solid white",
-    margin: "150px 10px 20px 10px",
+    margin: "20px 10px 20px 10px",
   },
   images: {
     marginRight: "20px",
@@ -48,12 +49,49 @@ const useStyles = makeStyles({
   link: {
     color: 'black',
     textDecoration: 'none',
-  }
+  },
+  drawerLink: {
+    color: 'white',
+    textDecoration: 'none',
+  },
 });
 
 const Header = (): JSX.Element => {
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("lg"));
   const [drawerOpen, setDrawerOpen] = React.useState(false);
+
+  const mobileDraweOptions = (
+    <>
+      <List>
+        <Link className={classes.drawerLink} to="/">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Home"} />
+        </Link>
+      </List>
+      <List>
+        <Link className={classes.drawerLink} to="/ui-ux-design">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"UI/UX Design"} />
+        </Link>
+      </List>
+      <List>
+        <Link className={classes.drawerLink} to="/mobile-app-dev">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Mobile App Development"} />
+        </Link>
+      </List>
+      <List>
+        <Link className={classes.drawerLink} to="/web-app-dev">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Web App Development"} />
+        </Link>
+      </List>
+      <List>
+        <Link className={classes.drawerLink} to="/request-a-quote">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Start A Project"} />
+        </Link>
+      </List>
+      <Divider className={classes.divider} />
+    </>
+  )
 
   const list = (
     <div
@@ -67,9 +105,10 @@ const Header = (): JSX.Element => {
           <img src={closeIcon} alt="" height="18" />
         </div>
       </List>
+      {!matches && mobileDraweOptions}
       <List>
         {["Our Services", "Our Compnay"].map((text, index) => (
-          <ListItemText style={{ padding: "10px" }} key={index} primary={text} />
+          <ListItemText style={{ padding: "10px 0 0 10px" }} key={index} primary={text} />
         ))}
       </List>
       <Divider className={classes.divider} />
@@ -86,7 +125,7 @@ const Header = (): JSX.Element => {
 
   return (
     <Box boxShadow={3} pl={0} pr={0}>
-      <Row style={{ background: "white" }} justify="center" alignItems="center">
+      <Row style={{ background: "white" }} justify={matches ? "center" : "space-between"} alignItems="center">
         <Col xs={1} sm={1} md={1} lg={1}>
           <Box
             bgcolor="white"
@@ -100,9 +139,10 @@ const Header = (): JSX.Element => {
             </Link>
           </Box>
         </Col>
+        {matches ?
+        <>
         <Col xs={7} sm={7} md={7} lg={7}>
-          <Row justify="space-between">
-            <Col xs={1} sm={1} md={1} lg={1}></Col>
+          <Row justify="space-around"> 
             <Col xs={1} sm={1} md={1} lg={1}>
               <Link className={classes.link} to="/">
                 <span className="nav-items">HOME</span>
@@ -118,12 +158,11 @@ const Header = (): JSX.Element => {
                 <span className="nav-items">MOBILE APP DEVELOPMENT</span>
               </Link>
             </Col>
-            <Col xs={3} sm={3} md={3} lg={3}>
+            <Col xs={3} sm={3} md={3} lg={4}>
               <Link className={classes.link} to="/web-app-dev">
                 <span className="nav-items">WEB APP DEVELOPEMENT</span>
               </Link>
             </Col>
-            <Col xs={1} sm={1} md={1} lg={1}></Col>
           </Row>
         </Col>
         <Col xs={2} sm={2} md={2} lg={2}>
@@ -149,6 +188,24 @@ const Header = (): JSX.Element => {
             </React.Fragment>
           </Row>
         </Col>
+        </>
+        : 
+        <React.Fragment key={"right"}>
+          <MenuIcon
+            className={classes.menuIcon}
+            onClick={() => setDrawerOpen(true)}
+            style={{paddingRight: '25px'}} 
+          />
+          <Drawer
+            transitionDuration={800}
+            anchor={"right"}
+            open={drawerOpen}
+            onClose={(): void => setDrawerOpen(false)}
+          >
+            {list}
+          </Drawer>
+        </React.Fragment>
+        }
       </Row>
     </Box>
   );
