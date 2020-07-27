@@ -105,3 +105,27 @@
   justify-content: space-evenly;
   padding: 0 15px 0 15px;
 }
+
+.big-blue-btn {
+  margin: 8px !important;
+  padding: 8px;
+  background-color: #3f51b5 !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 50px;
+}
+
+.big-yellow-btn {
+  margin: 8px !important;
+  padding: 8px;
+  background-color: #f7d297 !important;
+  color: black !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 50px;
+}
+
+.links {
+  text-decoration: none !important;
+}

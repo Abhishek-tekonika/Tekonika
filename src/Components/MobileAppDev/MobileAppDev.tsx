@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from '../Common/Grid';
 import phoneImg1 from "../../assets/phone-img1.jpg";
 import phoneImg2 from "../../assets/web-developer.png";
@@ -19,9 +20,25 @@ import LocalAtmOutlinedIcon from '@material-ui/icons/LocalAtmOutlined';
 
 import "./MobileAppDev.css";
 
+const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
 const MobileAppDev = (): JSX.Element => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+
+  const sec2 = useRef(null);
+  const handleLearnMore = (): void => {
+    scrollToRef(sec2);
+  }
+
+  const scrollTop = ():void => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return(
     <>
       <Container className="container-1">
@@ -38,12 +55,12 @@ const MobileAppDev = (): JSX.Element => {
               using a 100% agile approach for B2B, B2C and Enterprises. 
               We are a result oriented mobile app developer in Delhi, India.
               </p>
-              <Button className="learn-more" variant="contained">LEARN MORE<ArrowForwardIosIcon /> </Button>
+              <Button onClick={handleLearnMore} className="learn-more" variant="contained">LEARN MORE<ArrowForwardIosIcon /> </Button>
             </div>
           </Col>
         </Row>
       </Container>
-      <div className="icon-section-container">
+      <div className="icon-section-container" ref={sec2}>
         <Container>
         <Row style={{paddingTop: '30px'}}>
           <Col xs={11} sm={11} md={4} lg={4}>
@@ -107,7 +124,7 @@ const MobileAppDev = (): JSX.Element => {
                 Congratulations! You’ve just hired an Android, IOS and Windows 
                 mobile application developer in Lagos, Nigeria.
               </p>
-              <Button className="learn-more"> Get Started!</Button>
+              <Button onClick={scrollTop} className="learn-more"> Get Started!</Button>
             </div>
           </Col>
         </Row>
@@ -148,6 +165,18 @@ const MobileAppDev = (): JSX.Element => {
                 <span className="icon-heading">Monetization</span>
                 <p className="sub-heading-text">With millions of $ of app related revenues expected by 2021, freemium apps leading the stock but in-app advertising is taking monetization to next level.</p>
               </div>
+            </Col>
+          </Row>
+          <Row justify="center" className="center">
+            <Col xs={12} sm={12} md={4} lg={2}>
+              <Link className="links" to="/request-a-quote">
+                <Button className="big-blue-btn" variant="contained">Request Quote</Button>
+              </Link>
+            </Col>
+            <Col xs={12} sm={12} md={4} lg={2}>
+              <Link className="links" to="/contact-us">
+                <Button className="big-yellow-btn" variant="contained">Contact Us</Button>
+              </Link>
             </Col>
           </Row>
         </Container>
