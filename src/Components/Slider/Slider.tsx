@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
   },
   background: {
     backgroundColor: "#3f51b5;",
-    height: "100%",
+    marginTop: '6%'
+
   },
   text: {
     color: "white",
@@ -31,62 +32,79 @@ const Slider = (): JSX.Element => {
 
   return (
     <div className={classes.background}>
-      <Container style={{ marginTop: "6%" }}>
-        <Row
-          style={{ padding: "20px", marginTop: "10%" }}
-          justify="space-between"
+
+      <Row
+        style={{ padding: "20px", marginTop: "10%" }}
+        justify="space-evenly"
+      >
+        <Col
+          className="MarginTop"
+          xs={12}
+          sm={12}
+          md={5}
+          lg={5}
         >
-          <Col
-            className="MarginTop"
-            style={{ width: "50%" }}
-            xs={12}
-            sm={12}
-            md={5}
-            lg={5}
-          >
-            <span className={classes.text}>
-              Whether you need a coder, programmer,
+          <span className={classes.text}>
+            Whether you need a coder, programmer,
               <br /> developer or designer
               <br /> – we can help.
             </span>
-            <br />
-            <p className={classes.content}>
-              Tekonika is famous for its intelligent software and mobile
-              application solutions within the short time of its operation, with
+          <br />
+          <p className={classes.content}>
+            Tekonika is famous for its intelligent software and mobile
+            application solutions within the short time of its operation, with
               an expensive set of competencies to meet the enterprise <br />
               need(s).
               <br /> We positions our goals as a leading tech company in Lagos,
               Nigeria – West African, and Africa as a whole and the world at
               large in few years’ time. <br />
-              <p>At Tekonika we breath solutions.</p>
-            </p>
-          </Col>
-          <Col
-            className="MarginTop"
-            style={{ width: "50%" }}
-            xs={12}
-            sm={12}
-            md={5}
-            lg={5}
+            <p>At Tekonika we breath solutions.</p>
+          </p>
+        </Col>
+        <Col
+          className="MarginTop"
+
+          xs={12}
+          sm={12}
+          md={5}
+          lg={5}
+        >
+
+          <Box
+            boxShadow={3}
+            bgcolor="background.paper"
+            px="auto"
+            mx="auto"
+            style={{
+             
+              borderRadius: "10px",
+            }}
+            className={classes.p20}
           >
-            {matches ? (
-              <Box
-                boxShadow={3}
-                bgcolor="background.paper"
-                px="auto"
-                mx="auto"
-                style={{
-                  width: "90%",
-                  height: "85%",
-                  marginLeft: "3%",
-                  borderRadius: "10px",
-                }}
-                className={classes.p20}
-              ></Box>
-            ) : null}
-          </Col>
-        </Row>
-      </Container>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            
+          </Box>
+
+        </Col>
+      </Row>
+
     </div>
   );
 };

@@ -7,6 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../../Components/Footer/Footer";
 import Slider from "../Slider/Slider";
 import Cards from "../Cards/Cards";
+import EndSection from "../EndSection/EndSection";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +38,7 @@ const MidSection = (): JSX.Element => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Container style={{ marginTop: "5%" }}>
+      <Container>
         <Row
           style={{ padding: "20px", marginTop: "10%" }}
           justify="space-between"
@@ -115,6 +117,7 @@ const MidSection = (): JSX.Element => {
       </Container>
       <Slider />
       <Cards />
+      <EndSection/>
       <Footer />
     </React.Fragment>
   );

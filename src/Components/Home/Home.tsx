@@ -34,9 +34,9 @@ const Home = (): JSX.Element => {
       <Container>
         <Row
           style={{ padding: "20px", marginTop: "5%" }}
-          justify="space-between"
+          justify="space-evenly"
         >
-          <Col xs={11} sm={11} md={5} lg={5}>
+          <Col xs={12} sm={12} md={6} lg={6}>
             <span style={{ fontSize: "20px" }}>
               SOFTWARE DESIGN AND DEVELOPMENT
             </span>
@@ -64,7 +64,7 @@ const Home = (): JSX.Element => {
             </Button>
           </Col>
 
-          <Col xs={11} sm={11} md={5} lg={5}>
+          <Col xs={12} sm={12} md={6} lg={6}>
             <Col
               style={{
                 borderRadius: "10px",

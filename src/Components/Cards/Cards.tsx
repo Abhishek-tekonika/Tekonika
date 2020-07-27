@@ -3,104 +3,135 @@ import { Row, Col, Container } from "../Common/Grid";
 import "../Slider/Slider.css";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
+import design from "../../assets/design.svg";
+import code from "../../assets/code.svg";
+import ux from "../../assets/ux.svg";
+import database from "../../assets/database.svg";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   p20: {
     padding: "20px",
   },
-  background: {
-    height: "80vh",
- 
+  text: {
+
+    color: 'white'
   },
-  leftCol: {
-    marginTop: "10%",
+  icon: {
+    height: '60px'
+
   },
-  rightCol: {
-    marginTop: "5%",
-  },
+  leftCol:{
+    marginTop:'10%'
+  }
+
 }));
 const Cards = (): JSX.Element => {
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
-    <div className={classes.background}>
-      <Container>
-        <Row style={{ padding: "20px" }}>
-          <Col style={{ width: "30%" }} className={classes.leftCol}>
-            <span
-              style={{
-                fontSize: "6vh",
-                fontWeight: "bold",
-              }}
-            >
-              Striving to make
-              <br /> digital technology
-              <br /> a more beautiful
-              <br /> tool for every
-              <br /> business and
-              <br /> individuals
-            </span>
-          </Col>
-          <Col
-            className={classes.rightCol}
-            style={{ width: "50%", marginLeft: "20%" }}
+
+    <Container>
+      <Row justify="space-between" style={{ padding: "20px",marginTop:'10%' }}>
+        <Col md={6} lg={6} sm={11} className={classes.leftCol} >
+          <span
+            style={{
+              fontSize: "6vh",
+              fontWeight: "bold",
+            }}
           >
-            <Row style={{ height: "50%" }} justify="space-evenly">
-              <Box
-                boxShadow={3}
-                bgcolor="background.paper"
-                px="auto"
-                style={{
-                  width: "30%",
-                  height: "65%",
-                  borderRadius: "5px",
-                }}
-                className={classes.p20}
-              ></Box>
+            Striving to make
+            digital technology
+            a more beautiful
+            tool for every
+            business and
+            individuals
+            </span>
+        </Col>
+         <Col
+          md={6} sm={12} lg={6}
+        >
+          <Row justify="space-evenly">
+            <Box
 
-              <Box
-                boxShadow={3}
-                bgcolor="background.paper"
-                px="auto"
-                style={{
-                  width: "30%",
-                  height: "60%",
+              boxShadow={3}
+              bgcolor="background.paper"
+              px="auto"
+              style={{
+                width: "30%",
+               
+                borderRadius: "5px",
+                backgroundColor: '#44CBED'
+              }}
+              className={classes.p20}
+            >
+              <img className={classes.icon} src={design} alt="" />
+              <h3 className={classes.text} style={{ fontSize: '3vh' }}>Mobile Apps Dev  </h3>
+              <p className={classes.text} style={{ lineHeight: '20px' }}>Mobile Apps now controls users engagement over the internet.</p>
+            </Box>
 
-                  borderRadius: "5px",
-                }}
-                className={classes.p20}
-              ></Box>
-            </Row>
+            <Box
+              boxShadow={3}
+              bgcolor="background.paper"
+              px="auto"
+              style={{
+                width: "30%",
+               
+                borderRadius: "5px",
+                backgroundColor: '#378DD8'
+              }}
+              className={classes.p20}
+            >
+              <img className={classes.icon} src={code} alt="" />
+              <h3 className={classes.text} style={{ fontSize: '3vh' }}>Web Design</h3>
+              <p className={classes.text} style={{ lineHeight: '20px' }}>Let us get you a converting office in the cloud.</p>
 
-            {/*Row for aligning*/}
-            <Row style={{ height: "50%" }} justify="space-evenly">
-              <Box
-                boxShadow={3}
-                bgcolor="background.paper"
-                px="auto"
-                style={{
-                  width: "30%",
-                  height: "60%",
+            </Box>
+          </Row>
 
-                  borderRadius: "5px",
-                }}
-                className={classes.p20}
-              ></Box>
-              <Box
-                boxShadow={3}
-                bgcolor="background.paper"
-                px="auto"
-                style={{
-                  width: "30%",
-                  height: "60%",
-                  borderRadius: "5px",
-                }}
-                className={classes.p20}
-              ></Box>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+          {/*Row for aligning*/}
+          <Row style={{ marginTop: '2%' }} justify="space-evenly">
+            <Box
+              boxShadow={3}
+              bgcolor="background.paper"
+              px="auto"
+              style={{
+                width: "30%",
+          
+                borderRadius: "5px",
+                backgroundColor: '#4DB369'
+              }}
+              className={classes.p20}
+            >
+              <img className={classes.icon} alt="" src={ux} />
+              <h3 style={{ fontSize: '3vh' }} className={classes.text}> UI/UX Design</h3>
+              <p className={classes.text} style={{ lineHeight: '20px' }}>How your users interacts with your application matters.</p>
+            </Box>
+            <Box
+              boxShadow={3}
+              bgcolor="background.paper"
+              px="auto"
+              style={{
+                width: "30%",
+              
+                borderRadius: "5px",
+                backgroundColor: '#FCC525'
+              }}
+              className={classes.p20}
+            >
+              <img alt="" src={database} className={classes.icon} />
+              <h3 style={{ fontSize: '3vh' }} className={classes.text}>Hire Developers</h3>
+              <p className={classes.text} style={{ lineHeight: '20px' }} >We outsource our competent developers to server you better.</p>
+            </Box>
+          </Row>
+        </Col> 
+
+      </Row>
+    </Container>
+
   );
 };
 export default Cards;
