@@ -6,6 +6,7 @@ import RequestForm from './Components/RequestForm/RequestForm';
 import MobileAppDev from './Components/MobileAppDev/MobileAppDev';
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/request-a-quote" component={RequestForm} />
         <Route exact path="/mobile-app-dev" component={MobileAppDev} />
+        <Route exact path="/contact-us" component={ContactUs} />
       </Switch>
       <Footer />
     </BrowserRouter>
