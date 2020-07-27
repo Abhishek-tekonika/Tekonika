@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from '../Common/Grid';
 import phoneImg1 from "../../assets/phone-img1.jpg";
@@ -38,6 +38,10 @@ const MobileAppDev = (): JSX.Element => {
       behavior: 'smooth',
     });
   }
+
+  useEffect(() => {
+    scrollTop();
+  },[]);
 
   return(
     <>

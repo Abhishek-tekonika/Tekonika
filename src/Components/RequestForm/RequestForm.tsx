@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from "@material-ui/core/Button";
 import { Container, Row, Col } from '../Common/Grid';
 import { useForm } from 'react-hook-form';
@@ -17,10 +17,20 @@ interface formData {
 }
 
 const RequestForm = (): JSX.Element => {
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  },[])
+
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data: formData) => {
     console.log(data);
   };
+
   return (
     <Container className="request-container">
       <Row justify="center">
