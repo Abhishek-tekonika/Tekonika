@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import { Container, Row, Col } from '../Common/Grid';
 import phoneImg1 from "../../assets/phone-img1.jpg";
 import phoneImg2 from "../../assets/web-developer.png";
@@ -26,7 +24,6 @@ const MobileAppDev = (): JSX.Element => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return(
     <>
-      <Header />
       <Container className="container-1">
         <Row>
           <Col xs={12} sm={11} md={8} lg={8}>
@@ -155,7 +152,6 @@ const MobileAppDev = (): JSX.Element => {
           </Row>
         </Container>
       </div> 
-      <Footer />
     </>
   )
 }

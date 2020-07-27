@@ -5,7 +5,6 @@ import { Container } from "../Common/Grid";
 import Snippet from "../../assets/Snippet.gif";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import Header from "../Header/Header";
 import MidSection from "../MidSection/MidSection";
 import "./Home.css";
 
@@ -28,7 +27,7 @@ const Home = (): JSX.Element => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Header />
+      {/* <Header /> */}
       <Container>
         <Row
           style={{ padding: "20px", marginTop: "5%" }}
