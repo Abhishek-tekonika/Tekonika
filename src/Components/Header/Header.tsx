@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import { Link } from "react-router-dom";
 import { Col, Row } from "../Common/Grid";
@@ -60,7 +61,18 @@ const Header = (): JSX.Element => {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
+
+  const [active, setActive] = useState<number>(1);
+  const path = useLocation().pathname;
+  
+  useEffect(() => {
+    if(path === "/") setActive(1);
+    else if(path === "/ui-ux-design") setActive(2);
+    else if(path === "/mobile-app-dev") setActive(3);
+    else if(path === "/web-app-dev") setActive(4);
+    else setActive(0);
+  }, [path])
 
   const mobileDraweOptions = (
     <>
@@ -145,22 +157,22 @@ const Header = (): JSX.Element => {
           <Row justify="space-around"> 
             <Col xs={1} sm={1} md={1} lg={1}>
               <Link className={classes.link} to="/">
-                <span className="nav-items">HOME</span>
+                <span className={active === 1 ? "nav-items-active nav-items" : "nav-items"}>HOME</span>
               </Link>
             </Col>
             <Col xs={2} sm={2} md={2} lg={2}>
               <Link className={classes.link} to="/ui-ux-design">
-                <span className="nav-items">UI/UX DESIGN</span>
+                <span className={active === 2 ? "nav-items-active nav-items" : "nav-items"}>UI/UX DESIGN</span>
               </Link>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
               <Link className={classes.link} to="/mobile-app-dev">
-                <span className="nav-items">MOBILE APP DEVELOPMENT</span>
+                <span className={active === 3 ? "nav-items-active nav-items" : "nav-items"}>MOBILE APP DEVELOPMENT</span>
               </Link>
             </Col>
             <Col xs={3} sm={3} md={3} lg={4}>
               <Link className={classes.link} to="/web-app-dev">
-                <span className="nav-items">WEB APP DEVELOPEMENT</span>
+                <span className={active === 4 ? "nav-items-active nav-items" : "nav-items"}>WEB APP DEVELOPEMENT</span>
               </Link>
             </Col>
           </Row>
