@@ -83,7 +83,7 @@
    justify-content: center;
 }
 
-.learn-more {
+.ui-learn-more {
    background-color: transparent !important;
    color: #3f51b5 !important;
    font-weight: 600 !important;
@@ -97,9 +97,39 @@
    box-sizing: border-box;
 }
 
-.learn-more:hover {
+.ui-learn-more:hover {
    background-color: #3f51b5 !important;
    color: whitesmoke !important;
    font-weight: 650 !important;
 
+}
+
+.back-img {
+   background-image: url('../../assets/UIsplash_bg.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   /* background-color: red; */
+}
+
+.bold-heading-text {
+   color: white;
+   font-size: 60px;
+   line-height: 68px;
+}
+
+.UI-sub-heading {
+   color: white;
+}
+
+.blue-text {
+   color: #3f51b5;
+}
+
+.yellow-text {
+   color: yellow;
+}
+
+.UI-height-100 {
+   height: 100%;
 }

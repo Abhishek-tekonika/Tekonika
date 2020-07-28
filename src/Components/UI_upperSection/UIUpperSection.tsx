@@ -3,12 +3,8 @@ import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
 import { Theme, makeStyles } from "@material-ui/core/styles";
-//import SimpleZoom from "../../Components/UI_upperSection/ZoomTransition";
-import UIsplash from "../../assets/UIsplash_bg.jpg";
 import MidSplash from "../../assets/midsectionSplash.jpg";
 import CardSection from "../../Components/UI_upperSection/CardUISection";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -29,43 +25,35 @@ const useStyles = makeStyles((theme: Theme) => ({
       },
 
     img: {
-        height: "120vh",
-        width: "100vw",
+        width: "100%",
         opacity: "0.71",
         paddingBottom: "13px",
-
       },
     
     media: {
         height: 140,
       }
-
     }),
 );
 
 
 const UiDesign = (): JSX.Element => {
     const classes = useStyles();
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.up("lg"));
     
     return (
         <>
-            <div style={{width: "100%"}}>
-                <Row>
-                    <Col xs={12}>
-                        <img className={classes.img} src={UIsplash} alt="/" />
-                    </Col>
-                    <Col xs={12} sm={12}>
-                        <div className={matches ? "alignment-top-sub-heading" : ""}>
-                            <h1><span style={{ color: "#2196f3" }}>UI</span>
-                            <span style={{ color: "#ffffff" }}>/</span>
-                            <span style={{ color: "#fcc525" }}>UX</span>
-                            <span style={{ color: "#ffffff" }}>Design Company in New Delhi</span>
-                            </h1>
-                        </div>
-                    </Col>
-                </Row>
+            <div style={{width: "100%", minHeight: '700px'}}  className=" back-img">
+                <Container style={{height: '100%'}}>
+                    <Row justify="flex-start" alignItems="center">
+                        <Col xs={12} sm={12} md={6} lg={4}>
+                            <div className="UI-height-100"><h1 className="bold-heading-text">
+                                <span className="blue-text">UI</span>/<span className="yellow-text">UX</span> Design Company in Delhi India
+                                </h1>
+                                <p className="UI-sub-heading">We create with focus on your brand, and with the user at the center of design</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <CardSection />
             <div className="icon-section-container">
@@ -80,7 +68,7 @@ const UiDesign = (): JSX.Element => {
                                   </Col>
                                 </Row>
                                 <div style={{ paddingTop: "30px", boxSizing: "border-box", height: "30px", paddingLeft: "3px" }} >
-                                    <Button className="learn-more"> Get Started  </Button>
+                                    <Button className="ui-learn-more"> Get Started  </Button>
                                 </div>
                             </div>
                             
