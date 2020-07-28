@@ -6,9 +6,10 @@ import "./Slider.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 
+
 const useStyles = makeStyles((theme) => ({
   p20: {
-    padding: "20px",
+    padding: "10px",
   },
   background: {
     backgroundColor: "#3f51b5;",
@@ -24,11 +25,19 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "18px",
     lineHeight: "28px",
   },
+  listItem: {
+    fontSize: '20px',
+    marginTop: '10%',
+    marginBottom: '10%'
+  }
 }));
 const Slider = (): JSX.Element => {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+
+
+
 
   return (
     <div className={classes.background}>
@@ -76,30 +85,22 @@ const Slider = (): JSX.Element => {
             px="auto"
             mx="auto"
             style={{
-             
+
               borderRadius: "10px",
             }}
             className={classes.p20}
           >
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <ul style={{ listStyle: 'none' }}>
+              <li className={classes.listItem}> Mobile App Developement</li>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            
+              <li className={classes.listItem}> Web App Developement</li>
+
+              <li className={classes.listItem}>UI & UX Design</li>
+
+              <li className={classes.listItem}> IT Outsourcing</li>
+
+            </ul>
+
           </Box>
 
         </Col>

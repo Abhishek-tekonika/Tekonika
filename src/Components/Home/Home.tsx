@@ -41,7 +41,7 @@ const Home = (): JSX.Element => {
               SOFTWARE DESIGN AND DEVELOPMENT
             </span>
             <br />
-            <span style={{ fontSize: "70px", fontWeight: "bolder" }}>
+            <span style={{ fontSize: "60px", fontWeight: "bolder" }}>
               Go beyond technology,
               <br /> Do Tekonika
             </span>

@@ -23,7 +23,9 @@ const useStyles = makeStyles((theme) => ({
 
   },
   leftCol:{
-    marginTop:'10%'
+    marginTop:'10%',
+   
+    
   }
 
 }));
@@ -36,7 +38,7 @@ const Cards = (): JSX.Element => {
 
     <Container>
       <Row justify="space-between" style={{ padding: "20px",marginTop:'10%' }}>
-        <Col md={6} lg={6} sm={11} className={classes.leftCol} >
+        <Col md={6} lg={6} sm={12} className={classes.leftCol} >
           <span
             style={{
               fontSize: "6vh",
@@ -54,15 +56,15 @@ const Cards = (): JSX.Element => {
          <Col
           md={6} sm={12} lg={6}
         >
-          <Row justify="space-evenly">
+          <Row justify="space-between">
             <Box
 
               boxShadow={3}
               bgcolor="background.paper"
               px="auto"
               style={{
-                width: "30%",
-               
+                width: "42%",
+
                 borderRadius: "5px",
                 backgroundColor: '#44CBED'
               }}
@@ -78,7 +80,7 @@ const Cards = (): JSX.Element => {
               bgcolor="background.paper"
               px="auto"
               style={{
-                width: "30%",
+                width: "42%",
                
                 borderRadius: "5px",
                 backgroundColor: '#378DD8'
@@ -93,13 +95,13 @@ const Cards = (): JSX.Element => {
           </Row>
 
           {/*Row for aligning*/}
-          <Row style={{ marginTop: '2%' }} justify="space-evenly">
+          <Row style={{ marginTop: '2%' }} justify="space-between">
             <Box
               boxShadow={3}
               bgcolor="background.paper"
               px="auto"
               style={{
-                width: "30%",
+                width: "42%",
           
                 borderRadius: "5px",
                 backgroundColor: '#4DB369'
@@ -115,7 +117,7 @@ const Cards = (): JSX.Element => {
               bgcolor="background.paper"
               px="auto"
               style={{
-                width: "30%",
+                width: "42%",
               
                 borderRadius: "5px",
                 backgroundColor: '#FCC525'

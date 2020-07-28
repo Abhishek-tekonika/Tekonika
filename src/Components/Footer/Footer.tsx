@@ -15,7 +15,7 @@ import "./Footer.css";
 const Footer = (): JSX.Element => {
   return (
     <Container className="footer-container">
-      <Row justify="space-between">
+      <Row style={{marginTop:"10%"}}justify="space-between">
         <Col xs={5} sm={5} md={5} lg={5}>
           <Row>
             <Col xs={12} sm={12} md={12} lg={12}>

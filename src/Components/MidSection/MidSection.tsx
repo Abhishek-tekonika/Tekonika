@@ -43,7 +43,7 @@ const MidSection = (): JSX.Element => {
           style={{ padding: "20px", marginTop: "10%" }}
           justify="space-between"
         >
-          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
+          <Col xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} alt="" src={Chart} />
@@ -66,7 +66,7 @@ const MidSection = (): JSX.Element => {
               interface and user experience design
             </p>
           </Col>
-          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
+          <Col xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} src={Javascript} alt="" />
@@ -89,7 +89,7 @@ const MidSection = (): JSX.Element => {
               front-end web and mobile development.
             </p>
           </Col>
-          <Col style={{ width: "30%" }} xs={11} sm={11} md={3} lg={3}>
+          <Col  xs={11} sm={11} md={3} lg={3}>
             <div className={classes.innerdiv}>
               <div className={classes.circle}>
                 <img className={classes.img} alt="" src={Node} />
