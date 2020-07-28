@@ -1,0 +1,105 @@
+.alignment-top-sub-heading {
+   margin: 10px 0 0 -40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+   height: 80%;
+}
+
+.card-heading {
+   font-size: 36px;
+   color: #ffffff;
+   line-height: 40px;
+   text-align: left; 
+}
+
+.card-animation-container {
+   width: 100%;
+   backface-visibility: hidden;
+   display: "inline";
+   padding: 40px 0;
+   background-color: #f7d297;
+}
+
+.icon-section-container {
+   width: 100%;
+   backface-visibility: hidden;
+   display: "text";
+   padding: 40px 0;
+   background-color: #ffffff;
+}
+
+.heading-text {
+   font-size: 40px;
+   line-height: 50px;
+   text-align: left;
+   font-weight: 500;
+}
+ 
+.sub-heading-text {
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 300;
+}
+
+.UIheading-text {
+   font-size: 40px;
+   line-height: 50px;
+   text-align: left;
+   font-weight: 550;
+   padding-left: 10px;
+   padding-right: 10px;
+   scroll-padding: 12px;
+   box-sizing: border-box;
+   visibility: visible;
+}
+
+.weight-text {
+   color: #f7d297;
+   background-color: #ffffff;
+   font-weight: 830;
+}
+ 
+.icons-blue {
+   border-radius: 50% !important;
+   margin: 10px 0 10px 0;
+   height: 80px;
+   width: 80px;
+   background-color: #91d1ed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ 
+.icons-yellow {
+   border-radius: 50% !important;
+   margin: 10px 0 10px 0;
+   height: 80px;
+   width: 80px;
+   background-color: #f7d297;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.learn-more {
+   background-color: transparent !important;
+   color: #3f51b5 !important;
+   font-weight: 600 !important;
+   border: 3px solid #3f51b5 !important;
+   background-size: 500% 100%;
+   font-size: 19px;
+   line-height: 18px;
+   font-family: 'icomoon' !important;
+   word-spacing: 3px;
+   padding-top: 20em;
+   box-sizing: border-box;
+}
+
+.learn-more:hover {
+   background-color: #3f51b5 !important;
+   color: whitesmoke !important;
+   font-weight: 650 !important;
+
+}
