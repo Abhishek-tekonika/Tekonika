@@ -3,7 +3,7 @@ import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
 import { Theme, makeStyles } from "@material-ui/core/styles";
-import Grid, { GridSpacing } from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const CardSection = (): JSX.Element => {
     const classes = useStyles();
-    const [spacing, setSpacing] = React.useState<GridSpacing>(3);
+    // const [spacing, setSpacing] = React.useState<GridSpacing>(3);
     
     return (
         <Box 
@@ -51,7 +51,7 @@ const CardSection = (): JSX.Element => {
             >
             <Grid container className={classes.root} spacing={3}>
                 <Row item xs={12} sm={12} md={6} lg={6} >
-                    <Grid justify="center" spacing={spacing}>
+                    <Grid justify="center" spacing={3}>
                         {[0].map((value) => (
                         <Row key={value} item>
                             <div className="card-animation-container">
@@ -76,7 +76,7 @@ const CardSection = (): JSX.Element => {
                         </Row>
                         ))}
                     </Grid>
-                    <Grid justify="center" spacing={spacing}>
+                    <Grid justify="center" spacing={3}>
                         {[0].map((value) => (
                         <Row key={value} item>
                             <div className="card-animation-container">

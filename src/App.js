@@ -8,12 +8,14 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import UiDesign from './Components/UI_upperSection/UIUpperSection';
+import WebApp from "./Components/WebApp/WebApp";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Switch>
+        <Route exact path="/Web-App-dev" component ={WebApp}/>
         <Route exact path="/" component={Home} />
         <Route exact path="/request-a-quote" component={RequestForm} />
         <Route exact path="/mobile-app-dev" component={MobileAppDev} />
