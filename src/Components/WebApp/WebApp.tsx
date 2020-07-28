@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Header/Header";
 import { Container, Row, Col } from "../Common/Grid";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -25,7 +24,6 @@ const WebApp = (): JSX.Element => {
   const classes = useStyle();
   return (
     <React.Fragment>
-      <Header />
       <Container>
         <Row style={{ padding: "20px", marginTop: "5%" }}
           justify="space-between">
@@ -34,7 +32,7 @@ const WebApp = (): JSX.Element => {
             <span style={{ fontSize: '30px' }}>
               TEKONIKA</span>
             <br />
-              <p style={{ fontSize: "45px", fontWeight: 'bold' }}>
+            <p style={{ fontSize: "45px", fontWeight: 'bold' }}>
               Certified Website App Company in Lagos Nigeria
               </p>
             <p style={{ lineHeight: '30px' }}>
@@ -50,10 +48,9 @@ const WebApp = (): JSX.Element => {
             <img alt="" className={classes.images} src={FrontEnd} />
             <img alt="" className={classes.images} src={BackEnd} />
           </Col>
-          <MidSection/>
+          <MidSection />
         </Row>
       </Container>
-
     </React.Fragment>
   )
 }
