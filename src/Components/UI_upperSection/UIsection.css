@@ -168,3 +168,15 @@
    color: #3f51b5 !important;
    font-weight: 600 !important;
  }
+
+.ui-top-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.mb-10 {
+   margin-bottom: 10px;
+}

@@ -58,29 +58,26 @@ const UiDesign = (): JSX.Element => {
             <CardSection />
             <div className="container_1">
             <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}> 
-            <Row style={{ paddingTop: '30px' }}>
+            <Row style={{ paddingTop: '30px' }} justify="space-around">
                 <Col xs={11} sm={11} md={4} lg={4} style={{ paddingLeft: '50px'}}>
+                    <div>
                     <span className="UIheading-text" style={{ paddingTop: "29px" }}>An exceptionally <span className="weight-text">UI UX </span>design unique experience tailored to you</span>
-                    <div style={{ width:'100%', paddingTop: "30px", boxSizing: "border-box", height: "30px" }} >
-                        <Row >
-                          <Col xs={12} sm={12} md={6} lg={6}>
-                            <img src={MidSplash} width="400vw" height="269vh" alt="" />
-                          </Col>
-                        </Row>
-                        <div style={{ paddingTop: "30px", boxSizing: "border-box", height: "30px", paddingLeft: "3px" }} >
-                            <Button className="ui-learn-more"> Get Started  </Button>
-                        </div>
+                    <img src={MidSplash} width="100%" alt="" />
+                    <div style={{ paddingTop: "30px", boxSizing: "border-box", height: "30px", paddingLeft: "3px" }} >
+                        <Button className="ui-learn-more"> Get Started  </Button>
                     </div>
-                    
+                    </div>
                 </Col>
-                <Col xs={12} sm={12} md={2} lg={2}></Col>
-                <Col xs={11} sm={11} md={5} lg={5}>
-                    <Row justify="space-between" style={{ paddingLeft: "-50px" }} >
+                <Col xs={11} sm={11} md={5} lg={7}>
+                    <Row justify="space-around">
                         <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
-                          <div className="icons-blue"><PoolIcon /></div>
-                          <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Insight Driven</span>
-                          <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
-                            We leverage on the power of information and research to find out specific solutions to design problems</p>
+                          <div style={{padding: '20px'}}> 
+                            <div className="icons-blue"><PoolIcon /></div>
+                            <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Insight Driven</span>
+                            <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
+                                We leverage on the power of information and research to find out specific solutions to design problems
+                            </p>
+                          </div>
                         </Col>
                         <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
                           <div className="icons-yellow"><EmojiNatureIcon /></div>
@@ -89,8 +86,8 @@ const UiDesign = (): JSX.Element => {
                             We understand the impact of beautiful designs and stunning works of art. We build with style using tools like figma</p>
                         </Col>
                     </Row>
-                    <Row justify="space-between" style={{ paddingLeft: "-50" }} >
-                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
+                    <Row justify="space-around"  >
+                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover">
                           <div className="icons-yellow"><SportsKabaddiIcon /></div>
                           <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>User Centric</span>
                           <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
