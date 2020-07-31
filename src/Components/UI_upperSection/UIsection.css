@@ -67,7 +67,7 @@
  
 .icons-blue {
    border-radius: 50% !important;
-   margin: 10px 0 10px 0;
+   margin: 20px 0 20px 0;
    height: 80px;
    width: 80px;
    background-color: #91d1ed;
@@ -115,22 +115,30 @@
 
 }
 
-.back-img {
-   background-image: url('../../assets/UIsplash_bg.jpg');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   /* background-color: red; */
-}
-
 .bold-heading-text {
    color: white;
    font-size: 60px;
    line-height: 68px;
+   display: flex-start;
+   margin: auto;
+   padding-top: 100px;
+   align-items: center;  
 }
 
 .UI-sub-heading {
    color: white;
+   font-size: 20px;
+   line-height: 20px;
+   display: flex-start;
+   margin: auto;
+   padding-top: 20px;
+   align-items: center;
+   line-break: auto;   
+}
+
+.blur-background {
+   min-height: 600px;
+   width: 100%;
 }
 
 .blue-text {
@@ -138,7 +146,7 @@
 }
 
 .yellow-text {
-   color: yellow;
+   color: #fcc525;
 }
 
 .UI-height-100 {
@@ -178,5 +186,5 @@
 }
 
 .mb-10 {
-   margin-bottom: 10px;
+   margin: 10px;
 }

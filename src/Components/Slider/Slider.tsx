@@ -3,6 +3,7 @@ import { Col, Row } from "../Common/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import "./Slider.css";
+
 // import useMediaQuery from "@material-ui/core/useMediaQuery";
 // import { useTheme } from "@material-ui/core/styles";
 
@@ -27,8 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     fontSize: '20px',
-    marginTop: '10%',
-    marginBottom: '10%'
+
   }
 }));
 const Slider = (): JSX.Element => {
@@ -88,14 +88,24 @@ const Slider = (): JSX.Element => {
             className={classes.p20}
           >
             <ul style={{ listStyle: 'none' }}>
-              <li className={classes.listItem}> Mobile App Developement</li>
-
+              <li className={classes.listItem}> Mobile App Developement
+              <div className="progress-bar">
+              <span style={{ width: "85%" }} ></span>
+              </div>
+              </li>
               <li className={classes.listItem}> Web App Developement</li>
-
+              <div className="progress-bar">
+              <span style={{ width: "98%" }} ></span>
+              </div>
               <li className={classes.listItem}>UI & UX Design</li>
-
+              <div className="progress-bar">
+              <span style={{ width: "92%" }} ></span>
+              </div>
               <li className={classes.listItem}> IT Outsourcing</li>
-
+              <div className="progress-bar">
+              <span style={{ width: "82%" }} ></span>
+              </div>
+              
             </ul>
 
           </Box>

@@ -8,7 +8,6 @@ import FrontEnd from "../../assets/FrontEnd.png";
 import BackEnd from "../../assets/BackEnd.png";
 import MidSection from "./MidSection/MidSection";
 
-
 const useStyle = makeStyles((theme) => ({
   icon: {
     marginRight: '5%',
@@ -24,11 +23,11 @@ const WebApp = (): JSX.Element => {
   const classes = useStyle();
   return (
     <React.Fragment>
-      <Container>
-        <Row style={{ padding: "20px", marginTop: "5%" }}
+      <div style={{ backgroundColor: "black"}}>
+        <Row style={{ paddingLeft: "10%", paddingTop: "3%", paddingRight: "5%", paddingBottom: "3%" }}
           justify="space-between">
-
-          <Col sm={5} md={5} lg={5} xs={12}>
+          <Col sm={8} md={5} lg={6} xs={10} style={{ color: "whitesmoke" }} >
+          <Col sm={8} md={5} lg={6} xs={10} style={{ marginTop: "10%" }} >
             <span style={{ fontSize: '30px' }}>
               TEKONIKA</span>
             <br />
@@ -44,10 +43,17 @@ const WebApp = (): JSX.Element => {
             <TwitterIcon className={classes.icon} />
             <LinkedInIcon className={classes.icon} />
           </Col>
-          <Col sm={6} md={6} lg={6} xs={12}>
-            <img alt="" className={classes.images} src={FrontEnd} />
+          </Col>
+          <Col />
+          <Col sm={8} md={6} lg={6} xs={10} style={{ marginTop: "5%", padding: "auto" }} >
+            <img alt="" className={classes.images} src={FrontEnd} />   //#0085f2
             <img alt="" className={classes.images} src={BackEnd} />
           </Col>
+        </Row>
+        </div>
+        <Container>
+        <Row style={{ padding: "20px", marginTop: "5%" }}
+          justify="space-between">
           <MidSection />
         </Row>
       </Container>
