@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "../Common/Grid";
 import Button from "@material-ui/core/Button";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { Link } from "react-router-dom";
 
 import "./UIsection.css";
 
@@ -26,7 +27,9 @@ const CardSection = (): JSX.Element => {
                         We help businesses gain confidence in their product and position them as brands that clients can trust.
                         </span>
                         <div style={{ paddingTop: "34px" }} >
+                        <Link to="contact-us" className="linkName" >
                             <Button className="learn-more" variant="contained" >LEARN MORE<ArrowForwardIosIcon /> </Button>
+                        </Link>
                         </div>
                     </p>
                 </div>
@@ -48,7 +51,9 @@ const CardSection = (): JSX.Element => {
                         user interactions.
                         </span>
                         <div style={{ paddingTop: "37px" }} >
+                        <Link to="contact-us" className="linkName" >
                             <Button className="learn-more" variant="contained" >LEARN MORE<ArrowForwardIosIcon /> </Button>
+                        </Link>
                         </div>
                     </p>
                     

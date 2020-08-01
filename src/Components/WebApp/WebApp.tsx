@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "../Common/Grid";
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { makeStyles } from "@material-ui/core/styles";
 import FrontEnd from "../../assets/FrontEnd.png";
 import BackEnd from "../../assets/BackEnd.png";
 import MidSection from "./MidSection/MidSection";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const useStyle = makeStyles((theme) => ({
   icon: {
@@ -39,8 +38,7 @@ const WebApp = (): JSX.Element => {
               We have a team of professional experts having years of experience in the field of development.
               Our specialised team can provide custom web solutions to establish your business online.
               </p>
-            <InstagramIcon className={classes.icon} />
-            <TwitterIcon className={classes.icon} />
+            <FacebookIcon className={classes.icon} />
             <LinkedInIcon className={classes.icon} />
           </Col>
           </Col>

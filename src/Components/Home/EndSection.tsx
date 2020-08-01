@@ -3,6 +3,7 @@ import { Row, Col, Container } from "../Common/Grid";
 import Box from "@material-ui/core/Box";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -15,6 +16,11 @@ const useStyles = makeStyles((theme) => ({
       cursor: 'pointer',
       backgroundColor: '#e4e4e4'
     },
+  },
+
+  linkName: {
+    textDecoration: "none",
+    color: "white",
   },
 
 }));
@@ -59,9 +65,11 @@ const EndSection = (): JSX.Element => {
               {/* <Row style={{ backgroundColor: '#F3B421', justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '10px', border: '1px solid white' }} >
                 < span style={{color:'white'}}>Start A Project</span>
               </Row> */}
+              <Link to="request-a-quote" className={classes.linkName} >
               <StyledMenuItem style={{ justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '5px', border: '1px solid white' }} >
                 <span >Start A Project</span>
               </StyledMenuItem>
+              </Link>
             </Box>
           </Col>
 
@@ -80,9 +88,11 @@ const EndSection = (): JSX.Element => {
               {/* <Button variant="contained" color="primary">
                 Start A Project
                </Button> */}
+              <Link to="contact-us" className={classes.linkName }>
               <StyledMenuItem style={{ justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '5px', border: '1px solid white' }} >
                 <span  >Contact Us</span>
               </StyledMenuItem>
+              </Link> 
             </Box>
 
           </Col>

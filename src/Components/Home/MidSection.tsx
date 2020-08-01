@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "../Common/Grid";
-import Chart from "../../assets/Chart.png";
+import Chart from "../../assets/sketch.png";
 import Node from "../../assets/node.svg";
 import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
@@ -49,7 +49,7 @@ const MidSection = (): JSX.Element => {
               </div>
               <br />
               <i>
-                <span>Hello Figma!</span>
+                <span>Hello Sketch!</span>
               </i>
               <br />
               <span style={{ fontSize: "40px" }}>

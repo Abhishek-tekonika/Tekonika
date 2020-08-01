@@ -188,3 +188,8 @@
 .mb-10 {
    margin: 10px;
 }
+
+.linkName {
+   text-decoration: none;
+   color: white;
+}

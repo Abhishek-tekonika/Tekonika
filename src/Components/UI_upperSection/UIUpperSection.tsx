@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import { Parallax } from "react-parallax";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import { Link } from "react-router-dom";
 import PoolIcon from '@material-ui/icons/Pool';
 import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 import SportsKabaddiIcon from '@material-ui/icons/SportsKabaddi';
@@ -56,6 +56,7 @@ const UiDesign = (): JSX.Element => {
     //     }
         
     // }, []);
+
     const theme = useTheme();
     const breakPoint = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -137,13 +138,15 @@ const UiDesign = (): JSX.Element => {
                     <Typography gutterBottom variant="h5" component="h2" style={{ textAlign: "center", 
                         fontFamily: "cursive", fontStyle: "normal", fontWeight: 700, color: "#ffffff",
                         fontSize: "35.2px", lineHeight: "41.6px" }} >
-                        Build your dream website or app today.
+                        Build your dream Web or Mobile app today.
                     </Typography>
                     <br />
                     <Row xs={12} sm={12} md={6} lg={12} style={{ position: "relative", margin: "auto", display: "flex" }} >
-                        <Button variant="outlined" style={{ padding: "10px", color: "whitesmoke", borderColor: "whitesmoke", borderBlockWidth: "2px",margin: "auto" }} >
+                        <Link to="request-a-quote" className="linkName" style={{ padding: "10px", margin: "auto"  }} >
+                        <Button variant="outlined" style={{ color: "whitesmoke", borderColor: "whitesmoke", borderBlockWidth: "2px"}} >
                             Request quote
                         </Button>
+                        </Link>
                     </Row>
                     <br /><br /><br /><br />
                     </div>

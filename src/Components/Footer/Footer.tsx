@@ -5,8 +5,6 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Divider } from "@material-ui/core";
 
@@ -45,29 +43,7 @@ const Footer = (): JSX.Element => {
                   </ListItemText>
                 </ListItem>
               </List>
-              <Divider />
-              <List>
-                <ListItem>
-                  <ListItemIcon>
-                    <InstagramIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <span className="footer-links">Instagram</span>
-                  </ListItemText>
-                </ListItem>
-              </List>
-              <Divider />
-              <List>
-                <ListItem>
-                  <ListItemIcon>
-                    <TwitterIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <span className="footer-links">Twitter</span>
-                  </ListItemText>
-                </ListItem>
-              </List>
-              <Divider />
+              <Divider /> 
               <List>
                 <ListItem>
                   <ListItemIcon>
@@ -108,19 +84,19 @@ const Footer = (): JSX.Element => {
                     Phone
                   </label>
                   <p className="footer-text" id="Phone">
-                    0000000000
+                    +91-7400077777
                   </p>
                 </li>
                 <Divider className="mt-10" />
-                <li className="pt-20">
+                {/* <li className="pt-20">
                   <label className="footer-bold-text" htmlFor="Address">
                     Address
                   </label>
                   <p className="footer-text" id="Address">
                     Address here
                   </p>
-                </li>
-                <Divider className="mt-10" />
+                </li> */}
+                {/* <Divider className="mt-10" /> */}
               </ul>
             </Col>
           </Row>

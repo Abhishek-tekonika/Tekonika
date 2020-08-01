@@ -14,9 +14,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 
 import faceBookIcon from "../../assets/facebook-icon.svg";
-import twitterIcon from "../../assets/twitter-icon.svg";
 import linkedinIcon from "../../assets/linkedin-icon.svg";
-import instagramIcon from "../../assets/instagram-icon.svg";
 import closeIcon from "../../assets/close-icon.png";
 
 import "./Header.css";
@@ -127,8 +125,6 @@ const Header = (): JSX.Element => {
       <List>
         <ListItem>
           <img src={faceBookIcon} alt="" className={classes.images} />
-          <img src={twitterIcon} alt="" className={classes.images} />
-          <img src={instagramIcon} alt="" className={classes.images} />
           <img src={linkedinIcon} alt="" className={classes.images} />
         </ListItem>
       </List>

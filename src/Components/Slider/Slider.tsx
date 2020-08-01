@@ -61,9 +61,6 @@ const Slider = (): JSX.Element => {
             application solutions within the short time of its operation, with
               an expensive set of competencies to meet the enterprise <br />
               need(s).
-              <br /> We positions our goals as a leading tech company in Lagos,
-              Nigeria – West African, and Africa as a whole and the world at
-              large in few years’ time. <br />
             <p>At Tekonika we breath solutions.</p>
           </p>
         </Col>
