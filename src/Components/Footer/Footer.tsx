@@ -74,18 +74,32 @@ const Footer = (): JSX.Element => {
                   <label className="footer-bold-text" htmlFor="email">
                     Email
                   </label>
-                  <p className="footer-text" id="email">
-                    hello@tekonika.co
-                  </p>
+                  <a 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href="mailto:hello@tekonika.co" 
+                    className="contact-links"
+                  >
+                    <p className="footer-text" id="email">
+                      hello@tekonika.co
+                    </p>
+                  </a>
                 </li>
                 <Divider className="mt-10" />
                 <li className="pt-20">
                   <label className="footer-bold-text" htmlFor="Phone">
                     Phone
                   </label>
-                  <p className="footer-text" id="Phone">
-                    +91-7400077777
-                  </p>
+                  <a 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href="tel:+91 7400077777" 
+                    className="contact-links"
+                  >
+                    <p className="footer-text" id="Phone">
+                      +91-7400077777
+                    </p>
+                  </a>
                 </li>
                 <Divider className="mt-10" />
                 {/* <li className="pt-20">
