@@ -20,7 +20,7 @@ const ImageComparison = (): JSX.Element => {
 
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <div style={{marginBottom: '50px'}}>
       <Container>
         <Row style={{ marginTop: "5%" }} justify="space-between">
           <Col md={3} lg={3} sm={12} xs={12}>
@@ -39,8 +39,8 @@ const ImageComparison = (): JSX.Element => {
                 image1={BackEnd}
                 image2={FrontEnd}
                 sliderWidth={3}
-                sliderColor="blue"
-                handleColor="blue"
+                sliderColor="#5f61ab"
+                handleColor="#5f61ab"
                 handleBackgroundColor="white"
               />
             </div>
@@ -58,10 +58,8 @@ const ImageComparison = (): JSX.Element => {
           </Col>
         </Row>
         <br/>
-       
       </Container>
-
-    </React.Fragment>
+    </div>
   );
 }
 export default ImageComparison;

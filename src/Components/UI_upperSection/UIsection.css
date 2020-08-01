@@ -70,7 +70,7 @@
    margin: 20px 0 20px 0;
    height: 80px;
    width: 80px;
-   background-color: #91d1ed;
+   background-color: #5f61ab;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -89,9 +89,9 @@
 
 .ui-learn-more {
    background-color: transparent !important;
-   color: #3f51b5 !important;
+   color: #5f61ab !important;
    font-weight: 600 !important;
-   border: 3px solid #3f51b5 !important;
+   border: 3px solid #5f61ab !important;
    background-size: 500% 100%;
    font-size: 19px;
    line-height: 18px;
@@ -102,7 +102,7 @@
 }
 
 .ui-learn-more:hover {
-   background-color: #3f51b5 !important;
+   background-color: #5f61ab !important;
    color: whitesmoke !important;
    font-weight: 650 !important;
 
@@ -142,7 +142,7 @@
 }
 
 .blue-text {
-   color: #3f51b5;
+   color: #5f61ab;
 }
 
 .yellow-text {
@@ -165,15 +165,15 @@
 }
 
 .learn-more {
-   background-color: #3f51b5 !important;
+   background-color: #5f61ab !important;
    color: white !important;
    font-weight: 600 !important;
-   border: 2px solid #3f51b5 !important;
+   border: 2px solid #5f61ab !important;
  }
  
  .learn-more:hover {
    background-color: white !important;
-   color: #3f51b5 !important;
+   color: #5f61ab !important;
    font-weight: 600 !important;
  }
 

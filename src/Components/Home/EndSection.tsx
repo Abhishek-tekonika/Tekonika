@@ -59,7 +59,7 @@ const EndSection = (): JSX.Element => {
               bgcolor="background.paper"
               px="auto"
               className={classes.p20}
-              style={{ backgroundColor: '#378DD8', textAlign: 'center' }}
+              style={{ backgroundColor: '#5f61ab', textAlign: 'center' }}
 
             >
               <p style={{ marginTop: '7%', fontSize: '3vh', color: 'white' }}>Want to get Started ASAP!</p>
@@ -79,7 +79,7 @@ const EndSection = (): JSX.Element => {
               bgcolor="background.paper"
               px="auto"
               className={classes.p20}
-              style={{ backgroundColor: '#378DD8', textAlign: 'center' }}
+              style={{ backgroundColor: '#5f61ab', textAlign: 'center' }}
 
             >
               <p style={{ marginTop: '7%', fontSize: '3vh', color: 'white' }}>Ready to have a conversation?</p>

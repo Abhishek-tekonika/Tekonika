@@ -1,6 +1,6 @@
 .top-container {
   width: 100%;
-  background-color: #3f51b5;
+  background-color: #5f61ab;
   height: 400px;
   display: flex;
 }
@@ -35,7 +35,7 @@
 }
 
 .contact-links-text {
-  color: #3f51b5;
+  color: #5f61ab;
   display: flex;
   align-items: center;
   justify-content: center;

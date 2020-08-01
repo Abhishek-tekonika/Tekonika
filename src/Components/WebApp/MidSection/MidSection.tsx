@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container } from "../../Common/Grid";
+import { Row, Col } from "../../Common/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import testimonyImg from "../../../assets/project-testimony.jpg";
 import ImageComparison from "../ImageComparison/ImageComparison";
@@ -12,7 +12,7 @@ const useStyle = makeStyles((theme) => ({
     lineHeight: "30px",
   },
   testimonyTextDiv :{
-    background: '#3f51b5', 
+    background: '#5f61ab', 
     height: '100%', 
     color: 'white', 
     display: 'flex', 

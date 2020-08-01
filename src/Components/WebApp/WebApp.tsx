@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "../Common/Grid";
+import { Row, Col } from "../Common/Grid";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { makeStyles } from "@material-ui/core/styles";
 import FrontEnd from "../../assets/tekonika-frontend-pic.png";

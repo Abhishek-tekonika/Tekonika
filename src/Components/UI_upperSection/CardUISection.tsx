@@ -15,7 +15,7 @@ const CardSection = (): JSX.Element => {
         <Container>
         <Row justify="space-evenly" >
             <Col xs={11} sm={11} md={5} lg={5} className="mb-10" >
-                <div style={{ background: '#0085f2', height: '100%'}} className="ui-top-card mb-10">
+                <div style={{ background: '#5f61ab', height: '100%'}} className="ui-top-card mb-10">
                     <div>
                         <span className="card-heading">
                             You are in the right place
@@ -37,13 +37,13 @@ const CardSection = (): JSX.Element => {
             <Col xs={11} sm={11} md={5} lg={5} className="mb-10" >
                 <div style={{height: '100%', background: '#ffffff'}} className="ui-top-card mb-10">
                     <div>
-                        <span className="card-heading" style={{ color: "#0085f2" }}>
+                        <span className="card-heading" style={{ color: "#5f61ab" }}>
                             Great design offerings
                         </span>
                     </div>
                     <br />
                     <p className="sub-heading-text">
-                        <span style={{ color: "#0085f2" }}>
+                        <span style={{ color: "#5f61ab" }}>
                         We take problems and build solutions around them. 
                         We create concepts and implement designs that expresses 
                         your brand values. We integrate the essence of great human 

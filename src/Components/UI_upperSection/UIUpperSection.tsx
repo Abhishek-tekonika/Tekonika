@@ -19,7 +19,7 @@ import "./UIsection.css";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
-        backgroundColor: "#0085f2",
+        backgroundColor: "#5f61ab",
       },
 
     img: {
@@ -104,7 +104,7 @@ const UiDesign = (): JSX.Element => {
             </div>
             
             <div style={{ backgroundColor: "#f2f2f2", width: "100%", 
-                    borderTopLeftRadius: "80px", borderTopRightRadius: "80px", backfaceVisibility: "visible" }} >
+                    borderTopLeftRadius: "300px", borderTopRightRadius: "300px", backfaceVisibility: "visible" }} >
                 <Container >
                 <Row xs={12} sm={12} md={12} lg={12} style={{ margin: "auto" }} > 
                     <div className={ classes.root } style={{ width: "100%", display: "flex-start", height: "100%", borderRadius: "20px", margin: "auto"}}>

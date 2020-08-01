@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   list: {
     width: 300,
     height: "100vh",
-    background: "#3f51b5",
+    background: "#5f61ab",
     color: "white",
     fontWeight: "bold",
   },
@@ -178,7 +178,7 @@ const Header = (): JSX.Element => {
         <Col xs={2} sm={2} md={2} lg={2}>
           <Row alignItems="center" justify="space-evenly">
             <Link style={{ textDecoration: 'none' }} to="/request-a-quote">
-              <Button variant="contained" color="primary">
+              <Button variant="contained" className="blue-btn" >
                 START A PROJECT
               </Button>
             </Link>

@@ -61,9 +61,9 @@ const Home = (): JSX.Element => {
               <br />
               <Button
                 style={{ marginTop: "3%" }}
+                className="blue-btn"
                 variant="contained"
                 size="large"
-                color="primary"
                 onClick={handleLearnMore}
               >
                 Learn More

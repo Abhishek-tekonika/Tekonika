@@ -150,7 +150,7 @@ const RequestForm = (): JSX.Element => {
                     </Col>
                   </Row>
                   <Row justify="space-around" className="mt-30">
-                    <Button variant="contained" color="primary" type="submit">Submit Request</Button>
+                    <Button variant="contained" className="blue-btn" type="submit">Submit Request</Button>
                   </Row>
                 </form>
               </Container>

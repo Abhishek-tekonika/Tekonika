@@ -26,15 +26,15 @@
 }
 
 .learn-more {
-  background-color: #3f51b5 !important;
+  background-color: #5f61ab !important;
   color: white !important;
   font-weight: 600 !important;
-  border: 2px solid #3f51b5 !important;
+  border: 2px solid #5f61ab !important;
 }
 
 .learn-more:hover {
   background-color: white !important;
-  color: #3f51b5 !important;
+  color: #5f61ab !important;
   font-weight: 600 !important;
 }
 
@@ -49,7 +49,7 @@
   margin: 10px 0 10px 0;
   height: 80px;
   width: 80px;
-  background-color: #91d1ed;
+  background-color: #5f61ab;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@
 }
 
 .highlighted-blue {
-  background-color: #3f51b5;
+  background-color: #5f61ab;
   color: white;
   padding: 5px;
   font-size: 24px;
@@ -109,7 +109,7 @@
 .big-blue-btn {
   margin: 8px !important;
   padding: 8px;
-  background-color: #3f51b5 !important;
+  background-color: #5f61ab !important;
   color: white !important;
   text-transform: uppercase;
   font-size: 18px;
