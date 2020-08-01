@@ -75,7 +75,7 @@ const Footer = (): JSX.Element => {
                     Email
                   </label>
                   <p className="footer-text" id="email">
-                    contact-us@tekonika.co
+                    hello@tekonika.co
                   </p>
                 </li>
                 <Divider className="mt-10" />

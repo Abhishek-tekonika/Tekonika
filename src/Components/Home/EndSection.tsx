@@ -33,11 +33,15 @@ const StyledMenuItem = withStyles({
       color: 'black',
 
     },
-
     backgroundColor: '#white',
     fontWeight: 500,
     fontFamily: "inherit",
-    color: 'white'
+    color: 'white',
+    justifyContent: 'center', 
+    textAlign: 'center', 
+    height: '30%', 
+    borderRadius: '5px', 
+    border: '1px solid white',
   },
 })(MenuItem);
 
@@ -59,16 +63,10 @@ const EndSection = (): JSX.Element => {
 
             >
               <p style={{ marginTop: '7%', fontSize: '3vh', color: 'white' }}>Want to get Started ASAP!</p>
-              {/* <Button variant="contained" color="primary">
-                Start A Project
-               </Button> */}
-              {/* <Row style={{ backgroundColor: '#F3B421', justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '10px', border: '1px solid white' }} >
-                < span style={{color:'white'}}>Start A Project</span>
-              </Row> */}
               <Link to="request-a-quote" className={classes.linkName} >
-              <StyledMenuItem style={{ justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '5px', border: '1px solid white' }} >
-                <span >Start A Project</span>
-              </StyledMenuItem>
+                <StyledMenuItem>
+                  <span >Start A Project</span>
+                </StyledMenuItem>
               </Link>
             </Box>
           </Col>
@@ -85,13 +83,10 @@ const EndSection = (): JSX.Element => {
 
             >
               <p style={{ marginTop: '7%', fontSize: '3vh', color: 'white' }}>Ready to have a conversation?</p>
-              {/* <Button variant="contained" color="primary">
-                Start A Project
-               </Button> */}
               <Link to="contact-us" className={classes.linkName }>
-              <StyledMenuItem style={{ justifyContent: 'center', alignItems: 'center', height: '30%', borderRadius: '5px', border: '1px solid white' }} >
-                <span  >Contact Us</span>
-              </StyledMenuItem>
+                <StyledMenuItem>
+                  <span  >Contact Us</span>
+                </StyledMenuItem>
               </Link> 
             </Box>
 

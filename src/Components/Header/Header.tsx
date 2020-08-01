@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import { Link } from "react-router-dom";
-import { Col, Row } from "../Common/Grid";
+import { Col, Row, Container } from "../Common/Grid";
 import Button from "@material-ui/core/Button";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -133,13 +133,14 @@ const Header = (): JSX.Element => {
 
   return (
     <Box boxShadow={3} pl={0} pr={0}>
-      <Row style={{ background: "white" }} justify={matches ? "center" : "space-between"} alignItems="center">
+      <Container>
+      <Row style={{ background: "white" }} justify="space-between" alignItems="center">
         <Col xs={1} sm={1} md={1} lg={1}>
           <Box
             bgcolor="white"
-            pt={"12px"}
-            pb={"12px"}
-            pl={"25px"}
+            // pt={"12px"}
+            // pb={"12px"}
+            // // pl={"25px"}
             color="black"
           >
             <Link className={classes.link} to="/">
@@ -149,7 +150,7 @@ const Header = (): JSX.Element => {
         </Col>
         {matches ?
         <>
-        <Col xs={7} sm={7} md={7} lg={7}>
+        <Col xs={7} sm={7} md={9} lg={9}>
           <Row justify="space-around"> 
             <Col xs={1} sm={1} md={1} lg={1}>
               <Link className={classes.link} to="/">
@@ -215,6 +216,7 @@ const Header = (): JSX.Element => {
         </React.Fragment>
         }
       </Row>
+      </Container>
     </Box>
   );
 };

@@ -47,7 +47,7 @@ const MobileAppDev = (): JSX.Element => {
     <>
       <Container className="container-1">
         <Row>
-          <Col xs={12} sm={11} md={8} lg={8}>
+          <Col xs={12} sm={11} md={8} lg={9}>
             <img width="100%" src={phoneImg1} alt="" />
           </Col>
           <Col xs={11} sm={11} md={4} lg={3}>

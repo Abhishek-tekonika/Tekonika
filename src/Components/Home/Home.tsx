@@ -30,8 +30,8 @@ const Home = (): JSX.Element => {
     <React.Fragment>
       <Container>
         <Row
-          style={{ padding: "20px", marginTop: "5%" }}
-          justify="space-evenly"
+          style={{ marginTop: "5%" }}
+          justify="center"
         >
           <Col xs={12} sm={12} md={6} lg={6}>
             <div className="h-100">
@@ -62,7 +62,7 @@ const Home = (): JSX.Element => {
               </Button>
             </div>
           </Col>
-
+          <Col xs={12} sm={12} md={1} lg={1}></Col>
           <Col xs={12} sm={12} md={5} lg={5}>
             <Col
               style={{

@@ -37,18 +37,18 @@ const ContactUs = (): JSX.Element => {
           <a 
             target="_blank" 
             rel="noopener noreferrer" 
-            href="mailto:contact-us@tekonika.co" 
+            href="mailto:hello@tekonika.co" 
             className="contact-links"
           >
-            <span className="contact-links-text"><EmailIcon /> contact-us@tekonika.co</span>
+            <span className="contact-links-text"><EmailIcon /> hello@tekonika.co</span>
           </a>
           <a 
             target="_blank" 
             rel="noopener noreferrer" 
-            href="tel:+91 0000000000" 
+            href="tel:+91 7400077777" 
             className="contact-links"
           >
-            <span className="contact-links-text"><PhoneIcon /> +91 0000000000</span>
+            <span className="contact-links-text"><PhoneIcon /> +91 7400077777</span>
           </a>
         </Col>
       </Row>

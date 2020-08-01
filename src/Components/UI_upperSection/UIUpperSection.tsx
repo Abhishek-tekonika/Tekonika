@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
@@ -9,8 +9,6 @@ import CardSection from "../../Components/UI_upperSection/CardUISection";
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Parallax } from "react-parallax";
-import { useTheme } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { Link } from "react-router-dom";
 import PoolIcon from '@material-ui/icons/Pool';
 import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
@@ -39,34 +37,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const UiDesign = (): JSX.Element => {
     const classes = useStyles();
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // const imageApplied = windowWidth > 650 ? ImgBackground : MidSplash;
-
-    // useEffect(() => {
-
-    //     const handleWinResize = () => {
-    //         setWindowWidth(window.innerWidth);
-
-    //     };
-
-    //     window.addEventListener('resize', handleWinResize);
-
-    //     return () => {
-    //         window.addEventListener('resize', handleWinResize);
-    //     }
-        
-    // }, []);
-
-    const theme = useTheme();
-    const breakPoint = useMediaQuery(theme.breakpoints.down("sm"));
-
-    // const imageResize = breakPoint ? MidSplash : ImgBackground;
-
     return (
         <>
             <div >
-            {/* <div style={{width: "100%", minHeight: "600px", backgroundImage: `url(${ imageResize })` }}  > */}
-            <Parallax  className="blur-background" blur={ 5 } bgImage= {require("/home/nikkhil/Desktop/javascript_BB/tekonika/Tekonika/src/assets/UIsplash_bg.jpg")} 
+            <Parallax  className="blur-background" blur={ 5 } bgImage= {ImgBackground} 
                 strength= { 300 } >
             <Container>
                 <Row justify="flex-start" >
