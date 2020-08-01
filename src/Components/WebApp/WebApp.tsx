@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "../Common/Grid";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { makeStyles } from "@material-ui/core/styles";
-import FrontEnd from "../../assets/FrontEnd.png";
-import BackEnd from "../../assets/BackEnd.png";
+import FrontEnd from "../../assets/tekonika-frontend-pic.png";
+import BackEnd from "../../assets/tekonika-backend-pic.png";
 import MidSection from "./MidSection/MidSection";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
@@ -49,12 +49,7 @@ const WebApp = (): JSX.Element => {
           </Col>
         </Row>
         </div>
-        <Container>
-        <Row style={{ padding: "20px", marginTop: "5%" }}
-          justify="space-between">
-          <MidSection />
-        </Row>
-      </Container>
+        <MidSection />
     </React.Fragment>
   )
 }

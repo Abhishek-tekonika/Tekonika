@@ -12,6 +12,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
+import tekonikaLogo from "../../assets/TekonikaLogo.png";
 
 import faceBookIcon from "../../assets/facebook-icon.svg";
 import linkedinIcon from "../../assets/linkedin-icon.svg";
@@ -135,7 +136,7 @@ const Header = (): JSX.Element => {
     <Box boxShadow={3} pl={0} pr={0}>
       <Container>
       <Row style={{ background: "white" }} justify="space-between" alignItems="center">
-        <Col xs={1} sm={1} md={1} lg={1}>
+        <Col xs={2} sm={2} md={2} lg={2}>
           <Box
             bgcolor="white"
             // pt={"12px"}
@@ -144,13 +145,13 @@ const Header = (): JSX.Element => {
             color="black"
           >
             <Link className={classes.link} to="/">
-              <h4>Tekonika</h4>
+              <img src={tekonikaLogo}  alt="" style={{marginLeft: '-50px'}} />
             </Link>
           </Box>
         </Col>
         {matches ?
         <>
-        <Col xs={7} sm={7} md={9} lg={9}>
+        <Col xs={7} sm={7} md={8} lg={8}>
           <Row justify="space-around"> 
             <Col xs={1} sm={1} md={1} lg={1}>
               <Link className={classes.link} to="/">

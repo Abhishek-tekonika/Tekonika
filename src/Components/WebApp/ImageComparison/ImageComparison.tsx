@@ -2,9 +2,9 @@ import React from "react";
 import { Col, Row, Container } from "../../Common/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageSlider from "react-image-comparison-slider";
-import FrontEnd from "../../../assets/FrontEnd.png";
+import FrontEnd from "../../../assets/tekonika-frontend-pic.png";
+import BackEnd from "../../../assets/tekonika-backend-pic.png";
 
-import BackEnd from "../../../assets/BackEnd.png";
 const useStyles = makeStyles((theme) => ({
 
   text: {
@@ -22,11 +22,8 @@ const ImageComparison = (): JSX.Element => {
   return (
     <React.Fragment>
       <Container>
-        <Row style={{ padding: "20px", marginTop: "5%" }}
-          justify="space-evenly">
-
+        <Row style={{ marginTop: "5%" }} justify="space-between">
           <Col md={3} lg={3} sm={12} xs={12}>
-
             <span className={classes.text}>Front End Developement</span>
             <br />
             <span className={classes.bodyText}>
@@ -34,16 +31,13 @@ const ImageComparison = (): JSX.Element => {
               We develop an interactive and attractive
               looking web application front end for you using Angular 6+ a framework by google
               Not only Angular we work with React a framework by facebook .
-
-
               </span>
           </Col>
           <Col md={6} lg={6} sm={12} xs={12}>
-
-            <div style={{ width: "90%", height: "120%",marginLeft:'3%' }}>
+            <div style={{ width: "90%", height: "120%", marginLeft:'3%' }}>
               <ImageSlider
-                image1={FrontEnd}
-                image2={BackEnd}
+                image1={BackEnd}
+                image2={FrontEnd}
                 sliderWidth={3}
                 sliderColor="blue"
                 handleColor="blue"
