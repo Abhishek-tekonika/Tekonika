@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
@@ -8,6 +8,8 @@ import Button from "@material-ui/core/Button";
 import MidSection from "./MidSection";
 
 import "./Home.css";
+
+const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = (): JSX.Element => {
   const classes = useStyles();
+  
+  const sliderSec = useRef(null);
+  const handleLearnMore = (): void => {
+    scrollToRef(sliderSec);
+  }
   return (
     <React.Fragment>
       <Container>
@@ -57,6 +64,7 @@ const Home = (): JSX.Element => {
                 variant="contained"
                 size="large"
                 color="primary"
+                onClick={handleLearnMore}
               >
                 Learn More
               </Button>
@@ -78,7 +86,9 @@ const Home = (): JSX.Element => {
           </Col>
         </Row>
       </Container>
-      <MidSection />
+      <div ref={sliderSec} >
+        <MidSection />
+      </div>
     </React.Fragment>
   );
 };

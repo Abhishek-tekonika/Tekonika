@@ -1,6 +1,9 @@
 .MarginTop{
-    margin-top: 3% !important;
-    
+  margin-top: 3% !important;
+}
+
+.MarginBottom{
+  margin-bottom: 3% !important;
 }
 
 .progress-bar { 

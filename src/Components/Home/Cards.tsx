@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Container } from "../Common/Grid";
-import "../Slider/Slider.css";
+import "./Slider/Slider.css";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
 import design from "../../assets/design.svg";

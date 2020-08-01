@@ -4,7 +4,7 @@ import Chart from "../../assets/sketch.png";
 import Node from "../../assets/node.svg";
 import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
-import Slider from "../Slider/Slider";
+import Slider from "./Slider/Slider";
 import Cards from "./Cards";
 import EndSection from "./EndSection";
 
