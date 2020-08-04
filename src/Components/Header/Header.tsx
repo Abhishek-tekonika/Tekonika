@@ -54,6 +54,13 @@ const useStyles = makeStyles({
     color: 'white',
     textDecoration: 'none',
   },
+  servicesLink: {
+    color: 'white',
+    textDecoration: 'none',
+  },
+  pointer: {
+    cursor: 'pointer'
+  }
 });
 
 const Header = (): JSX.Element => {
@@ -61,6 +68,8 @@ const Header = (): JSX.Element => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("lg"));
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
+
+  const [servicesOpen, setServicesOpen] = useState<boolean>(false);
 
   const [active, setActive] = useState<number>(1);
   const path = useLocation().pathname;
@@ -104,23 +113,49 @@ const Header = (): JSX.Element => {
     </>
   )
 
+  const handleServicesItemClick = () => {
+    setDrawerOpen(false);
+    setServicesOpen(false);
+  }
+  
+  const servicesList= (
+    <>
+    <List>
+      <Link className={classes.servicesLink} to="/mobile-app-dev" onClick={handleServicesItemClick}>
+        <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"Mobile App Dev"} />
+      </Link>
+      <Link className={classes.servicesLink} to="/web-app-dev" onClick={handleServicesItemClick}>
+        <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"Web App Dev"} />
+      </Link>
+      <Link className={classes.servicesLink} to="/ui-ux-design" onClick={handleServicesItemClick}>
+        <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"UI/UX Design"} />
+      </Link>
+      <Link className={classes.servicesLink} to="/contact-us" onClick={handleServicesItemClick}>
+        <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"IT outsourcing"} />
+      </Link>
+    </List>
+    <Divider className={classes.divider} />
+    </>
+  )
+
   const list = (
     <div
       className={classes.list}
       role="presentation"
-      onClick={(): void => setDrawerOpen(false)}
       onKeyDown={(): void => setDrawerOpen(false)}
     >
       <List>
-        <div className={classes.closeIcon}>
+        <div className={classes.closeIcon} onClick={(): void => setDrawerOpen(false)}>
           <img src={closeIcon} alt="" height="18" />
         </div>
       </List>
       {!matches && mobileDraweOptions}
       <List>
-        {["Our Services", "Our Compnay"].map((text, index) => (
-          <ListItemText style={{ padding: "10px 0 0 10px" }} key={index} primary={text} />
-        ))}
+        <ListItemText className={classes.pointer} style={{ padding: "10px 0 0 10px" }} primary={"Our Services"} onClick={ () => setServicesOpen(!servicesOpen)} />
+        {servicesOpen && servicesList}
+        <Link to="/contact-us" className={classes.servicesLink}>
+          <ListItemText className={classes.pointer} style={{ padding: "10px 0 0 10px" }} primary={"Our Company"} onClick={() => setDrawerOpen(false)} />
+        </Link>
       </List>
       <Divider className={classes.divider} />
       <List>

@@ -57,7 +57,7 @@ const Slider = (): JSX.Element => {
               need(s).
               <br />
               <br />
-            <p>At Tekonika we breath solutions.</p>
+            <span>At Tekonika we breath solutions.</span>
           </p>
         </Col>
         <Col

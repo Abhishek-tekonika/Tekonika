@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route exact path="/Web-App-dev" component ={WebApp}/>
+        <Route exact path="/web-app-dev" component ={WebApp}/>
         <Route exact path="/" component={Home} />
         <Route exact path="/request-a-quote" component={RequestForm} />
         <Route exact path="/mobile-app-dev" component={MobileAppDev} />
