@@ -31,10 +31,10 @@ const WebApp = (): JSX.Element => {
               TEKONIKA</span>
             <br />
             <p style={{ fontSize: "45px", fontWeight: 'bold' }}>
-              Certified Website App Company in Lagos Nigeria
+              Certified Website App Company in Delhi, India.
               </p>
             <p style={{ lineHeight: '30px' }}>
-              Tekonika is one of the best Website App Companies in Lagos Nigeria.
+              Tekonika is one of the best Website App Companies in Delhi.
               We have a team of professional experts having years of experience in the field of development.
               Our specialised team can provide custom web solutions to establish your business online.
               </p>

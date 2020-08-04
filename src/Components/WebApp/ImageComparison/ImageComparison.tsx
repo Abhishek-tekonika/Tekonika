@@ -27,10 +27,10 @@ const ImageComparison = (): JSX.Element => {
             <span className={classes.text}>Front End Developement</span>
             <br />
             <span className={classes.bodyText}>
-              We are the best front end development company in Lagos Nigeria.
+              We are among the best front end development company in Delhi India.
               We develop an interactive and attractive
-              looking web application front end for you using Angular 6+ a framework by google
-              Not only Angular we work with React a framework by facebook .
+              looking web application front end for you using React a framework by Facebook
+              Not only React we also work with Angular 6+ a framework by Google.
               </span>
           </Col>
           <Col md={6} lg={6} sm={12} xs={12}>

@@ -28,7 +28,7 @@ const CardSection = (): JSX.Element => {
                         </span>
                         <div style={{ paddingTop: "34px" }} >
                         <Link to="contact-us" className="linkName" >
-                            <Button className="learn-more" variant="contained" >LEARN MORE<ArrowForwardIosIcon /> </Button>
+                            <Button className="learn-more-white" variant="contained" >LEARN MORE<ArrowForwardIosIcon /> </Button>
                         </Link>
                         </div>
                     </p>
@@ -45,8 +45,8 @@ const CardSection = (): JSX.Element => {
                     <p className="sub-heading-text">
                         <span style={{ color: "#5f61ab" }}>
                         We take problems and build solutions around them. 
-                        We create concepts and implement designs that expresses 
-                        your brand values. We integrate the essence of great human 
+                        We create concepts and implement designs that express
+                        your values. We integrate the essence of great human 
                         experience into designs from beautiful interfaces to innovative 
                         user interactions.
                         </span>

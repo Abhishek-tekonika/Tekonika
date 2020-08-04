@@ -80,24 +80,42 @@ const Slider = (): JSX.Element => {
             className={classes.p20}
           >
             <ul style={{ listStyle: 'none', padding: '10px' }}>
-              <li className={classes.listItem}> Mobile App Developement
-              <div className="progress-bar">
-              <span style={{ width: "85%" }} ></span>
-              </div>
+              <li className={classes.listItem}> 
+                <div style={{display:'flex', justifyContent: 'space-between'}}>
+                  <span>Mobile App Developement</span>
+                  <span>85%</span>
+                </div>
+                <div className="progress-bar">
+                  <span style={{ width: "85%" }} ></span>
+                </div>
               </li>
-              <li className={classes.listItem}> Web App Developement</li>
-              <div className="progress-bar">
-              <span style={{ width: "98%" }} ></span>
-              </div>
-              <li className={classes.listItem}>UI & UX Design</li>
-              <div className="progress-bar">
-              <span style={{ width: "92%" }} ></span>
-              </div>
-              <li className={classes.listItem}> IT Outsourcing</li>
-              <div className="progress-bar">
-              <span style={{ width: "82%" }} ></span>
-              </div>
-              
+              <li className={classes.listItem}> 
+                <div style={{display:'flex', justifyContent: 'space-between'}}>
+                  <span>Web App Developement</span>
+                  <span>98%</span>
+                </div>
+                <div className="progress-bar">
+                  <span style={{ width: "98%" }} ></span>
+                </div>
+              </li>
+              <li className={classes.listItem}> 
+                <div style={{display:'flex', justifyContent: 'space-between'}}>
+                  <span>UI & UX Design</span>
+                  <span>92%</span>
+                </div>
+                <div className="progress-bar">
+                  <span style={{ width: "92%" }} ></span>
+                </div>
+              </li>
+              <li className={classes.listItem}> 
+                <div style={{display:'flex', justifyContent: 'space-between'}}>
+                  <span>IT Outsourcing</span>
+                  <span>90%</span>
+                </div>
+                <div className="progress-bar">
+                  <span style={{ width: "90%" }} ></span>
+                </div>
+              </li>              
             </ul>
 
           </Box>

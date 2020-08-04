@@ -18,7 +18,7 @@ const useStyle = makeStyles((theme) => ({
     display: 'flex', 
     flexDirection: 'column', 
     justifyContent:'space-around', 
-    padding: '0 10% 0 10%',
+    padding: '0 20% 0 20%',
   }
 }));
 const MidSectiontion = (): JSX.Element => {
@@ -28,13 +28,13 @@ const MidSectiontion = (): JSX.Element => {
         <div style={{width: '100%'}}>
           <Row justify="space-between" >
             <Col xs={12} sm={12} md={6} lg={6} >
-              <div style={{background:'yellow', display: 'flex', justifyContent:'center'}}>
+              <div style={{background:'#d9d9d9', display: 'flex', justifyContent:'center'}}>
                 <img src={testimonyImg} alt="" width="90%" style={{padding: "5% 0 5% 0"}} />
               </div>
             </Col>
             <Col lg={6} xs={12} md={6} sm={12}>
               <div className={classes.testimonyTextDiv}>
-                <span style={{ fontSize: "8vh", fontWeight: "bold", paddingTop: '20px'}}>
+                <span style={{ fontSize: "8vh", fontWeight: "bold", paddingTop: '50px'}}>
                   We build best apps!
                 </span>
                 <br />
@@ -63,11 +63,11 @@ const MidSectiontion = (): JSX.Element => {
                   industries.</span>
                   <br /> <br />
                   <br />
-                  <span className={classes.bodyText}>
+                  <span className={classes.bodyText} style={{paddingBottom: '150px'}}>
                   Our qualified developers are expert professionals in HTML5, CSS3,
                   PHP, JavaScript,TypeScript. We ensure you get a top-quality
                   website and web apps in the shortest time possible.
-                </span>
+                  </span>
               </div>
             </Col>
           </Row>

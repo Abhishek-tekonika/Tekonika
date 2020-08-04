@@ -47,7 +47,7 @@ const UiDesign = (): JSX.Element => {
     return (
         <>
             <div >
-            <Parallax  className="blur-background" blur={ 5 } bgImage= {ImgBackground} 
+            <Parallax  className="blur-background" blur={ 2 } bgImage= {ImgBackground} 
                 strength= { 300 } >
             <Container>
                 <Row justify="flex-start" >
@@ -77,34 +77,34 @@ const UiDesign = (): JSX.Element => {
                 </Col>
                 <Col xs={11} sm={11} md={5} lg={5} >
                     <Row justify="space-evenly" >
-                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                        <Col xs={9} sm={9} md={5} lg={5} className="card-background" style={{ margin: "20px" }} >
                             <img style={{ margin: "30px" }} src={Insight} width="25%" alt="" />
                             <br />  
-                            <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Insight Driven</span>
+                            <span style={{ fontSize: "28px", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Insight Driven</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                                 We leverage on the power of information and research to find out specific solutions to design problems
                             </p>
                         </Col>
-                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                        <Col xs={9} sm={9} md={5} lg={5} className="card-background" style={{ margin: "20px" }} >
                             <img style={{ margin: "30px" }} src={Butterfly} width="25%" alt="" />
                             <br />  
-                            <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Elegant Design</span>
+                            <span style={{ fontSize: "28px", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Elegant Design</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               We understand the impact of beautiful designs and stunning works of art. We build with style using tools like figma</p>
                         </Col>
                     </Row>
                     <Row justify="space-evenly"  >
-                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                        <Col xs={9} sm={9} md={5} lg={5} className="card-background" style={{ margin: "20px" }} >
                             <img style={{ margin: "30px" }} src={Innovation} width="25%" alt="" />
                             <br />  
-                            <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>User Centric</span>
+                            <span style={{ fontSize: "28px", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>User Centric</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               At the center of our designs is the belief that the user is the definer of purpose. We thus create designs that improve human experience. </p>
                         </Col>
-                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                        <Col xs={9} sm={9} md={5} lg={5} className="card-background" style={{ margin: "20px" }} >
                             <img style={{ margin: "30px" }} src={Champion} width="25%" alt="" />
                             <br />  
-                            <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Quality Tested</span>
+                            <span style={{ fontSize: "28px", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Quality Tested</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               We chose quality above just doing it. Our solutions make sure you appreciate the beauty of great designs </p>
                         </Col>

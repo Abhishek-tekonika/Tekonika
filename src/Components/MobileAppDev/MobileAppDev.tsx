@@ -73,7 +73,7 @@ const MobileAppDev = (): JSX.Element => {
               You are about to hire a professional mobile 
               app developer for your business idea. 
               Be it for Android, IOS or Windows, we’ve got you covered. 
-              Aitechma, a globally recognized mobile app development company, 
+              Tekonika, a recognized mobile app development company, 
               delivers business-centric and highly customized native, 
               hybrid and cross platform mobile apps to startups and enterprises.
             </p>
@@ -82,7 +82,7 @@ const MobileAppDev = (): JSX.Element => {
           <Col xs={11} sm={11} md={5} lg={5}>
             <Row justify="space-between">
               <Col xs={11} sm={11} md={5} lg={5}>
-                <div className="icons-blue"><BrushOutlinedIcon /></div>
+                <div className="icons-blue-mobile"><BrushOutlinedIcon /></div>
                 <span className="heading-text">Design</span>
                 <p className="sub-heading-text">Our team prepares a professional UI and UX design for your mobile application.</p>
               </Col>
@@ -99,7 +99,7 @@ const MobileAppDev = (): JSX.Element => {
                 <p className="sub-heading-text">After adequate testing, we get your mobile app on the Google Playstore and Apple Appstore.  </p>
               </Col>
               <Col xs={11} sm={11} md={5} lg={5}>
-                <div className="icons-blue"><ContactSupportOutlinedIcon /></div>
+                <div className="icons-blue-mobile"><ContactSupportOutlinedIcon /></div>
                 <span className="heading-text">Support</span>
                 <p className="sub-heading-text">We render post development support for bug fixes and new features integration.</p>
               </Col>
@@ -122,11 +122,11 @@ const MobileAppDev = (): JSX.Element => {
                 Cool, you have the next big idea are you planning to get the business idea 
                 closer to your customer through their mobile device? If yes, that’s a great 
                 decision. <br /> <br />  
-                Aitechma develops cross-platform mobile applications using modern 
+                Tekonika develops cross-platform mobile applications using modern 
                 technologies and state-of-the-art UI and UX designs to justify and complement 
                 your idea. <br /> <br /> 
                 Congratulations! You’ve just hired an Android, IOS and Windows 
-                mobile application developer in Lagos, Nigeria.
+                mobile application developer based in Delhi, India.
               </p>
               <Button onClick={scrollTop} className="learn-more"> Get Started!</Button>
             </div>
@@ -144,7 +144,7 @@ const MobileAppDev = (): JSX.Element => {
           <Row style={{marginTop: '40px'}}>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue"><PhoneIphoneOutlinedIcon /></div>
+                <div className="icons-blue-mobile"><PhoneIphoneOutlinedIcon /></div>
                 <span className="icon-heading">App Strategy</span>
                 <p className="sub-heading-text">Mobile app strategy begins with the idea of interaction. The ultimate goal is to build the app that provides customers with exactly, what they want.</p>
               </div>
@@ -158,7 +158,7 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue"><BubbleChartOutlinedIcon /></div>
+                <div className="icons-blue-mobile"><BubbleChartOutlinedIcon /></div>
                 <span className="icon-heading">Cross Platform</span>
                 <p className="sub-heading-text">Enterprise-to-consumer apps are fueling demand of cross platform app development to rapidly develop and deploy mobile apps on several mobile platforms.</p>
               </div>
