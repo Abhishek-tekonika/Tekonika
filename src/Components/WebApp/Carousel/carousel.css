@@ -2,36 +2,17 @@
     display: inline-block;
     width:100%;
     height:100%;
-    margin: 10%;
+    margin: 8% 0 3% 0%;
     position: relative;
-    
 }
 
 .carousel-heading {
     color: "whitesmoke";
     text-align: center;
     display: inline-block;
-    padding-left: 23%;
-    padding-right: 23%;
     font-size: 29px;
     font-style: inherit;
     vertical-align: baseline;
     font-weight: 600;
+    margin-bottom: 30px;
 }
-
-.slider-section {
-    display: flexbox;
-    position:absolute;
-    top: 15px;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-duration:15s;
-    animation-duration:15s;
-    -webkit-animation-delay:2s;
-    animation-delay:2s;
-    -webkit-animation-timing-function:ease;
-    animation-timing-function:ease;
-    -webkit-animation-direction:normal;
-    animation-direction:normal;
-}
-
