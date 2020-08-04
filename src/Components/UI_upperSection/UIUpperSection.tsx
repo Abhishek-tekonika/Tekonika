@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
@@ -10,12 +10,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
-import PoolIcon from '@material-ui/icons/Pool';
-import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
-import SportsKabaddiIcon from '@material-ui/icons/SportsKabaddi';
-import GestureIcon from '@material-ui/icons/Gesture';
+import Insight from "../../assets/insight.png";
+import Butterfly from "../../assets/butterfly.png";
+import Innovation from "../../assets/innovation.png";
+import Champion from '../../assets/champion.png';
 
 import "./UIsection.css";
+
+const scrollToHandle = (ref: any) => ref.current.scrollIntoView({ behaviour:'smooth', block:'start' })
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -37,6 +39,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const UiDesign = (): JSX.Element => {
     const classes = useStyles();
+    const sec2 = useRef(null);
+    const handleLearnMore = (): void => {
+        scrollToHandle(sec2);
+    }
+
     return (
         <>
             <div >
@@ -64,35 +71,39 @@ const UiDesign = (): JSX.Element => {
                     <span className="UIheading-text" style={{ paddingTop: "29px" }}>An exceptionally <span className="weight-text">UI UX </span>design unique experience tailored to you</span>
                     <img style={{ margin: "12px" }} src={MidSplash} width="100%" alt="" />
                     <div style={{ display: "flex", height: "30px" }} >
-                        <Button className="ui-learn-more"> Get Started  </Button>
+                        <Button onClick={handleLearnMore} className="ui-learn-more" variant="contained" > Get Started </Button>
                     </div>
                     </div>
                 </Col>
                 <Col xs={11} sm={11} md={5} lg={5} >
-                    <Row justify="space-evenly" style={{ margin: "auto" }} >
-                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
-                            <div className="icons-blue"><PoolIcon /></div>
+                    <Row justify="space-evenly" >
+                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                            <img style={{ margin: "30px" }} src={Insight} width="25%" alt="" />
+                            <br />  
                             <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Insight Driven</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                                 We leverage on the power of information and research to find out specific solutions to design problems
                             </p>
                         </Col>
-                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
-                            <div className="icons-yellow"><EmojiNatureIcon /></div>
+                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                            <img style={{ margin: "30px" }} src={Butterfly} width="25%" alt="" />
+                            <br />  
                             <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Elegant Design</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               We understand the impact of beautiful designs and stunning works of art. We build with style using tools like figma</p>
                         </Col>
                     </Row>
                     <Row justify="space-evenly"  >
-                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover">
-                            <div className="icons-yellow"><SportsKabaddiIcon /></div>
+                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                            <img style={{ margin: "30px" }} src={Innovation} width="25%" alt="" />
+                            <br />  
                             <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>User Centric</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               At the center of our designs is the belief that the user is the definer of purpose. We thus create designs that improve human experience. </p>
                         </Col>
-                        <Col xs={11} sm={11} md={5} lg={5} className="col-background-hover" >
-                            <div className="icons-blue"><GestureIcon /></div>
+                        <Col xs={9} sm={9} md={5} lg={5} className="col-background-hover" style={{ margin: "20px" }} >
+                            <img style={{ margin: "30px" }} src={Champion} width="25%" alt="" />
+                            <br />  
                             <span style={{ fontSize: "28.9px", fontFamily: "Raleway", fontWeight: 400, lineHeight: "32px", opacity: "1" }}>Quality Tested</span>
                             <p style={{ fontSize: "16px", lineHeight: "29px", opacity: "0.75", color: "#444", fontStyle: "inherit", textAlign: "left" }}>
                               We chose quality above just doing it. Our solutions make sure you appreciate the beauty of great designs </p>
