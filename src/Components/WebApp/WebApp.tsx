@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import FrontEnd from "../../assets/tekonika-frontend-pic.png";
 import BackEnd from "../../assets/tekonika-backend-pic.png";
 import MidSection from "./MidSection/MidSection";
+import Carousel from "./Carousel/Carousel";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
 const useStyle = makeStyles((theme) => ({
@@ -48,8 +49,9 @@ const WebApp = (): JSX.Element => {
             <img alt="" className={classes.images} src={BackEnd} />
           </Col>
         </Row>
-        </div>
-        <MidSection />
+      </div>
+      <MidSection />
+      <Carousel />
     </React.Fragment>
   )
 }

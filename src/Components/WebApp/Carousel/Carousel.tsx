@@ -1,71 +1,44 @@
-import React, { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import React from "react";
+import { Row } from "../../Common/Grid";
+import { Col } from "../../Common/Grid";
+import { Container } from "../../Common/Grid";
+import slider1 from "../../../assets/angular-svg-vector-3.png";
+import slider2 from "../../../assets/flask.png";
+import slider3 from "../../../assets/React_logo_wordmark.png";
+import slider4 from  "../../../assets/nodejs-logo-png-transparent.png";
 
 
-// function ControlledCarousel() {
-//   const [index, setIndex] = useState(0);
+import "./carousel.css";
 
-//   const handleSelect = (selectedIndex, e) => {
-//     setIndex(selectedIndex);
-//   };
-//   render(<ControlledCarousel />);
-// };
+const Carousel = (): JSX.Element => {
 
+  return (
+    <React.Fragment>
+     <Container className="carousel" >
+        <Row className="carousel-heading" >
+          <Col xs={10} sm={10} md={8} lg={8} style={{textAlign: "center"}}>
+          <span > Our Technologies !</span>
+          </Col>
+        </Row>
+        <Row className="slider-section" justify="flex-start" >
+          <Col xs={4} sm={4} md={3} lg={3} style={{ marginBottom: "20px", marginTop: "20px", padding: "3px" }} >
+            <img src={slider1} width = "100%" height = "50%" />
+          </Col>
+          <Col xs={4} sm={4} md={3} lg={3} style={{ marginBottom: "20px", marginTop: "20px", padding: "3px" }} >
+            <img src={slider2} width = "100%" height = "50%" />
+          </Col>
+          <Col xs={4} sm={4} md={3} lg={3} style={{ marginBottom: "20px", marginTop: "20px", padding: "3px" }} >
+            <img src={slider3} width = "100%" height = "50%" />
+          </Col>
+          <Col xs={4} sm={4} md={3} lg={3} style={{ marginBottom: "20px", marginTop: "20px", padding: "3px" }} >
+            <img src={slider4} width = "100%" height = "50%" />
+          </Col>
 
-// const CarouselEffect=(): JSX.Element => {
-  
-//   // const carouselController = () => {
-//   //   const [watchIndex, setWatchIndex] = useState(0);
-//   // }
-//   // return(
+        </Row>
+      </Container>
+    </React.Fragment>
+  )
 
-//   //   <React.Fragment>
+}
 
-//   //   </React.Fragment>
-//   // );
-  
-//   return (
-//     <Carousel activeIndex={index} onSelect={handleSelect}>
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           src="holder.js/800x400?text=First slide&bg=373940"
-//           alt="First slide"
-//         />
-//         <Carousel.Caption>
-//           <h3>First slide label</h3>
-//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           src="holder.js/800x400?text=Second slide&bg=282c34"
-//           alt="Second slide"
-//         />
-
-//         <Carousel.Caption>
-//           <h3>Second slide label</h3>
-//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           src="holder.js/800x400?text=Third slide&bg=20232a"
-//           alt="Third slide"
-//         />
-
-//         <Carousel.Caption>
-//           <h3>Third slide label</h3>
-//           <p>
-//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//           </p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-
-// }
-
-// export default CarouselEffect;
+export default Carousel;
