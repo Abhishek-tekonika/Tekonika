@@ -29,12 +29,12 @@ const Footer = (): JSX.Element => {
                 <p className="footer-bold-text">Hire us today!</p>
               </Col>
             </Row>
-            <Row style={{ marginBottom: "40px" }}>
+            {/* <Row style={{ marginBottom: "40px" }}>
               <Col xs={12} sm={12} md={12} lg={12}>
                 <p className="footer-uppercase-heading">
                   Follow us on social media
-                </p>
-                <List>
+                </p> */}
+                {/* <List>
                   <ListItem>
                     <ListItemIcon>
                       <FacebookIcon />
@@ -54,10 +54,10 @@ const Footer = (): JSX.Element => {
                       <span className="footer-links">LinkedIn</span>
                     </ListItemText>
                   </ListItem>
-                </List>
-                <Divider />
+                </List> */}
+                {/* <Divider />
               </Col>
-            </Row>
+            </Row> */}
             <Row>
               <Col xs={12} sm={12} md={12} lg={12}>
                 <p className="footer-text">
@@ -86,7 +86,7 @@ const Footer = (): JSX.Element => {
                       </p>
                     </a>
                   </li>
-                  <Divider className="mt-10" />
+                  {/* <Divider className="mt-10" />
                   <li className="pt-20">
                     <label className="footer-bold-text" htmlFor="Phone">
                       Phone
@@ -101,7 +101,7 @@ const Footer = (): JSX.Element => {
                         +91-7400077777
                       </p>
                     </a>
-                  </li>
+                  </li> */}
                   <Divider className="mt-10" />
                   {/* <li className="pt-20">
                     <label className="footer-bold-text" htmlFor="Address">

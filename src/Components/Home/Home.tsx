@@ -7,7 +7,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import MidSection from "./MidSection";
 
+
 import "./Home.css";
+
+const Fade = require('react-reveal/Fade');
 
 const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
@@ -22,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     lineHeight: "28px",
     fontWeight: 300,
-    margin: 0,
+    marginTop: 20,
   },
 }));
 
@@ -41,24 +44,26 @@ const Home = (): JSX.Element => {
           justify="center"
         >
           <Col xs={12} sm={12} md={6} lg={6}>
+           
             <div className="h-100">
-              <span style={{ fontSize: "20px" }}>
-                SOFTWARE DESIGN AND DEVELOPMENT
-              </span>
+            <Fade bottom>
               <br />
+             
               <span style={{ fontSize: "60px", fontWeight: "bolder" }}>
-                Go beyond technology,
-                <br /> Do Tekonika
+                We Design &
+                <br /> Build Products
               </span>
+             
               <br />
-              <span className={classes.text} style={{ fontSize: "20px" }}>
-                Tekonika is one of the most trusted names in the IT space
-                delivering technology innovation in India. Our digital
-                transformation strategies, problem-solving benchmarks and agile
-                business models, enable our clients to digitize, scale, and
-                transform in to high performance businesse
+              
+              <span className={classes.text} style={{ fontSize: "18px" }}>
+              Tekonika is a Web & Mobile app development company 
+              providing dedicated remote teams globally. We work 
+              closely with you to design and build your digital products.
               </span>
+              
               <br />
+            
               <Button
                 style={{ marginTop: "3%" }}
                 className="blue-btn"
@@ -68,6 +73,7 @@ const Home = (): JSX.Element => {
               >
                 Learn More
               </Button>
+              </Fade>
             </div>
           </Col>
           <Col xs={12} sm={12} md={1} lg={1}></Col>

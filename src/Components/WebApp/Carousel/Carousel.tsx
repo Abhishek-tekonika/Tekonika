@@ -6,6 +6,8 @@ import slider1 from "../../../assets/angular.png";
 import slider2 from "../../../assets/elastic-icon.png";
 import slider3 from "../../../assets/React-icon.png";
 import slider4 from  "../../../assets/nodejs-logo-png-transparent.png";
+import slider5 from "../../../assets/react-native.png";
+import slider6 from "../../../assets/mongodb.png";
 
 import "./carousel.css";
 
@@ -19,17 +21,23 @@ const Carousel = (): JSX.Element => {
           </Col>
         </Row>
         <Row justify="center" >
-          <Col xs={8} sm={6} md={3} lg={3}>
-            <img src={slider1} width = "90%" alt="" />
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider1} width = "60%" alt="" />
           </Col>
-          <Col xs={8} sm={6} md={3} lg={3}>
-            <img src={slider2} width = "90%" alt="" />
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider2} width = "60%" alt="" />
           </Col>
-          <Col xs={8} sm={6} md={3} lg={3}>
-            <img src={slider3} width = "90%" alt="" />
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider3} width = "60%" alt="" />
           </Col>
-          <Col xs={8} sm={6} md={3} lg={3}>
-            <img src={slider4} width = "90%" alt="" />
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider4} width = "60%" alt="" />
+          </Col>
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider5} width = "65%" alt="" />
+          </Col>
+          <Col xs={8} sm={6} md={2} lg={2}>
+            <img src={slider6} width = "60%" alt="" />
           </Col>
         </Row>
       </Container>

@@ -50,9 +50,8 @@
 .UIheading-text {
    font-size: 40px;
    line-height: 50px;
-   text-align: left;
+   text-align:left;
    font-weight: 550;
-   padding-left: 10px;
    padding-right: 10px;
    scroll-padding: 12px;
    box-sizing: border-box;
@@ -119,29 +118,33 @@
 }
 
 .bold-heading-text {
-   color: white;
+   color: black;
    font-size: 60px;
    line-height: 68px;
    display: flex-start;
-   margin: auto;
-   padding-top: 100px;
-   align-items: center;  
+    margin: auto;
+   padding-top: 100px; 
+   align-items: center;
+   position: relative;
+   margin-top:70px;
 }
 
 .UI-sub-heading {
-   color: white;
+   color:black;
    font-size: 20px;
    line-height: 20px;
    display: flex-start;
    margin: auto;
    padding-top: 20px;
    align-items: center;
-   line-break: auto;   
+   line-break: auto;  
+   margin-right:80px;  
+   position: relative; 
 }
 
 .blur-background {
-   min-height: 600px;
-   width: 100%;
+   min-height:400px;
+   width:100%;
 }
 
 .blue-text {
@@ -206,4 +209,26 @@
 .linkName {
    text-decoration: none;
    color: white;
+}
+.container-box{
+   height:700px;
+   width: 100%;
+   background-color:#f2f2f2;
+   /* position:absolute; */
+   margin-top:100px;
+}
+.heading-upper{
+ padding-top:120px;
+ padding-left:180px;
+ padding-right:120px;
+ font-size: 40px;
+ font-weight: bolder;
+ text-align: justify;
+}
+.para-lower{
+   font-size: 18px;
+   padding-top:20px;
+   padding-left:180px;
+   padding-right:120px;
+   text-align: justify;
 }

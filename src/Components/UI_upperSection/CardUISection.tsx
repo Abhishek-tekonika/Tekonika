@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Link } from "react-router-dom";
 
 import "./UIsection.css";
+const Zoom = require('react-reveal/Zoom');
 
 const CardSection = (): JSX.Element => {
     
@@ -14,7 +15,9 @@ const CardSection = (): JSX.Element => {
         backgroundColor: "#f2f2f2" }}>
         <Container>
         <Row justify="space-evenly" >
+           
             <Col xs={11} sm={11} md={5} lg={5} className="mb-10" >
+            <Zoom top>
                 <div style={{ background: '#5f61ab', height: '100%'}} className="ui-top-card mb-10">
                     <div>
                         <span className="card-heading">
@@ -33,8 +36,11 @@ const CardSection = (): JSX.Element => {
                         </div>
                     </p>
                 </div>
+                </Zoom>
             </Col>
+            
             <Col xs={11} sm={11} md={5} lg={5} className="mb-10" >
+                <Zoom bottom>
                 <div style={{height: '100%', background: '#ffffff'}} className="ui-top-card mb-10">
                     <div>
                         <span className="card-heading" style={{ color: "#5f61ab" }}>
@@ -58,6 +64,7 @@ const CardSection = (): JSX.Element => {
                     </p>
                     
                 </div>
+                </Zoom>
             </Col>
         </Row>
         </Container>

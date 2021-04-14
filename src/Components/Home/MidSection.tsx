@@ -4,9 +4,11 @@ import Chart from "../../assets/sketch.png";
 import Node from "../../assets/node.svg";
 import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
-import Slider from "./Slider/Slider";
-import Cards from "./Cards";
+// import Slider from "./Slider/Slider";
+import Clients from "./Clients";
+import Card from "./Card";
 import EndSection from "./EndSection";
+import Linear from "./Linear";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
 const MidSection = (): JSX.Element => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <div style={{overflowX:"hidden"}}>
       <Container>
         <Row
-          style={{ padding: "20px", marginTop: "10%" }}
+          style={{ padding: "20px", marginTop: "10%"}}
           justify="space-between"
         >
           <Col xs={11} sm={11} md={3} lg={3}>
@@ -114,10 +116,12 @@ const MidSection = (): JSX.Element => {
           </Col>
         </Row>
       </Container>
-      <Slider />
-      <Cards />
+      {/* <Slider /> */}
+      <Clients/>
+      <Linear/>
+      <Card/>
       <EndSection/>
-    </React.Fragment>
+    </div>
   );
 };
 export default MidSection;

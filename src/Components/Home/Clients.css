@@ -1,0 +1,24 @@
+.image-logo {
+    height:40px;
+    width: 100px;
+    -webkit-filter:grayscale(1);
+    margin-left:80px;
+    margin-right:80px;
+}
+.image-logo:hover
+{
+    -webkit-filter:grayscale(0);
+}
+.img-space{
+    margin-top:50px;
+}
+.image-logo-1 {
+    height:80px;
+    width: 150px;
+    margin-left:55px;
+    margin-right: 50px;
+    margin-top: -25px;
+}
+.img-space1{
+    margin-top:30px;
+}

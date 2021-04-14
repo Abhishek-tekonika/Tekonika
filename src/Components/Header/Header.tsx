@@ -12,13 +12,13 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
-import tekonikaLogo from "../../assets/TekonikaLogo.png";
-
+import tekonikaLogo from "../../assets/final-Tekonika.png";
 import faceBookIcon from "../../assets/facebook-icon.svg";
 import linkedinIcon from "../../assets/linkedin-icon.svg";
 import closeIcon from "../../assets/close-icon.png";
-
 import "./Header.css";
+import { grey } from "@material-ui/core/colors";
+
 
 const useStyles = makeStyles({
   list: {
@@ -48,19 +48,17 @@ const useStyles = makeStyles({
   },
   link: {
     color: 'black',
-    textDecoration: 'none',
+    textDecoration: 'none !important',
   },
   drawerLink: {
     color: 'white',
     textDecoration: 'none',
   },
-  servicesLink: {
-    color: 'white',
-    textDecoration: 'none',
-  },
+  
   pointer: {
     cursor: 'pointer'
   }
+  
 });
 
 const Header = (): JSX.Element => {
@@ -79,11 +77,13 @@ const Header = (): JSX.Element => {
     else if(path === "/ui-ux-design") setActive(2);
     else if(path === "/mobile-app-dev") setActive(3);
     else if(path === "/web-app-dev") setActive(4);
+    else if(path === "/case-studies") setActive(5);
     else setActive(0);
   }, [path])
 
   const mobileDraweOptions = (
     <>
+   
       <List>
         <Link className={classes.drawerLink} to="/">
           <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Home"} />
@@ -105,6 +105,11 @@ const Header = (): JSX.Element => {
         </Link>
       </List>
       <List>
+        <Link className={classes.drawerLink} to="/case-studies">
+          <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Case Studies"} />
+        </Link>
+      </List>
+      <List>
         <Link className={classes.drawerLink} to="/request-a-quote">
           <ListItemText style={{ padding: "10px 0 0 10px" }} primary={"Start A Project"} />
         </Link>
@@ -121,16 +126,16 @@ const Header = (): JSX.Element => {
   const servicesList= (
     <>
     <List>
-      <Link className={classes.servicesLink} to="/mobile-app-dev" onClick={handleServicesItemClick}>
+      <Link className ="servicesLink" to="/mobile-app-dev" onClick={handleServicesItemClick}>
         <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"Mobile App Dev"} />
       </Link>
-      <Link className={classes.servicesLink} to="/web-app-dev" onClick={handleServicesItemClick}>
+      <Link className ="servicesLink" to="/web-app-dev" onClick={handleServicesItemClick}>
         <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"Web App Dev"} />
       </Link>
-      <Link className={classes.servicesLink} to="/ui-ux-design" onClick={handleServicesItemClick}>
+      <Link className ="servicesLink" to="/ui-ux-design" onClick={handleServicesItemClick}>
         <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"UI/UX Design"} />
       </Link>
-      <Link className={classes.servicesLink} to="/contact-us" onClick={handleServicesItemClick}>
+      <Link className ="servicesLink" to="/contact-us" onClick={handleServicesItemClick}>
         <ListItemText style={{ padding: "5px 0 5px 25px" }} primary={"IT outsourcing"} />
       </Link>
     </List>
@@ -153,7 +158,7 @@ const Header = (): JSX.Element => {
       <List>
         <ListItemText className={classes.pointer} style={{ padding: "10px 0 0 10px" }} primary={"Our Services"} onClick={ () => setServicesOpen(!servicesOpen)} />
         {servicesOpen && servicesList}
-        <Link to="/contact-us" className={classes.servicesLink}>
+        <Link to="/contact-us" className ="servicesLink">
           <ListItemText className={classes.pointer} style={{ padding: "10px 0 0 10px" }} primary={"Our Company"} onClick={() => setDrawerOpen(false)} />
         </Link>
       </List>
@@ -168,6 +173,8 @@ const Header = (): JSX.Element => {
   );
 
   return (
+    
+    
     <Box boxShadow={3} pl={0} pr={0}>
       <Container>
       <Row style={{ background: "white" }} justify="space-between" alignItems="center">
@@ -180,7 +187,7 @@ const Header = (): JSX.Element => {
             color="black"
           >
             <Link className={classes.link} to="/">
-              <img src={tekonikaLogo}  alt="" style={{marginLeft: '-50px'}} />
+             <div style={{padding:'20px'}}><img src={tekonikaLogo} height="50px" width="150px"  alt="" style={{marginLeft:'-50px'}}  /></div>
             </Link>
           </Box>
         </Col>
@@ -203,9 +210,14 @@ const Header = (): JSX.Element => {
                 <span className={active === 3 ? "nav-items-active nav-items" : "nav-items"}>MOBILE APP DEVELOPMENT</span>
               </Link>
             </Col>
-            <Col xs={3} sm={3} md={3} lg={4}>
+            <Col xs={3} sm={3} md={3} lg={3}>
               <Link className={classes.link} to="/web-app-dev">
                 <span className={active === 4 ? "nav-items-active nav-items" : "nav-items"}>WEB APP DEVELOPEMENT</span>
+              </Link>
+            </Col>
+            <Col xs={3} sm={3} md={2} lg={2}>
+              <Link className={classes.link} to="/case-studies">
+                <span className={active === 5 ? "nav-items-active nav-items" : "nav-items"}>CASE STUDIES</span>
               </Link>
             </Col>
           </Row>
@@ -254,6 +266,7 @@ const Header = (): JSX.Element => {
       </Row>
       </Container>
     </Box>
+    
   );
 };
 

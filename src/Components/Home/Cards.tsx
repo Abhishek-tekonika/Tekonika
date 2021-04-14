@@ -7,8 +7,12 @@ import design from "../../assets/design.svg";
 import code from "../../assets/code.svg";
 import ux from "../../assets/ux.svg";
 import database from "../../assets/database.svg";
+
 // import useMediaQuery from "@material-ui/core/useMediaQuery";
 // import { useTheme } from "@material-ui/core/styles";
+
+
+
 
 const useStyles = makeStyles((theme) => ({
   p20: {
@@ -35,7 +39,7 @@ const Cards = (): JSX.Element => {
   // const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-
+   
     <Container>
       <Row justify="space-between" style={{ padding: "20px", marginTop: '10%' }}>
         <Col xs={12} md={5} lg={5} sm={12} className={classes.leftCol} >
