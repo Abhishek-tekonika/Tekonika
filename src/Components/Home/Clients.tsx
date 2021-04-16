@@ -77,7 +77,7 @@ const Clients = (): JSX.Element => {
     </div>
     <div className="row img-space1">
       <div className="col-md-4">
-      <img className="image-logo" src={hiyatri} alt="hiyatri" style={{width:"250px",height:"60px",marginLeft:"-10px"}}/>
+      <img className="image-logo" src={hiyatri} alt="hiyatri" style={{width:"210px",height:"100px",marginLeft:"20px"}}/>
       </div>
       <div className="col-md-4">
       <img className="image-logo" src={Stigasoft} alt="stigasoft" style={{height:"100px",width:"120px"}}/>
