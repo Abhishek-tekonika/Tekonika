@@ -98,7 +98,7 @@ const Card = (): JSX.Element => {
             <div className="box-1">
             <img alt="" src={database} className={classes.icon} />
                 <h3 style={{ fontSize:'4vh', marginTop: "60px", marginLeft:"30px",}} className="text1">Hire Developers</h3>
-                <p className="text2"  style={{ lineHeight:'20px',marginLeft:"30px",marginRight:"30px",marginTop:"20px",textAlign:"justify"}} >We outsource our competent developers to server you better.</p>
+                <p className="text2"  style={{ lineHeight:'20px',marginLeft:"30px",marginRight:"30px",marginTop:"20px",textAlign:"justify"}} >We outsource our competent developers to serve you better.</p>
            </div>
             </Col>
         

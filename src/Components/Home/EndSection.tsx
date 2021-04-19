@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   linkName: {
-    textDecoration: "none",
+    textDecoration: "none !important",
     color: "white",
   },
 
