@@ -93,7 +93,7 @@ const Linear = () => {
      
     <div className="container-top" style={{marginTop:"100px",background: '#d9d9d9'}}>
       <div className="row">
-        <div className="col-md-12">
+        <div style={{display:'flex',flexDirection:'column',alignItems:'center'}} className="col-md-12">
         <div className="heading">
           <h3>Web Application Development Process</h3>
           </div>
