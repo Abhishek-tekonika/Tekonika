@@ -59,7 +59,7 @@ const Clients = (): JSX.Element => {
             <div className="col-md-4">
               <img
                 className="image-logo"
-                style={{ width: "40%", height: "100%" }}
+                style={{ width: "50%", height: "100%" }}
                 src={wheelsemi}
                 alt="wheelsemi"
               />
@@ -82,46 +82,47 @@ const Clients = (): JSX.Element => {
             </div>
           </div>
           <div className="row img-space">
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo"
-                style={{ width: "30%" }}
+                style={{ width: "40%",paddingTop:"7%",height:'70px' }}
                 src={wiziq}
                 alt="wiziq"
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-12">
               <img
+              
                 className="image-logo"
                 src={yuno}
                 alt="yuno"
-                style={{ width: "30%" }}
+                style={{ width: "50%",height:'80%' }}
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo-1"
-                style={{ width: "50%" }}
+                style={{ width: "50%",height:'120px' }}
                 src={whitehilllogo}
                 alt="yuno"
               />
             </div>
           </div>
           <div className="row img-space1">
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo"
                 src={hiyatri}
                 alt="hiyatri"
-                style={{ width: "210px", height: "120px", marginLeft: "20px" }}
+                style={{ width: "70%", height: "140px", marginLeft: "20px" }}
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo"
                 src={Stigasoft}
                 alt="stigasoft"
-                style={{ height: "140px", width: "120px" }}
+                style={{ height: "100%", width: "140px",paddingTop:'6%' }}
               />
             </div>
             <div className="col-md-4"></div>

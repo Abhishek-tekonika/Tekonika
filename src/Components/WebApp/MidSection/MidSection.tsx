@@ -65,7 +65,7 @@ const MidSectiontion = (): JSX.Element => {
                   <br />
                   <span className={classes.bodyText} style={{paddingBottom: '150px'}}>
                   Our qualified developers are expert professionals in HTML5, CSS3,
-                  PHP, JavaScript,TypeScript. We ensure you get a top-quality
+                  ,JavaScript,TypeScript. We ensure you get a top-quality
                   website and web apps in the shortest time possible.
                   </span>
               </div>

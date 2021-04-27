@@ -215,11 +215,11 @@ const Header = (): JSX.Element => {
                 <span className={active === 4 ? "nav-items-active nav-items" : "nav-items"}>WEB APP DEVELOPEMENT</span>
               </Link>
             </Col>
-            <Col xs={3} sm={3} md={2} lg={2}>
+            {/* <Col xs={3} sm={3} md={2} lg={2}>
               <Link className={classes.link} to="/case-studies">
                 <span className={active === 5 ? "nav-items-active nav-items" : "nav-items"}>CASE STUDIES</span>
               </Link>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
         <Col xs={2} sm={2} md={2} lg={2}>
