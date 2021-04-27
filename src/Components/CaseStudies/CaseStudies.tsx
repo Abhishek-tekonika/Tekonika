@@ -59,6 +59,7 @@ const CaseStudies = (): JSX.Element => {
       <div>
         <Row style={{ marginTop: "50px", marginBottom: "100px" }}>
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: true,
@@ -102,6 +103,7 @@ const CaseStudies = (): JSX.Element => {
             </div>
           </Col>
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: false,
@@ -145,6 +147,7 @@ const CaseStudies = (): JSX.Element => {
             </div>
           </Col>
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: false,
@@ -189,6 +192,7 @@ const CaseStudies = (): JSX.Element => {
           </Col>
 
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: false,
@@ -233,6 +237,7 @@ const CaseStudies = (): JSX.Element => {
           </Col>
 
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: false,
@@ -276,6 +281,7 @@ const CaseStudies = (): JSX.Element => {
             </div>
           </Col>
           <Col
+            className="cursor"
             onMouseEnter={() =>
               setgridState({
                 first: false,
