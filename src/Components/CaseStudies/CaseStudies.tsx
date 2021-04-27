@@ -56,7 +56,7 @@ const CaseStudies = (): JSX.Element => {
         </Row>
       </Container>
       {/* <Container> */}
-      <div className="container-fluid">
+      <div>
         <Row style={{ marginTop: "50px", marginBottom: "100px" }}>
           <Col
             onMouseEnter={() =>
