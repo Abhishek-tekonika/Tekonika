@@ -2,28 +2,25 @@
 
   .dark-image{
     position: relative;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+   
   }
  
 
-  .dark-image .content {
+  .content {
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-    height: 350px;
+    height: 100%;
     transition: 0.3s;
   }
- .dark-image .content:hover{
-  background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
-  display:none;
- }
+
   .image-heading{
-    margin-top:80px;
+    margin-top:25%;
     text-align:auto;
     margin-left: 40px;
   }
@@ -32,14 +29,5 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  /* .image-heading:hover{
-  display: none;
   
-  }
-  .image-para:hover{
-    display:none;
-  } */
-
-  /* .dark-image.content:hover{
-    display: none;
-  } */
+ 
