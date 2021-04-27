@@ -78,11 +78,11 @@ const Footer = (): JSX.Element => {
                     <a 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      href="mailto:hello@tekonika.co" 
+                      href="mailto:technologiestekonika@gmail.com" 
                       className="contact-links"
                     >
                       <p className="footer-text" id="email">
-                        hello@tekonika.co
+                      technologiestekonika@gmail.com
                       </p>
                     </a>
                   </li>
