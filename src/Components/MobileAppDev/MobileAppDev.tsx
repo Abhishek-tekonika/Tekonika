@@ -115,7 +115,7 @@ const MobileAppDev = (): JSX.Element => {
                     </p>
                   </Col>
                   <Col xs={11} sm={11} md={5} lg={5}>
-                    <div className="icons-yellow">
+                    <div className="icons-blue-mobile">
                       <SettingsOutlinedIcon />
                     </div>
                     <span className="heading-text">Develop</span>
@@ -127,7 +127,7 @@ const MobileAppDev = (): JSX.Element => {
                 </Row>
                 <Row justify="space-between">
                   <Col xs={11} sm={11} md={5} lg={5}>
-                    <div className="icons-yellow">
+                    <div className="icons-blue-mobile">
                       <CloudDoneOutlinedIcon />
                     </div>
                     <span className="heading-text">Deploy</span>
@@ -172,9 +172,8 @@ const MobileAppDev = (): JSX.Element => {
                   device? If yes, that’s a great decision. <br /> <br />
                   Tekonika develops cross-platform mobile applications using
                   modern technologies and state-of-the-art UI and UX designs to
-                  justify and complement your idea. <br /> <br />
-                  Congratulations! You’ve just hired an Android, IOS and Windows
-                  mobile application developer based in India.
+                  justify and complement your idea.
+               
                 </p>
                 <Button onClick={scrollTop} className="learn-more">
                   Get Started!
@@ -209,7 +208,7 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-yellow">
+                <div className="icons-blue-mobile">
                   <GroupAddOutlinedIcon />
                 </div>
                 <span className="icon-heading">User Experience</span>
@@ -235,7 +234,7 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-yellow">
+                <div className="icons-blue-mobile">
                   <LocalAtmOutlinedIcon />
                 </div>
                 <span className="icon-heading">Monetization</span>
@@ -257,7 +256,7 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={4} lg={2}>
               <Link className="links" to="/contact-us">
-                <Button className="big-yellow-btn" variant="contained">
+                <Button  className="big-blue-btn" variant="contained">
                   Contact Us
                 </Button>
               </Link>
