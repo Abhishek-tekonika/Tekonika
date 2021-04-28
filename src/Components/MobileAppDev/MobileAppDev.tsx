@@ -23,7 +23,6 @@ import "./MobileAppDev.css";
 const Zoom = require("react-reveal/Zoom");
 const Bounce = require("react-reveal/Bounce");
 
-
 const scrollToRef = (ref: any) =>
   ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -104,7 +103,19 @@ const MobileAppDev = (): JSX.Element => {
               <Col xs={12} sm={12} md={2} lg={2}></Col>
               <Col xs={11} sm={11} md={5} lg={5}>
                 <Row justify="space-between">
-                  <Col xs={11} sm={11} md={5} lg={5}>
+                  <Col
+                    xs={11}
+                    sm={11}
+                    md={5}
+                    lg={5}
+                    style={{
+                      margin: "20px",
+                      boxShadow: "0px 0px 10px gray",
+                      cursor: "pointer",
+                      borderRadius: "5%",
+                      padding:'5%',
+                    }}
+                  >
                     <div className="icons-blue-mobile">
                       <BrushOutlinedIcon />
                     </div>
@@ -114,7 +125,19 @@ const MobileAppDev = (): JSX.Element => {
                       mobile application.
                     </p>
                   </Col>
-                  <Col xs={11} sm={11} md={5} lg={5}>
+                  <Col
+                    xs={11}
+                    sm={11}
+                    md={5}
+                    lg={5}
+                    style={{
+                      margin: "20px",
+                      boxShadow: "0px 0px 10px gray",
+                      cursor: "pointer",
+                      borderRadius: "5%",
+                      padding:'5%',
+                    }}
+                  >
                     <div className="icons-blue-mobile">
                       <SettingsOutlinedIcon />
                     </div>
@@ -126,7 +149,19 @@ const MobileAppDev = (): JSX.Element => {
                   </Col>
                 </Row>
                 <Row justify="space-between">
-                  <Col xs={11} sm={11} md={5} lg={5}>
+                  <Col
+                    xs={11}
+                    sm={11}
+                    md={5}
+                    lg={5}
+                    style={{
+                      margin: "20px",
+                      boxShadow: "0px 0px 10px gray",
+                      cursor: "pointer",
+                      borderRadius: "5%",
+                      padding:'5%',
+                    }}
+                  >
                     <div className="icons-blue-mobile">
                       <CloudDoneOutlinedIcon />
                     </div>
@@ -136,7 +171,19 @@ const MobileAppDev = (): JSX.Element => {
                       Google Playstore and Apple Appstore.
                     </p>
                   </Col>
-                  <Col xs={11} sm={11} md={5} lg={5}>
+                  <Col
+                    xs={11}
+                    sm={11}
+                    md={5}
+                    lg={5}
+                    style={{
+                      margin: "20px",
+                      boxShadow: "0px 0px 10px gray",
+                      cursor: "pointer",
+                      borderRadius: "5%",
+                      padding:'5%',
+                    }}
+                  >
                     <div className="icons-blue-mobile">
                       <ContactSupportOutlinedIcon />
                     </div>
@@ -173,7 +220,6 @@ const MobileAppDev = (): JSX.Element => {
                   Tekonika develops cross-platform mobile applications using
                   modern technologies and state-of-the-art UI and UX designs to
                   justify and complement your idea.
-               
                 </p>
                 <Button onClick={scrollTop} className="learn-more">
                   Get Started!
@@ -256,7 +302,7 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={4} lg={2}>
               <Link className="links" to="/contact-us">
-                <Button  className="big-blue-btn" variant="contained">
+                <Button className="big-blue-btn" variant="contained">
                   Contact Us
                 </Button>
               </Link>
