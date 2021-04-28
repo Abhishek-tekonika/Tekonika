@@ -8,9 +8,6 @@ import MidSection from "./MidSection/MidSection";
 import Carousel from "./Carousel/Carousel";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
-const RubberBand = require("react-reveal/RubberBand");
-const Jump = require("react-reveal/Jump");
-
 const useStyle = makeStyles((theme) => ({
   icon: {
     marginRight: "5%",
@@ -22,6 +19,9 @@ const useStyle = makeStyles((theme) => ({
     height: "43%",
   },
 }));
+
+const Zoom = require("react-reveal/Zoom");
+
 const WebApp = (): JSX.Element => {
   const classes = useStyle();
   return (
@@ -37,15 +37,13 @@ const WebApp = (): JSX.Element => {
           justify="space-between"
         >
           <Col sm={8} md={5} lg={6} xs={10} style={{ color: "whitesmoke" }}>
-            <RubberBand duration={2000}>
+            <Zoom duration={3500}>
               <Col sm={8} md={5} lg={6} xs={10} style={{ marginTop: "10%" }}>
                 <span style={{ fontSize: "30px" }}>TEKONIKA</span>
                 <br />
-                <p style={{ fontSize: "45px", fontWeight: "bold" }}>
-                  Certified Web App Company in Delhi, India.
-                </p>
+
                 <p style={{ lineHeight: "30px" }}>
-                  Tekonika is one of the best Web App Companies in Delhi. We
+                  Tekonika is one of the best Web App development Companies. We
                   have a team of professional experts having years of experience
                   in the field of development. Our specialised team can provide
                   custom web solutions to establish your business online.
@@ -53,7 +51,7 @@ const WebApp = (): JSX.Element => {
                 <FacebookIcon className={classes.icon} />
                 <LinkedInIcon className={classes.icon} />
               </Col>
-            </RubberBand>
+            </Zoom>
           </Col>
           <Col />
           <Col
@@ -63,8 +61,10 @@ const WebApp = (): JSX.Element => {
             xs={10}
             style={{ marginTop: "5%", padding: "auto" }}
           >
-            <img alt="" className={classes.images} src={FrontEnd} /> //#0085f2
-            <img alt="" className={classes.images} src={BackEnd} />
+            <Zoom top>
+              <img alt="" className={classes.images} src={FrontEnd} /> //#0085f2
+              <img alt="" className={classes.images} src={BackEnd} />
+            </Zoom>
           </Col>
         </Row>
       </div>

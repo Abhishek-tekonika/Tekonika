@@ -38,7 +38,7 @@ const MidSection = (): JSX.Element => {
   const classes = useStyles();
   return (
     <div style={{ overflowX: "hidden" }}>
-      <Bounce left duration={5000}>
+      <Bounce left duration={3500}>
         <Container>
           <Row
             style={{ padding: "20px", marginTop: "10%" }}

@@ -20,7 +20,7 @@ import Nvis from "../Home/clients-logo/nvis.png";
 import "./UIsection.css";
 
 const Zoom = require("react-reveal/Zoom");
-const Fade = require("react-reveal/Fade");
+
 
 
 
@@ -91,7 +91,7 @@ const UiDesign = (): JSX.Element => {
       <div style={{ marginTop: "100px" }}>
         <CardSection />
       </div>
-      <Fade duration={4000}>
+      <Zoom duration={3500}>
         <Container>
           <Row>
             <Col md={6}>
@@ -121,11 +121,11 @@ const UiDesign = (): JSX.Element => {
             </Col>
           </Row>
         </Container>
-      </Fade>
+      </Zoom>
 
 
         
-     <Zoom top duration={2000}>
+      <Zoom duration={3500}>
      <div className="container_1">
         <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
           <Row style={{ paddingTop: "30px" }} justify="space-around">
@@ -138,7 +138,7 @@ const UiDesign = (): JSX.Element => {
                 <img
                   style={{ margin: "12px 0px 12px 0px" }}
                   src={MidSplash}
-                  width="100%"
+                  width="120%"
                   alt=""
                 />
                 <div style={{ display: "flex", height: "30px" }}>
@@ -161,7 +161,7 @@ const UiDesign = (): JSX.Element => {
                   md={5}
                   lg={5}
                   className="card-background"
-                  style={{ margin: "20px" }}
+                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
                 >
                   <img
                     style={{ margin: "30px" }}
@@ -200,7 +200,7 @@ const UiDesign = (): JSX.Element => {
                   md={5}
                   lg={5}
                   className="card-background"
-                  style={{ margin: "20px" }}
+                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
                 >
                   <img
                     style={{ margin: "30px" }}
@@ -241,7 +241,7 @@ const UiDesign = (): JSX.Element => {
                   md={5}
                   lg={5}
                   className="card-background"
-                  style={{ margin: "20px" }}
+                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
                 >
                   <img
                     style={{ margin: "30px" }}
@@ -281,7 +281,7 @@ const UiDesign = (): JSX.Element => {
                   md={5}
                   lg={5}
                   className="card-background"
-                  style={{ margin: "20px" }}
+                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
                 >
                   <img
                     style={{ margin: "30px" }}

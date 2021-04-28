@@ -57,9 +57,9 @@ const UiDesign = (): JSX.Element => {
               <Col xs={12} sm={10} md={6} lg={4} justify="space-evenly">
                 <div className="UI-height-100">
                   <h1 className="bold-heading-text ">
-                    <span className="blue-text">UI</span>/
-                    <span className="yellow-text">UX</span> Design Company in
-                    Delhi India
+                    <span className="blue-text">Best UI</span>/
+                    <span className="yellow-text">UX</span> Design Company 
+                    
                   </h1>
                   <p className="UI-sub-heading ">
                     We create with focus on your brand, and with the user at the
@@ -75,7 +75,7 @@ const UiDesign = (): JSX.Element => {
       <div className="container_1">
         <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
           <Row style={{ paddingTop: "30px" }} justify="space-around">
-            <Col xs={11} sm={11} md={4} lg={4} style={{ paddingLeft: "50px" }}>
+            <Col xs={11} sm={11} md={4} lg={4} style={{ paddingLeft: "50px" , }}>
               <div>
                 <span className="UIheading-text" style={{ paddingTop: "29px" }}>
                   An exceptionally <span className="weight-text">UI UX </span>

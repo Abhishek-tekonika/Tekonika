@@ -14,8 +14,7 @@ import whitehilllogo from "./clients-logo/whitehilllogo.png";
 import hiyatri from "./clients-logo/HiYatriLogo.png";
 import aggio from "./clients-logo/aggio.svg";
 import "./Clients.css";
-import { Brightness1 } from "@material-ui/icons";
-// import Slider from "./Slider/Slider";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {

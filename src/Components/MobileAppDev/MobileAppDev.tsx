@@ -21,8 +21,8 @@ import LocalAtmOutlinedIcon from "@material-ui/icons/LocalAtmOutlined";
 import "./MobileAppDev.css";
 
 const Zoom = require("react-reveal/Zoom");
-const Roll = require("react-reveal/Roll");
-const Fade = require("react-reveal/Fade");
+const Bounce = require("react-reveal/Bounce");
+
 
 const scrollToRef = (ref: any) =>
   ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -67,7 +67,7 @@ const MobileAppDev = (): JSX.Element => {
                   Tekonika develops a myriad of engaging, personalized and
                   adaptive mobile applications using a 100% agile approach for
                   B2B, B2C and Enterprises. We are a result oriented mobile app
-                  developer in Delhi, India.
+                  development company
                 </p>
                 <Button
                   onClick={handleLearnMore}
@@ -84,13 +84,13 @@ const MobileAppDev = (): JSX.Element => {
       </Container>
       <div className="icon-section-container" ref={sec2}>
         <Container>
-          <Roll left duration={3000}>
+          <Bounce left duration={3500}>
             <Row style={{ paddingTop: "30px" }}>
               <Col xs={11} sm={11} md={4} lg={4}>
                 <span className="heading-text">
                   One of the best
-                  <span className="highlighted-text">mobile apps</span>{" "}
-                  developer in Delhi.
+                  <span className="highlighted-text">mobile apps</span>
+                  development company.
                 </span>
                 <p className="sub-heading-text mt-50">
                   You are about to hire a professional mobile app developer for
@@ -149,7 +149,7 @@ const MobileAppDev = (): JSX.Element => {
                 </Row>
               </Col>
             </Row>
-          </Roll>
+          </Bounce>
         </Container>
       </div>
       <div style={{ width: "100%" }}>
@@ -161,7 +161,7 @@ const MobileAppDev = (): JSX.Element => {
           </Col>
           <Col xs={12} sm={12} md={1} lg={1}></Col>
           <Col xs={11} sm={11} md={5} lg={4}>
-            <Fade top>
+            <Zoom duration={2500}>
               <div className="container-3">
                 <span className="heading-text">
                   Need a Mobile App Developer for that idea?
@@ -174,13 +174,13 @@ const MobileAppDev = (): JSX.Element => {
                   modern technologies and state-of-the-art UI and UX designs to
                   justify and complement your idea. <br /> <br />
                   Congratulations! You’ve just hired an Android, IOS and Windows
-                  mobile application developer based in Delhi, India.
+                  mobile application developer based in India.
                 </p>
                 <Button onClick={scrollTop} className="learn-more">
                   Get Started!
                 </Button>
               </div>
-            </Fade>
+            </Zoom>
           </Col>
         </Row>
       </div>
