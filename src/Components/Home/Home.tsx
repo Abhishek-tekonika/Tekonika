@@ -7,12 +7,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import MidSection from "./MidSection";
 
-
 import "./Home.css";
 
-const Fade = require('react-reveal/Fade');
+const Fade = require("react-reveal/Fade");
 
-const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+const scrollToRef = (ref: any) =>
+  ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,48 +31,44 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = (): JSX.Element => {
   const classes = useStyles();
-  
+
   const sliderSec = useRef(null);
   const handleLearnMore = (): void => {
     scrollToRef(sliderSec);
-  }
+  };
   return (
     <React.Fragment>
       <Container>
-        <Row
-          style={{ marginTop: "5%" }}
-          justify="center"
-        >
+        <Row style={{ marginTop: "5%" }} justify="center">
           <Col xs={12} sm={12} md={6} lg={6}>
-           
             <div className="h-100">
-            <Fade bottom>
-              <br />
-             
-              <span style={{ fontSize: "60px", fontWeight: "bolder" }}>
-                We Design &
-                <br /> Build Products
-              </span>
-             
-              <br />
-              
-              <span className={classes.text} style={{ fontSize: "18px" }}>
-              Tekonika is a Web & Mobile app development company 
-              providing dedicated remote teams globally. We work 
-              closely with you to design and build your digital products.
-              </span>
-              
-              <br />
-            
-              <Button
-                style={{ marginTop: "3%" }}
-                className="blue-btn"
-                variant="contained"
-                size="large"
-                onClick={handleLearnMore}
-              >
-                Learn More
-              </Button>
+              <Fade bottom duration={3000}>
+                <br />
+
+                <span style={{ fontSize: "60px", fontWeight: "bolder" }}>
+                  We Design &
+                  <br /> Build Products
+                </span>
+
+                <br />
+
+                <span className={classes.text} style={{ fontSize: "18px" }}>
+                  Tekonika is a Web & Mobile app development company providing
+                  dedicated remote teams globally. We work closely with you to
+                  design and build your digital products.
+                </span>
+
+                <br />
+
+                <Button
+                  style={{ marginTop: "3%" }}
+                  className="blue-btn"
+                  variant="contained"
+                  size="large"
+                  onClick={handleLearnMore}
+                >
+                  Learn More
+                </Button>
               </Fade>
             </div>
           </Col>
@@ -92,7 +88,7 @@ const Home = (): JSX.Element => {
           </Col>
         </Row>
       </Container>
-      <div ref={sliderSec} >
+      <div ref={sliderSec}>
         <MidSection />
       </div>
     </React.Fragment>

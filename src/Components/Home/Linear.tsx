@@ -95,7 +95,7 @@ const Linear = () => {
       <div className="row">
         <div style={{display:'flex',flexDirection:'column',alignItems:'center'}} className="col-md-12">
         <div className="heading">
-          <h3>Web Application Development Process</h3>
+          <h3 style={{fontWeight:'bold'}}>Web Application Development Process</h3>
           </div>
           <div className="paragraph">
           <p>Our custom web development services are notable for our development methods, innovative 

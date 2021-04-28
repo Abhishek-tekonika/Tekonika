@@ -12,18 +12,20 @@ import "./Footer.css";
 
 const Footer = (): JSX.Element => {
   return (
-    <div style={{background: '#d9d9d9'}}>
+    <div style={{ background: "#d9d9d9" }}>
       <Container className="footer-container">
         <Row justify="space-between">
           <Col xs={5} sm={5} md={5} lg={5}>
             <Row>
               <Col xs={12} sm={12} md={12} lg={12}>
-                <p className="footer-uppercase-heading">Want to work with us?</p>
+                <p className="footer-uppercase-heading">
+                  Want to work with us?
+                </p>
                 <p className="footer-text">
-                  We build technology rich apps and solutions which give the best
-                  user experience. We always use latest technologies and
-                  methodology to build the products. We provide extensive support
-                  to our clients in the areas of design, development and
+                  We build technology rich apps and solutions which give the
+                  best user experience. We always use latest technologies and
+                  methodology to build the products. We provide extensive
+                  support to our clients in the areas of design, development and
                   marketing.
                 </p>
                 <p className="footer-bold-text">Hire us today!</p>
@@ -34,7 +36,7 @@ const Footer = (): JSX.Element => {
                 <p className="footer-uppercase-heading">
                   Follow us on social media
                 </p> */}
-                {/* <List>
+            {/* <List>
                   <ListItem>
                     <ListItemIcon>
                       <FacebookIcon />
@@ -55,7 +57,7 @@ const Footer = (): JSX.Element => {
                     </ListItemText>
                   </ListItem>
                 </List> */}
-                {/* <Divider />
+            {/* <Divider />
               </Col>
             </Row> */}
             <Row>
@@ -75,43 +77,19 @@ const Footer = (): JSX.Element => {
                     <label className="footer-bold-text" htmlFor="email">
                       Email
                     </label>
-                    <a 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      href="mailto:technologiestekonika@gmail.com" 
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:hello@tekonika.co"
                       className="contact-links"
                     >
                       <p className="footer-text" id="email">
-                      technologiestekonika@gmail.com
+                       hello@tekonika.co
                       </p>
                     </a>
                   </li>
-                  {/* <Divider className="mt-10" />
-                  <li className="pt-20">
-                    <label className="footer-bold-text" htmlFor="Phone">
-                      Phone
-                    </label>
-                    <a 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      href="tel:+91 7400077777" 
-                      className="contact-links"
-                    >
-                      <p className="footer-text" id="Phone">
-                        +91-7400077777
-                      </p>
-                    </a>
-                  </li> */}
+
                   <Divider className="mt-10" />
-                  {/* <li className="pt-20">
-                    <label className="footer-bold-text" htmlFor="Address">
-                      Address
-                    </label>
-                    <p className="footer-text" id="Address">
-                      Address here
-                    </p>
-                  </li> */}
-                  {/* <Divider className="mt-10" /> */}
                 </ul>
               </Col>
             </Row>

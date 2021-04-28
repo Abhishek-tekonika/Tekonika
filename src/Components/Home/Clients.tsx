@@ -12,7 +12,7 @@ import wiziq from "./clients-logo/wiziq-logo.png";
 import yuno from "./clients-logo/yuno_logo.png";
 import whitehilllogo from "./clients-logo/whitehilllogo.png";
 import hiyatri from "./clients-logo/HiYatriLogo.png";
-// import aggio from "./clients-logo/aggio.svg";
+import aggio from "./clients-logo/aggio.svg";
 import "./Clients.css";
 import { Brightness1 } from "@material-ui/icons";
 // import Slider from "./Slider/Slider";

@@ -181,9 +181,6 @@ const Header = (): JSX.Element => {
         <Col xs={2} sm={2} md={2} lg={2}>
           <Box
             bgcolor="white"
-            // pt={"12px"}
-            // pb={"12px"}
-            // // pl={"25px"}
             color="black"
           >
             <Link className={classes.link} to="/">

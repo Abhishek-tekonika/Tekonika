@@ -4,12 +4,11 @@ import Chart from "../../assets/sketch.png";
 import Node from "../../assets/node.svg";
 import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
-// import Slider from "./Slider/Slider";
 import Clients from "./Clients";
 import Card from "./Card";
 import EndSection from "./EndSection";
 import Linear from "./Linear";
-
+const Bounce = require("react-reveal/Bounce");
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,89 +37,92 @@ const useStyles = makeStyles((theme) => ({
 const MidSection = (): JSX.Element => {
   const classes = useStyles();
   return (
-    <div style={{overflowX:"hidden"}}>
-      <Container>
-        <Row
-          style={{ padding: "20px", marginTop: "10%"}}
-          justify="space-between"
-        >
-          <Col xs={11} sm={11} md={3} lg={3}>
-            <div className={classes.innerdiv}>
-              <div className={classes.circle}>
-                <img className={classes.img} alt="" src={Chart} />
-              </div>
-              <br />
-              <i>
-                <span>Hello Sketch!</span>
-              </i>
-              <br />
-              <span style={{ fontSize: "40px" }}>
-                <span style={{ color: "#d4d4d4" }}>01.</span>Research
-              </span>
-            </div>
-
-            <br />
-            <p className={classes.text}>
-              You have an amazing idea that needs adequate evaluation. Tekonika
-              will help you explore your idea potential can providing a
-              professional service for you in prototyping the idea through user
-              interface and user experience design
-            </p>
-          </Col>
-          <Col xs={11} sm={11} md={3} lg={3}>
-            <div className={classes.innerdiv}>
-              <div className={classes.circle}>
-                <img className={classes.img} src={Javascript} alt="" />
-              </div>
-              <br />
-              <i>
-                <span>Hi Javascript!</span>
-              </i>
-              <br />
-              <span style={{ fontSize: "40px" }}>
-                <span style={{ color: "#d4d4d4" }}>02.</span>Design
-              </span>
-            </div>
-
-            <br />
-            <p className={classes.text}>
-              Front-end development of your product using creative
-              tools/programming language to achieve a responsive and attractive
-              design for your product. We render the best service in the area of
-              front-end web and mobile development.
-            </p>
-          </Col>
-          <Col  xs={11} sm={11} md={3} lg={3}>
-            <div className={classes.innerdiv}>
-              <div className={classes.circle}>
-                <img className={classes.img} alt="" src={Node} />
+    <div style={{ overflowX: "hidden" }}>
+      <Bounce left duration={5000}>
+        <Container>
+          <Row
+            style={{ padding: "20px", marginTop: "10%" }}
+            justify="space-between"
+          >
+            <Col xs={11} sm={11} md={3} lg={3}>
+              <div className={classes.innerdiv}>
+                <div className={classes.circle}>
+                  <img className={classes.img} alt="" src={Chart} />
+                </div>
+                <br />
+                <i>
+                  <span>Hello Sketch!</span>
+                </i>
+                <br />
+                <span style={{ fontSize: "40px" }}>
+                  <span style={{ color: "#d4d4d4" }}>01.</span>Research
+                </span>
               </div>
 
               <br />
-              <i>
-                <span>Hello Node!</span>
-              </i>
-              <br />
-              <span style={{ fontSize: "40px" }}>
-                <span style={{ color: "#d4d4d4" }}>03.</span>Develop
-              </span>
-            </div>
+              <p className={classes.text}>
+                You have an amazing idea that needs adequate evaluation.
+                Tekonika will help you explore your idea potential can providing
+                a professional service for you in prototyping the idea through
+                user interface and user experience design
+              </p>
+            </Col>
+            <Col xs={11} sm={11} md={3} lg={3}>
+              <div className={classes.innerdiv}>
+                <div className={classes.circle}>
+                  <img className={classes.img} src={Javascript} alt="" />
+                </div>
+                <br />
+                <i>
+                  <span>Hi Javascript!</span>
+                </i>
+                <br />
+                <span style={{ fontSize: "40px" }}>
+                  <span style={{ color: "#d4d4d4" }}>02.</span>Design
+                </span>
+              </div>
 
-            <br />
-            <p className={classes.text}>
-              After prototyping and front-end design, we proceed to the
-              development of the product internal structure and control features
-              which include the database. We use the most powerful back-end
-              framework to achieve this.
-            </p>
-          </Col>
-        </Row>
-      </Container>
+              <br />
+              <p className={classes.text}>
+                Front-end development of your product using creative
+                tools/programming language to achieve a responsive and
+                attractive design for your product. We render the best service
+                in the area of front-end web and mobile development.
+              </p>
+            </Col>
+            <Col xs={11} sm={11} md={3} lg={3}>
+              <div className={classes.innerdiv}>
+                <div className={classes.circle}>
+                  <img className={classes.img} alt="" src={Node} />
+                </div>
+
+                <br />
+                <i>
+                  <span>Hello Node!</span>
+                </i>
+                <br />
+                <span style={{ fontSize: "40px" }}>
+                  <span style={{ color: "#d4d4d4" }}>03.</span>Develop
+                </span>
+              </div>
+
+              <br />
+              <p className={classes.text}>
+                After prototyping and front-end design, we proceed to the
+                development of the product internal structure and control
+                features which include the database. We use the most powerful
+                back-end framework to achieve this.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Bounce>
+
       {/* <Slider /> */}
-      <Clients/>
-      <Linear/>
-      <Card/>
-      <EndSection/>
+      <Clients />
+      <Linear />
+      <Card />
+      <EndSection />
     </div>
   );
 };

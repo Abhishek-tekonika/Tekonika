@@ -207,14 +207,13 @@
 }
 
 .linkName {
-   text-decoration: none;
+   text-decoration: none !important;
    color: white;
 }
 .container-box{
    height:700px;
    width: 100%;
    background-color:#f2f2f2;
-   /* position:absolute; */
    margin-top:100px;
 }
 .heading-upper{

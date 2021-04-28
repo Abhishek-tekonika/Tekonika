@@ -8,9 +8,6 @@ import code from "../../assets/code.svg";
 import ux from "../../assets/ux.svg";
 import database from "../../assets/database.svg";
 
-// import useMediaQuery from "@material-ui/core/useMediaQuery";
-// import { useTheme } from "@material-ui/core/styles";
-
 
 
 
@@ -30,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '10%',
 
 
-  }
+  },
 
 }));
 const Cards = (): JSX.Element => {

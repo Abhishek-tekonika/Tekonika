@@ -1,26 +1,19 @@
-
-.box-1{
-    height:350px;
-    width:90%;
-    border-radius: 5%;
-    margin-top:80px;
-    border:1px solid whitesmoke;
-    
+.box-1 {
+  height: 350px;
+  width: 90%;
+  border-radius: 5%;
+  margin-top: 80px;
+  border: 1px solid whitesmoke;
 }
-.box-1:hover{
-    background-color:skyblue;
-    /* background-image: url('./clients-logo/sofftware-dev.jpg'); */
-   }
-   .linkname {
-    text-decoration: none;
-    color:black;
- } 
- .linkname:hover{
-    text-decoration: none;
-    color:black; 
- }
+.box-1:hover {
+  background-color: rgba(95, 97, 171, 0.6) !important;
+}
 
-    
-    
-    
-    
+.linkname {
+  text-decoration: none;
+  color: black;
+}
+.linkname:hover {
+  text-decoration: none;
+  color: black;
+}
