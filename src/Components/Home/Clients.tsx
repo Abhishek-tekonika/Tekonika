@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Row, Container } from "../Common/Grid";
-import Chart from "../../assets/sketch.png";
-import Node from "../../assets/node.svg";
-import Javascript from "../../assets/javascript.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Stigasoft from "./clients-logo/stigasoft.png";
 import Sourcefuse from "./clients-logo/sourcefuse.png";
@@ -12,7 +9,7 @@ import wiziq from "./clients-logo/wiziq-logo.png";
 import yuno from "./clients-logo/yuno_logo.png";
 import whitehilllogo from "./clients-logo/whitehilllogo.png";
 import hiyatri from "./clients-logo/HiYatriLogo.png";
-import aggio from "./clients-logo/aggio.svg";
+import aggio from "./clients-logo/aggio.png";
 import "./Clients.css";
 
 
@@ -124,7 +121,14 @@ const Clients = (): JSX.Element => {
                 style={{ height: "100%", width: "140px",paddingTop:'6%' }}
               />
             </div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4 col-sm-12">
+            <img
+                className="image-logo"
+                src={aggio}
+                alt="aggio"
+                style={{ height: "100%", width: "140px",paddingTop:'6%' }}
+              />
+            </div>
           </div>
         </div>
       </>
