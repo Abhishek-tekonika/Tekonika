@@ -3,6 +3,8 @@ import { Row, Col } from "../../Common/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import testimonyImg from "../../../assets/project-testimony.jpg";
 import ImageComparison from "../ImageComparison/ImageComparison";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+
 
 const useStyle = makeStyles((theme) => ({
   text: {
