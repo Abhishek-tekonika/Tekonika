@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "../Common/Grid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { makeStyles,useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import FrontEnd from "../../assets/tekonika-frontend-pic.png";
 import BackEnd from "../../assets/tekonika-backend-pic.png";
 import MidSection from "./MidSection/MidSection";
@@ -25,7 +25,7 @@ const Zoom = require("react-reveal/Zoom");
 
 const WebApp = (): JSX.Element => {
   const classes = useStyle();
-  const theme=useTheme();
+  const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
 
   return (
@@ -42,7 +42,16 @@ const WebApp = (): JSX.Element => {
         >
           <Col sm={8} md={5} lg={6} xs={10} style={{ color: "whitesmoke" }}>
             <Zoom duration={3500}>
-              <Col sm={8} md={5} lg={6} xs={10} style={{ marginTop: "10%",paddingLeft:matches?"18%":'4%' }}>
+              <Col
+                sm={8}
+                md={5}
+                lg={6}
+                xs={10}
+                style={{
+                  marginTop: "10%",
+                  paddingLeft: matches ? "18%" : "4%",
+                }}
+              >
                 <span style={{ fontSize: "30px" }}>TEKONIKA</span>
                 <br />
 

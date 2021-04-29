@@ -12,7 +12,6 @@ import hiyatri from "./clients-logo/HiYatriLogo.png";
 import aggio from "./clients-logo/aggio.png";
 import "./Clients.css";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -23,39 +22,37 @@ const Clients = (): JSX.Element => {
   return (
     <React.Fragment>
       <>
-        <Container>
-          <Row>
-            <Col md={12}>
-              <h2
-                style={{
-                  textAlign: "center",
-                  marginTop: "100px",
-                  fontSize: "60px",
-                  fontWeight: "bolder",
-                }}
-              >
-                Our Journey so far
-              </h2>
-              <h3
-                style={{
-                  fontSize: "18px",
-                  textAlign: "center",
-                  marginBottom: "60px",
-                }}
-              >
-                Since 2018, we have helped a number of companies convert their
-                digital ideas into engaging, feature rich apps
-              </h3>
-            </Col>
-          </Row>
-        </Container>
+        <div style={{ backgroundColor: "#5f61ab" ,padding:'1% 0% 1% 0%',margin:'6% 0% 6% 0%'}}>
+          <h2
+            style={{
+              textAlign: "center",
+              marginTop: "100px",
+              fontSize: "60px",
+              fontWeight: "bolder",
+              color: "whitesmoke",
+            }}
+          >
+            Our Journey so far
+          </h2>
+          <h3
+            style={{
+              fontSize: "18px",
+              textAlign: "center",
+              marginBottom: "100px",
+              color: "whitesmoke",
+            }}
+          >
+            Since 2018, we have helped a number of companies convert their
+            digital ideas into engaging, feature rich apps
+          </h3>
+        </div>
 
         <div className="container">
           <div className="row">
             <div className="col-md-4">
               <img
                 className="image-logo"
-                style={{ width: "50%", height: "100%" }}
+                style={{ width: "42%", height: "90%" }}
                 src={wheelsemi}
                 alt="wheelsemi"
               />
@@ -81,24 +78,23 @@ const Clients = (): JSX.Element => {
             <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo"
-                style={{ width: "40%",paddingTop:"7%",height:'70px' }}
+                style={{ width: "35%", paddingTop: "7%", height: "60px" }}
                 src={wiziq}
                 alt="wiziq"
               />
             </div>
             <div className="col-md-4 col-sm-12">
               <img
-              
                 className="image-logo"
                 src={yuno}
                 alt="yuno"
-                style={{ width: "50%",height:'80%' }}
+                style={{ width: "40%", height: "70%" }}
               />
             </div>
             <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo-1"
-                style={{ width: "50%",height:'120px' }}
+                style={{ width: "45%", height: "100px" }}
                 src={whitehilllogo}
                 alt="yuno"
               />
@@ -118,15 +114,15 @@ const Clients = (): JSX.Element => {
                 className="image-logo"
                 src={Stigasoft}
                 alt="stigasoft"
-                style={{ height: "100%", width: "140px",paddingTop:'6%' }}
+                style={{ height: "100%", width: "140px", paddingTop: "6%" }}
               />
             </div>
             <div className="col-md-4 col-sm-12">
-            <img
+              <img
                 className="image-logo"
                 src={aggio}
                 alt="aggio"
-                style={{ height: "100%", width: "140px",paddingTop:'6%' }}
+                style={{ height: "100%", width: "140px", paddingTop: "6%" }}
               />
             </div>
           </div>
