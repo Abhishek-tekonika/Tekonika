@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+import Favicon from 'react-favicon';
+import tekonikaLogo from "../src/assets/final-Tekonika.png";
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <Favicon url={tekonikaLogo} />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
