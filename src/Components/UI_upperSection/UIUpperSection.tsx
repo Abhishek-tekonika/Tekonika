@@ -296,7 +296,7 @@ const UiDesign = (): JSX.Element => {
                 component="h2"
                 style={{
                   textAlign: "center",
-                  fontFamily: "Arial",
+                  fontFamily: "Arial !important",
                   fontStyle: "normal",
                   fontWeight: 700,
                   color: "#ffffff",

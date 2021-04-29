@@ -8,21 +8,17 @@ import ImgBackground from "../Home/clients-logo/Wireframe-light.jpeg";
 import MidSplash from "../../assets/midsectionSplash.jpg";
 import CardSection from "../../Components/UI_upperSection/CardUISection";
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 
 import Insight from "../../assets/insight.png";
 import Butterfly from "../../assets/butterfly.png";
 import Innovation from "../../assets/innovation.png";
 import Champion from "../../assets/champion.png";
-import Nvis from "../Home/clients-logo/nvis.png";
+import mainuiux from "../../assets/mainuiux.jpeg";
 
 import "./UIsection.css";
 
 const Zoom = require("react-reveal/Zoom");
-
-
-
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -53,8 +49,8 @@ const UiDesign = (): JSX.Element => {
               <Zoom duration={2500}>
                 <img
                   src={ImgBackground}
-                  height="500px"
-                  width="65%"
+                  height="600px"
+                  width="60%"
                   style={{
                     marginTop: "100px",
                     marginBottom: "500px",
@@ -96,7 +92,7 @@ const UiDesign = (): JSX.Element => {
           <Row>
             <Col md={6}>
               <img
-                src={Nvis}
+                src={mainuiux}
                 height="550px"
                 width="120%"
                 style={{
@@ -123,204 +119,226 @@ const UiDesign = (): JSX.Element => {
         </Container>
       </Zoom>
 
-
-        
       <Zoom duration={3500}>
-     <div className="container_1">
-        <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
-          <Row style={{ paddingTop: "30px" }} justify="space-around">
-            <Col xs={11} sm={11} md={4} lg={4} style={{ paddingLeft: "50px" }}>
-              <div>
-                <span className="UIheading-text" style={{ paddingTop: "29px" }}>
-                  An exceptionally <span className="weight-text">UI/UX </span>
-                  design unique experience tailored to you
-                </span>
-                <img
-                  style={{ margin: "12px 0px 12px 0px" }}
-                  src={MidSplash}
-                  width="120%"
-                  alt=""
-                />
-                <div style={{ display: "flex", height: "30px" }}>
-                  <Link
-                    style={{ textDecoration: "none" }}
-                    to="/request-a-quote"
+        <div className="container_1">
+          <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
+            <Row style={{ paddingTop: "30px" }} justify="space-around">
+              <Col
+                xs={11}
+                sm={11}
+                md={4}
+                lg={4}
+                style={{ paddingLeft: "50px" }}
+              >
+                <div>
+                  <span
+                    className="UIheading-text"
+                    style={{ paddingTop: "29px" }}
                   >
-                    <Button variant="contained" className="blue-btn">
-                      Get Started
-                    </Button>
-                  </Link>
+                    An exceptionally <span className="weight-text">UI/UX </span>
+                    design unique experience tailored to you
+                  </span>
+                  <img
+                    style={{ margin: "12px 0px 12px 0px" }}
+                    src={MidSplash}
+                    width="120%"
+                    alt=""
+                  />
+                  <div style={{ display: "flex", height: "30px" }}>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="/request-a-quote"
+                    >
+                      <Button variant="contained" className="blue-btn">
+                        Get Started
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col xs={11} sm={11} md={5} lg={5}>
-              <Row justify="space-evenly">
-                <Col
-                  xs={9}
-                  sm={9}
-                  md={5}
-                  lg={5}
-                  className="card-background"
-                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
-                >
-                  <img
-                    style={{ margin: "30px" }}
-                    src={Insight}
-                    width="25%"
-                    alt=""
-                  />
-                  <br />
-                  <span
+              </Col>
+              <Col xs={11} sm={11} md={5} lg={5}>
+                <Row justify="space-evenly">
+                  <Col
+                    xs={9}
+                    sm={9}
+                    md={5}
+                    lg={5}
+                    className="card-background"
                     style={{
-                      fontSize: "28px",
-                      fontWeight: 400,
-                      lineHeight: "32px",
-                      opacity: "1",
+                      margin: "30px 30px 40px 0px",
+                      boxShadow: "0px 0px 10px gray",
+                      borderRadius: "5%",
                     }}
                   >
-                    Insight Driven
-                  </span>
-                  <p
+                    <img
+                      style={{ margin: "30px" }}
+                      src={Insight}
+                      width="25%"
+                      alt=""
+                    />
+                    <br />
+                    <span
+                      style={{
+                        fontSize: "28px",
+                        fontWeight: 400,
+                        lineHeight: "32px",
+                        opacity: "1",
+                      }}
+                    >
+                      Insight Driven
+                    </span>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: "29px",
+                        opacity: "0.75",
+                        color: "#444",
+                        fontStyle: "inherit",
+                        textAlign: "left",
+                      }}
+                    >
+                      We leverage on the power of information and research to
+                      find out specific solutions to design problems
+                    </p>
+                  </Col>
+                  <Col
+                    xs={9}
+                    sm={9}
+                    md={5}
+                    lg={5}
+                    className="card-background"
                     style={{
-                      fontSize: "16px",
-                      lineHeight: "29px",
-                      opacity: "0.75",
-                      color: "#444",
-                      fontStyle: "inherit",
-                      textAlign: "left",
+                      margin: "30px 30px 40px 0px",
+                      boxShadow: "0px 0px 10px gray",
+                      borderRadius: "5%",
                     }}
                   >
-                    We leverage on the power of information and research to find
-                    out specific solutions to design problems
-                  </p>
-                </Col>
-                <Col
-                  xs={9}
-                  sm={9}
-                  md={5}
-                  lg={5}
-                  className="card-background"
-                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
-                >
-                  <img
-                    style={{ margin: "30px" }}
-                    src={Butterfly}
-                    width="25%"
-                    alt=""
-                  />
-                  <br />
-                  <span
+                    <img
+                      style={{ margin: "30px" }}
+                      src={Butterfly}
+                      width="25%"
+                      alt=""
+                    />
+                    <br />
+                    <span
+                      style={{
+                        fontSize: "28px",
+                        fontWeight: 400,
+                        lineHeight: "32px",
+                        opacity: "1",
+                      }}
+                    >
+                      Elegant Design
+                    </span>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: "29px",
+                        opacity: "0.75",
+                        color: "#444",
+                        fontStyle: "inherit",
+                        textAlign: "left",
+                      }}
+                    >
+                      We understand the impact of beautiful designs and stunning
+                      works of art. We build with style using tools like figma
+                    </p>
+                  </Col>
+                </Row>
+                <Row justify="space-evenly">
+                  <Col
+                    xs={9}
+                    sm={9}
+                    md={5}
+                    lg={5}
+                    className="card-background"
                     style={{
-                      fontSize: "28px",
-                      fontWeight: 400,
-                      lineHeight: "32px",
-                      opacity: "1",
+                      margin: "30px 30px 0px 0px",
+                      boxShadow: "0px 0px 10px gray",
+                      borderRadius: "5%",
                     }}
                   >
-                    Elegant Design
-                  </span>
-                  <p
+                    <img
+                      style={{ margin: "30px" }}
+                      src={Innovation}
+                      width="25%"
+                      alt=""
+                    />
+                    <br />
+                    <span
+                      style={{
+                        fontSize: "28px",
+                        fontWeight: 400,
+                        lineHeight: "32px",
+                        opacity: "1",
+                      }}
+                    >
+                      User Centric
+                    </span>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: "29px",
+                        opacity: "0.75",
+                        color: "#444",
+                        fontStyle: "inherit",
+                        textAlign: "left",
+                      }}
+                    >
+                      At the center of our designs is the belief that the user
+                      is the definer of purpose. We thus create designs that
+                      improve human experience.
+                    </p>
+                  </Col>
+                  <Col
+                    xs={9}
+                    sm={9}
+                    md={5}
+                    lg={5}
+                    className="card-background"
                     style={{
-                      fontSize: "16px",
-                      lineHeight: "29px",
-                      opacity: "0.75",
-                      color: "#444",
-                      fontStyle: "inherit",
-                      textAlign: "left",
+                      margin: "30px 30px 0px 0px",
+                      boxShadow: "0px 0px 10px gray",
+                      borderRadius: "5%",
                     }}
                   >
-                    We understand the impact of beautiful designs and stunning
-                    works of art. We build with style using tools like figma
-                  </p>
-                </Col>
-              </Row>
-              <Row justify="space-evenly">
-                <Col
-                  xs={9}
-                  sm={9}
-                  md={5}
-                  lg={5}
-                  className="card-background"
-                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
-                >
-                  <img
-                    style={{ margin: "30px" }}
-                    src={Innovation}
-                    width="25%"
-                    alt=""
-                  />
-                  <br />
-                  <span
-                    style={{
-                      fontSize: "28px",
-                      fontWeight: 400,
-                      lineHeight: "32px",
-                      opacity: "1",
-                    }}
-                  >
-                    User Centric
-                  </span>
-                  <p
-                    style={{
-                      fontSize: "16px",
-                      lineHeight: "29px",
-                      opacity: "0.75",
-                      color: "#444",
-                      fontStyle: "inherit",
-                      textAlign: "left",
-                    }}
-                  >
-                    At the center of our designs is the belief that the user is
-                    the definer of purpose. We thus create designs that improve
-                    human experience.
-                  </p>
-                </Col>
-                <Col
-                  xs={9}
-                  sm={9}
-                  md={5}
-                  lg={5}
-                  className="card-background"
-                  style={{ margin: "20px",boxShadow:'0px 0px 10px gray',cursor:'pointer',  borderRadius: "5%" }}
-                >
-                  <img
-                    style={{ margin: "30px" }}
-                    src={Champion}
-                    width="25%"
-                    alt=""
-                  />
-                  <br />
-                  <span
-                    style={{
-                      fontSize: "28px",
-                      fontWeight: 400,
-                      lineHeight: "32px",
-                      opacity: "1",
-                    }}
-                  >
-                    Quality Tested
-                  </span>
-                  <p
-                    style={{
-                      fontSize: "16px",
-                      lineHeight: "29px",
-                      opacity: "0.75",
-                      color: "#444",
-                      fontStyle: "inherit",
-                      textAlign: "left",
-                    }}
-                  >
-                    We chose quality above just doing it. Our solutions make
-                    sure you appreciate the beauty of great designs
-                  </p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-     </Zoom>
-    
+                    <img
+                      style={{ margin: "30px" }}
+                      src={Champion}
+                      width="25%"
+                      alt=""
+                    />
+                    <br />
+                    <span
+                      style={{
+                        fontSize: "28px",
+                        fontWeight: 400,
+                        lineHeight: "32px",
+                        opacity: "1",
+                      }}
+                    >
+                      Quality Tested
+                    </span>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: "29px",
+                        opacity: "0.75",
+                        color: "#444",
+                        fontStyle: "inherit",
+                        textAlign: "left",
+                      }}
+                    >
+                      We chose quality above just doing it. Our solutions make
+                      sure you appreciate the beauty of great designs
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Zoom>
 
       <div
         style={{
@@ -347,13 +365,10 @@ const UiDesign = (): JSX.Element => {
               <br />
               <br />
               <br />
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="h2"
+              <h2
                 style={{
                   textAlign: "center",
-                  fontFamily: "cursive",
+                  fontFamily: "arial",
                   fontStyle: "normal",
                   fontWeight: 700,
                   color: "#ffffff",
@@ -362,7 +377,7 @@ const UiDesign = (): JSX.Element => {
                 }}
               >
                 Build your dream Web or Mobile app today.
-              </Typography>
+              </h2>
               <br />
               <Row
                 xs={12}

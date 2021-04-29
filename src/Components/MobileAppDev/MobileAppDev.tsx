@@ -9,14 +9,15 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-import BrushOutlinedIcon from "@material-ui/icons/BrushOutlined";
-import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
-import CloudDoneOutlinedIcon from "@material-ui/icons/CloudDoneOutlined";
-import ContactSupportOutlinedIcon from "@material-ui/icons/ContactSupportOutlined";
-import PhoneIphoneOutlinedIcon from "@material-ui/icons/PhoneIphoneOutlined";
-import GroupAddOutlinedIcon from "@material-ui/icons/GroupAddOutlined";
-import BubbleChartOutlinedIcon from "@material-ui/icons/BubbleChartOutlined";
-import LocalAtmOutlinedIcon from "@material-ui/icons/LocalAtmOutlined";
+import BrushOutlinedIcon from "../../assets/design.png";
+import SettingsOutlinedIcon from "../../assets/codelaptop.png";
+import CloudDoneOutlinedIcon from "../../assets/cloud.png";
+import ContactSupportOutlinedIcon from "../../assets/question.png";
+
+import PhoneIphoneOutlinedIcon from "../../assets/mobile.png";
+import GroupAddOutlinedIcon from "../../assets/experience.png";
+import BubbleChartOutlinedIcon from "../../assets/crossplatform.png";
+import LocalAtmOutlinedIcon from "../../assets/monetization.png";
 
 import "./MobileAppDev.css";
 
@@ -109,17 +110,21 @@ const MobileAppDev = (): JSX.Element => {
                     md={5}
                     lg={5}
                     style={{
-                      margin: "20px",
+                      margin: "30px 30px 40px 0px",
                       boxShadow: "0px 0px 10px gray",
-                      cursor: "pointer",
                       borderRadius: "5%",
-                      padding:'5%',
+                      padding: "5%",
                     }}
                   >
-                    <div className="icons-blue-mobile">
-                      <BrushOutlinedIcon />
+                    <div>
+                      <img
+                        src={BrushOutlinedIcon}
+                        width="30%"
+                        height="50px"
+                        alt=""
+                      />
                     </div>
-                    <span className="heading-text">Design</span>
+                    <span style={{ fontSize: "28px" }}>Design</span>
                     <p className="sub-heading-text">
                       Our team prepares a professional UI and UX design for your
                       mobile application.
@@ -131,17 +136,21 @@ const MobileAppDev = (): JSX.Element => {
                     md={5}
                     lg={5}
                     style={{
-                      margin: "20px",
+                      margin: "30px 30px 40px 0px",
                       boxShadow: "0px 0px 10px gray",
-                      cursor: "pointer",
                       borderRadius: "5%",
-                      padding:'5%',
+                      padding: "5%",
                     }}
                   >
-                    <div className="icons-blue-mobile">
-                      <SettingsOutlinedIcon />
+                    <div>
+                      <img
+                        src={SettingsOutlinedIcon}
+                        width="30%"
+                        height="50px"
+                        alt=""
+                      />
                     </div>
-                    <span className="heading-text">Develop</span>
+                    <span style={{ fontSize: "28px" }}>Develop</span>
                     <p className="sub-heading-text">
                       We develop your mobile app using hybrid tech for android
                       and iOS
@@ -155,17 +164,21 @@ const MobileAppDev = (): JSX.Element => {
                     md={5}
                     lg={5}
                     style={{
-                      margin: "20px",
+                      margin: "30px 30px 0px 0px",
                       boxShadow: "0px 0px 10px gray",
-                      cursor: "pointer",
                       borderRadius: "5%",
-                      padding:'5%',
+                      padding: "5%",
                     }}
                   >
-                    <div className="icons-blue-mobile">
-                      <CloudDoneOutlinedIcon />
+                    <div>
+                      <img
+                        src={CloudDoneOutlinedIcon}
+                        width="30%"
+                        height="50px"
+                        alt=""
+                      />
                     </div>
-                    <span className="heading-text">Deploy</span>
+                    <span style={{ fontSize: "28px" }}>Deploy</span>
                     <p className="sub-heading-text">
                       After adequate testing, we get your mobile app on the
                       Google Playstore and Apple Appstore.
@@ -177,17 +190,21 @@ const MobileAppDev = (): JSX.Element => {
                     md={5}
                     lg={5}
                     style={{
-                      margin: "20px",
+                      margin: "30px 30px 0px 0px",
                       boxShadow: "0px 0px 10px gray",
-                      cursor: "pointer",
                       borderRadius: "5%",
-                      padding:'5%',
+                      padding: "5%",
                     }}
                   >
-                    <div className="icons-blue-mobile">
-                      <ContactSupportOutlinedIcon />
+                    <div>
+                      <img
+                        src={ContactSupportOutlinedIcon}
+                        width="30%"
+                        height="50px"
+                        alt=""
+                      />
                     </div>
-                    <span className="heading-text">Support</span>
+                    <span style={{ fontSize: "28px" }}>Support</span>
                     <p className="sub-heading-text">
                       We render post development support for bug fixes and new
                       features integration.
@@ -241,8 +258,13 @@ const MobileAppDev = (): JSX.Element => {
           <Row style={{ marginTop: "40px" }}>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue-mobile">
-                  <PhoneIphoneOutlinedIcon />
+                <div>
+                  <img
+                    src={PhoneIphoneOutlinedIcon}
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
                 </div>
                 <span className="icon-heading">App Strategy</span>
                 <p className="sub-heading-text">
@@ -254,8 +276,13 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue-mobile">
-                  <GroupAddOutlinedIcon />
+                <div>
+                  <img
+                    src={GroupAddOutlinedIcon}
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
                 </div>
                 <span className="icon-heading">User Experience</span>
                 <p className="sub-heading-text">
@@ -267,8 +294,13 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue-mobile">
-                  <BubbleChartOutlinedIcon />
+                <div>
+                  <img
+                    src={BubbleChartOutlinedIcon}
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
                 </div>
                 <span className="icon-heading">Cross Platform</span>
                 <p className="sub-heading-text">
@@ -280,8 +312,13 @@ const MobileAppDev = (): JSX.Element => {
             </Col>
             <Col xs={12} sm={12} md={5} lg={3}>
               <div className="icon-card center">
-                <div className="icons-blue-mobile">
-                  <LocalAtmOutlinedIcon />
+                <div>
+                  <img
+                    src={LocalAtmOutlinedIcon}
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
                 </div>
                 <span className="icon-heading">Monetization</span>
                 <p className="sub-heading-text">

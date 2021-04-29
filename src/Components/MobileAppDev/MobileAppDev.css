@@ -1,11 +1,12 @@
 .heading-text {
-  font-size: 40px;
+  font-size: 28px;
   line-height: 50px;
   text-align: left;
   font-weight: 500;
 }
 
 .sub-heading-text {
+  margin-top: 5%;
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
@@ -96,6 +97,7 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
+  margin-top: 5%;
 }
 
 .icon-card {
