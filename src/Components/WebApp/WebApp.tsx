@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Row, Col } from "../Common/Grid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -16,17 +16,29 @@ const useStyle = makeStyles((theme) => ({
     cursor: "pointer",
   },
   images: {
-    width: "96%",
-    height: "43%",
+    width: "100%",
+    height: "50%",
   },
 }));
 
-const Zoom = require("react-reveal/Zoom");
+const scrollTop = (): void => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
+
+
 
 const WebApp = (): JSX.Element => {
   const classes = useStyle();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <React.Fragment>
@@ -41,30 +53,28 @@ const WebApp = (): JSX.Element => {
           justify="space-between"
         >
           <Col sm={8} md={5} lg={6} xs={10} style={{ color: "whitesmoke" }}>
-            <Zoom duration={3500}>
-              <Col
-                sm={8}
-                md={5}
-                lg={6}
-                xs={10}
-                style={{
-                  marginTop: "10%",
-                  paddingLeft: matches ? "18%" : "4%",
-                }}
-              >
-                <span style={{ fontSize: "30px" }}>TEKONIKA</span>
-                <br />
+            <Col
+              sm={8}
+              md={5}
+              lg={6}
+              xs={10}
+              style={{
+                marginTop: "2%",
+                paddingLeft: matches ? "18%" : "4%",
+              }}
+            >
+              <span style={{ fontSize: "30px" }}>TEKONIKA</span>
+              <br />
 
-                <p style={{ lineHeight: "30px" }}>
-                  Tekonika is one of the best Web App development Companies. We
-                  have a team of professional experts having years of experience
-                  in the field of development. Our specialised team can provide
-                  custom web solutions to establish your business online.
-                </p>
-                <FacebookIcon className={classes.icon} />
-                <LinkedInIcon className={classes.icon} />
-              </Col>
-            </Zoom>
+              <p style={{ lineHeight: "30px" }}>
+                Tekonika is one of the best Web App development Companies. We
+                have a team of professional experts having years of experience
+                in the field of development. Our specialised team can provide
+                custom web solutions to establish your business online.
+              </p>
+              <FacebookIcon className={classes.icon} />
+              <LinkedInIcon className={classes.icon} />
+            </Col>
           </Col>
           <Col />
           <Col
@@ -72,12 +82,10 @@ const WebApp = (): JSX.Element => {
             md={6}
             lg={6}
             xs={10}
-            style={{ marginTop: "5%", padding: "auto" }}
+            style={{ marginTop: "1%", padding: "auto" }}
           >
-            <Zoom top>
-              <img alt="" className={classes.images} src={FrontEnd} /> //#0085f2
-              <img alt="" className={classes.images} src={BackEnd} />
-            </Zoom>
+            <img alt="" className={classes.images} src={FrontEnd} /> 
+            <img alt="" className={classes.images} src={BackEnd} />
           </Col>
         </Row>
       </div>

@@ -21,9 +21,6 @@ import LocalAtmOutlinedIcon from "../../assets/monetization.png";
 
 import "./MobileAppDev.css";
 
-const Zoom = require("react-reveal/Zoom");
-const Bounce = require("react-reveal/Bounce");
-
 const scrollToRef = (ref: any) =>
   ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -53,196 +50,186 @@ const MobileAppDev = (): JSX.Element => {
       <Container className="container-1">
         <Row>
           <Col xs={12} sm={11} md={8} lg={9}>
-            <Zoom duration={2500}>
-              <img width="100%" src={phoneImg1} alt="" />
-            </Zoom>
+            <img width="100%" src={phoneImg1} alt="" />
           </Col>
           <Col xs={11} sm={11} md={4} lg={3}>
-            <Zoom top>
-              <div className={matches ? "alignment-top-sub-heading" : ""}>
-                <span className="heading-text">
-                  Quality is what matters most in Mobile Apps
-                </span>
-                <p className="sub-heading-text">
-                  Tekonika develops a myriad of engaging, personalized and
-                  adaptive mobile applications using a 100% agile approach for
-                  B2B, B2C and Enterprises. We are a result oriented mobile app
-                  development company
-                </p>
-                <Button
-                  onClick={handleLearnMore}
-                  className="learn-more"
-                  variant="contained"
-                >
-                  LEARN MORE
-                  <ArrowForwardIosIcon />
-                </Button>
-              </div>
-            </Zoom>
+            <div className={matches ? "alignment-top-sub-heading" : ""}>
+              <span className="heading-text">
+                Quality is what matters most in Mobile Apps
+              </span>
+              <p className="sub-heading-text">
+                Tekonika develops a myriad of engaging, personalized and
+                adaptive mobile applications using a 100% agile approach for
+                B2B, B2C and Enterprises. We are a result oriented mobile app
+                development company
+              </p>
+              <Button
+                onClick={handleLearnMore}
+                className="learn-more"
+                variant="contained"
+              >
+                LEARN MORE
+                <ArrowForwardIosIcon />
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
       <div className="icon-section-container" ref={sec2}>
         <Container>
-          <Bounce left duration={3500}>
-            <Row style={{ paddingTop: "30px" }}>
-              <Col xs={11} sm={11} md={4} lg={4}>
-                <span className="heading-text">
-                  One of the best
-                  <span className="highlighted-text">mobile apps</span>
-                  development company.
-                </span>
-                <p className="sub-heading-text mt-50">
-                  You are about to hire a professional mobile app developer for
-                  your business idea. Be it for Android, IOS or Windows, we’ve
-                  got you covered. Tekonika, a recognized mobile app development
-                  company, delivers business-centric and highly customized
-                  native, hybrid and cross platform mobile apps to startups and
-                  enterprises.
-                </p>
-              </Col>
-              <Col xs={12} sm={12} md={2} lg={2}></Col>
-              <Col xs={11} sm={11} md={5} lg={5}>
-                <Row justify="space-between">
-                  <Col
-                    xs={11}
-                    sm={11}
-                    md={5}
-                    lg={5}
-                    style={{
-                      margin: "30px 30px 40px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                      padding: "5%",
-                    }}
-                  >
-                    <div>
-                      <img
-                        src={BrushOutlinedIcon}
-                        width="30%"
-                        height="50px"
-                        alt=""
-                      />
-                    </div>
-                    <span style={{ fontSize: "28px" }}>Design</span>
-                    <p className="sub-heading-text">
-                      Our team prepares a professional UI and UX design for your
-                      mobile application.
-                    </p>
-                  </Col>
-                  <Col
-                    xs={11}
-                    sm={11}
-                    md={5}
-                    lg={5}
-                    style={{
-                      margin: "30px 30px 40px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                      padding: "5%",
-                    }}
-                  >
-                    <div>
-                      <img
-                        src={SettingsOutlinedIcon}
-                        width="30%"
-                        height="50px"
-                        alt=""
-                      />
-                    </div>
-                    <span style={{ fontSize: "28px" }}>Develop</span>
-                    <p className="sub-heading-text">
-                      We develop your mobile app using hybrid tech for android
-                      and iOS
-                    </p>
-                  </Col>
-                </Row>
-                <Row justify="space-between">
-                  <Col
-                    xs={11}
-                    sm={11}
-                    md={5}
-                    lg={5}
-                    style={{
-                      margin: "30px 30px 0px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                      padding: "5%",
-                    }}
-                  >
-                    <div>
-                      <img
-                        src={CloudDoneOutlinedIcon}
-                        width="30%"
-                        height="50px"
-                        alt=""
-                      />
-                    </div>
-                    <span style={{ fontSize: "28px" }}>Deploy</span>
-                    <p className="sub-heading-text">
-                      After adequate testing, we get your mobile app on the
-                      Google Playstore and Apple Appstore.
-                    </p>
-                  </Col>
-                  <Col
-                    xs={11}
-                    sm={11}
-                    md={5}
-                    lg={5}
-                    style={{
-                      margin: "30px 30px 0px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                      padding: "5%",
-                    }}
-                  >
-                    <div>
-                      <img
-                        src={ContactSupportOutlinedIcon}
-                        width="30%"
-                        height="50px"
-                        alt=""
-                      />
-                    </div>
-                    <span style={{ fontSize: "28px" }}>Support</span>
-                    <p className="sub-heading-text">
-                      We render post development support for bug fixes and new
-                      features integration.
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Bounce>
+          <Row style={{ paddingTop: "30px" }}>
+            <Col xs={11} sm={11} md={4} lg={4}>
+              <span className="heading-text">
+                One of the best
+                <span className="highlighted-text">mobile apps</span>
+                development company.
+              </span>
+              <p className="sub-heading-text mt-50">
+                You are about to hire a professional mobile app developer for
+                your business idea. Be it for Android, IOS or Windows, we’ve got
+                you covered. Tekonika, a recognized mobile app development
+                company, delivers business-centric and highly customized native,
+                hybrid and cross platform mobile apps to startups and
+                enterprises.
+              </p>
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}></Col>
+            <Col xs={11} sm={11} md={5} lg={5}>
+              <Row justify="space-between">
+                <Col
+                  xs={11}
+                  sm={11}
+                  md={5}
+                  lg={5}
+                  style={{
+                    margin: "30px 30px 40px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                    padding: "5%",
+                  }}
+                >
+                  <div>
+                    <img
+                      src={BrushOutlinedIcon}
+                      width="30%"
+                      height="50px"
+                      alt=""
+                    />
+                  </div>
+                  <span style={{ fontSize: "28px" }}>Design</span>
+                  <p className="sub-heading-text">
+                    Our team prepares a professional UI and UX design for your
+                    mobile application.
+                  </p>
+                </Col>
+                <Col
+                  xs={11}
+                  sm={11}
+                  md={5}
+                  lg={5}
+                  style={{
+                    margin: "30px 30px 40px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                    padding: "5%",
+                  }}
+                >
+                  <div>
+                    <img
+                      src={SettingsOutlinedIcon}
+                      width="30%"
+                      height="50px"
+                      alt=""
+                    />
+                  </div>
+                  <span style={{ fontSize: "28px" }}>Develop</span>
+                  <p className="sub-heading-text">
+                    We develop your mobile app using hybrid tech for android and
+                    iOS
+                  </p>
+                </Col>
+              </Row>
+              <Row justify="space-between">
+                <Col
+                  xs={11}
+                  sm={11}
+                  md={5}
+                  lg={5}
+                  style={{
+                    margin: "30px 30px 0px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                    padding: "5%",
+                  }}
+                >
+                  <div>
+                    <img
+                      src={CloudDoneOutlinedIcon}
+                      width="30%"
+                      height="50px"
+                      alt=""
+                    />
+                  </div>
+                  <span style={{ fontSize: "28px" }}>Deploy</span>
+                  <p className="sub-heading-text">
+                    After adequate testing, we get your mobile app on the Google
+                    Playstore and Apple Appstore.
+                  </p>
+                </Col>
+                <Col
+                  xs={11}
+                  sm={11}
+                  md={5}
+                  lg={5}
+                  style={{
+                    margin: "30px 30px 0px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                    padding: "5%",
+                  }}
+                >
+                  <div>
+                    <img
+                      src={ContactSupportOutlinedIcon}
+                      width="30%"
+                      height="50px"
+                      alt=""
+                    />
+                  </div>
+                  <span style={{ fontSize: "28px" }}>Support</span>
+                  <p className="sub-heading-text">
+                    We render post development support for bug fixes and new
+                    features integration.
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </Container>
       </div>
       <div style={{ width: "100%" }}>
         <Row>
           <Col xs={12} sm={12} md={6} lg={6}>
-            <Zoom duration={2500}>
-              <img src={matches ? phoneImg3 : phoneImg2} width="100%" alt="" />
-            </Zoom>
+            <img src={matches ? phoneImg3 : phoneImg2} width="100%" alt="" />
           </Col>
           <Col xs={12} sm={12} md={1} lg={1}></Col>
           <Col xs={11} sm={11} md={5} lg={4}>
-            <Zoom duration={2500}>
-              <div className="container-3">
-                <span className="heading-text">
-                  Need a Mobile App Developer for that idea?
-                </span>
-                <p className="sub-heading-text">
-                  Cool, you have the next big idea are you planning to get the
-                  business idea closer to your customer through their mobile
-                  device? If yes, that’s a great decision. <br /> <br />
-                  Tekonika develops cross-platform mobile applications using
-                  modern technologies and state-of-the-art UI and UX designs to
-                  justify and complement your idea.
-                </p>
-                <Button onClick={scrollTop} className="learn-more">
-                  Get Started!
-                </Button>
-              </div>
-            </Zoom>
+            <div className="container-3">
+              <span className="heading-text">
+                Need a Mobile App Developer for that idea?
+              </span>
+              <p className="sub-heading-text">
+                Cool, you have the next big idea are you planning to get the
+                business idea closer to your customer through their mobile
+                device? If yes, that’s a great decision. <br /> <br />
+                Tekonika develops cross-platform mobile applications using
+                modern technologies and state-of-the-art UI and UX designs to
+                justify and complement your idea.
+              </p>
+              <Button onClick={scrollTop} className="learn-more">
+                Get Started!
+              </Button>
+            </div>
           </Col>
         </Row>
       </div>

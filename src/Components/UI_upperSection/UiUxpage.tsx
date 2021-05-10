@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Row } from "../Common/Grid";
 import { Col } from "../Common/Grid";
 import { Container } from "../Common/Grid";
@@ -18,8 +18,6 @@ import mainuiux from "../../assets/mainuiux.jpeg";
 
 import "./UIsection.css";
 
-const Zoom = require("react-reveal/Zoom");
-
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     backgroundColor: "#5f61ab",
@@ -36,9 +34,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
+const scrollTop = (): void => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
+
 const UiDesign = (): JSX.Element => {
   const classes = useStyles();
   const sec2 = useRef(null);
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <>
@@ -46,40 +56,36 @@ const UiDesign = (): JSX.Element => {
         <Container style={{ marginBottom: "300px" }}>
           <Row>
             <Col md={8}>
-              <Zoom duration={2500}>
-                <img
-                  src={ImgBackground}
-                  height="600px"
-                  width="60%"
-                  style={{
-                    marginTop: "100px",
-                    marginBottom: "500px",
-                    position: "absolute",
-                  }}
-                />
-              </Zoom>
+              <img
+                src={ImgBackground}
+                height="600px"
+                width="60%"
+                style={{
+                  marginTop: "100px",
+                  marginBottom: "500px",
+                  position: "absolute",
+                }}
+              />
             </Col>
             <Col md={4}>
-              <Zoom top>
-                <h1 className="bold-heading-text ">
-                  <span className="blue-text">UI</span>/
-                  <span className="yellow-text">UX</span> Design Company
-                </h1>
-                <p className="UI-sub-heading ">
-                  We create with focus on your brand, and with the user at the
-                  center of design
-                </p>
+              <h1 className="bold-heading-text ">
+                <span className="blue-text">UI</span>/
+                <span className="yellow-text">UX</span> Design Company
+              </h1>
+              <p className="UI-sub-heading ">
+                We create with focus on your brand, and with the user at the
+                center of design
+              </p>
 
-                <Link style={{ textDecoration: "none" }} to="/request-a-quote">
-                  <Button
-                    variant="contained"
-                    className="blue-btn"
-                    style={{ marginTop: "30px" }}
-                  >
-                    Learn More
-                  </Button>
-                </Link>
-              </Zoom>
+              <Link style={{ textDecoration: "none" }} to="/request-a-quote">
+                <Button
+                  variant="contained"
+                  className="blue-btn"
+                  style={{ marginTop: "30px" }}
+                >
+                  Learn More
+                </Button>
+              </Link>
             </Col>
           </Row>
         </Container>
@@ -87,258 +93,246 @@ const UiDesign = (): JSX.Element => {
       <div style={{ marginTop: "100px" }}>
         <CardSection />
       </div>
-      <Zoom duration={3500}>
-        <Container>
-          <Row>
-            <Col md={6}>
-              <img
-                src={mainuiux}
-                height="550px"
-                width="120%"
-                style={{
-                  marginTop: "28.5%",
-                  position: "relative",
-                }}
-              />
-            </Col>
-            <Col md={6}>
-              <div className="container-box">
-                <h2 className="heading-upper">
-                  If you wish to make an app from scratch, you must first invent
-                  a good prototype.
-                </h2>
-                <p className="para-lower">
-                  We are your partner in designs and we collaborate exquisitely
-                  great with businesses like yours. We help businesses gain
-                  confidence in their products and position them as brands that
-                  clients can trust.
-                </p>
+
+      <Container>
+        <Row>
+          <Col md={6}>
+            <img
+              src={mainuiux}
+              height="550px"
+              width="120%"
+              style={{
+                marginTop: "28.5%",
+                position: "relative",
+              }}
+            />
+          </Col>
+          <Col md={6}>
+            <div className="container-box">
+              <h2 className="heading-upper">
+                If you wish to make an app from scratch, you must first invent a
+                good prototype.
+              </h2>
+              <p className="para-lower">
+                We are your partner in designs and we collaborate exquisitely
+                great with businesses like yours. We help businesses gain
+                confidence in their products and position them as brands that
+                clients can trust.
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <div className="container_1">
+        <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
+          <Row style={{ paddingTop: "30px" }} justify="space-around">
+            <Col xs={11} sm={11} md={4} lg={4} style={{ paddingLeft: "50px" }}>
+              <div>
+                <span className="UIheading-text" style={{ paddingTop: "29px" }}>
+                  An exceptionally <span className="weight-text">UI/UX </span>
+                  design unique experience tailored to you
+                </span>
+                <img
+                  style={{ margin: "12px 0px 12px 0px" }}
+                  src={MidSplash}
+                  width="120%"
+                  alt=""
+                />
+                <div style={{ display: "flex", height: "30px" }}>
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to="/request-a-quote"
+                  >
+                    <Button variant="contained" className="blue-btn">
+                      Get Started
+                    </Button>
+                  </Link>
+                </div>
               </div>
+            </Col>
+            <Col xs={11} sm={11} md={5} lg={5}>
+              <Row justify="space-evenly">
+                <Col
+                  xs={9}
+                  sm={9}
+                  md={5}
+                  lg={5}
+                  className="card-background"
+                  style={{
+                    margin: "30px 30px 40px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                  }}
+                >
+                  <img
+                    style={{ margin: "30px" }}
+                    src={Insight}
+                    width="25%"
+                    alt=""
+                  />
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "28px",
+                      fontWeight: 400,
+                      lineHeight: "32px",
+                      opacity: "1",
+                    }}
+                  >
+                    Insight Driven
+                  </span>
+                  <p
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: "29px",
+                      opacity: "0.75",
+                      color: "#444",
+                      fontStyle: "inherit",
+                      textAlign: "left",
+                    }}
+                  >
+                    We leverage on the power of information and research to find
+                    out specific solutions to design problems
+                  </p>
+                </Col>
+                <Col
+                  xs={9}
+                  sm={9}
+                  md={5}
+                  lg={5}
+                  className="card-background"
+                  style={{
+                    margin: "30px 30px 40px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                  }}
+                >
+                  <img
+                    style={{ margin: "30px" }}
+                    src={Butterfly}
+                    width="25%"
+                    alt=""
+                  />
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "28px",
+                      fontWeight: 400,
+                      lineHeight: "32px",
+                      opacity: "1",
+                    }}
+                  >
+                    Elegant Design
+                  </span>
+                  <p
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: "29px",
+                      opacity: "0.75",
+                      color: "#444",
+                      fontStyle: "inherit",
+                      textAlign: "left",
+                    }}
+                  >
+                    We understand the impact of beautiful designs and stunning
+                    works of art. We build with style using tools like figma
+                  </p>
+                </Col>
+              </Row>
+              <Row justify="space-evenly">
+                <Col
+                  xs={9}
+                  sm={9}
+                  md={5}
+                  lg={5}
+                  className="card-background"
+                  style={{
+                    margin: "30px 30px 0px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                  }}
+                >
+                  <img
+                    style={{ margin: "30px" }}
+                    src={Innovation}
+                    width="25%"
+                    alt=""
+                  />
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "28px",
+                      fontWeight: 400,
+                      lineHeight: "32px",
+                      opacity: "1",
+                    }}
+                  >
+                    User Centric
+                  </span>
+                  <p
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: "29px",
+                      opacity: "0.75",
+                      color: "#444",
+                      fontStyle: "inherit",
+                      textAlign: "left",
+                    }}
+                  >
+                    At the center of our designs is the belief that the user is
+                    the definer of purpose. We thus create designs that improve
+                    human experience.
+                  </p>
+                </Col>
+                <Col
+                  xs={9}
+                  sm={9}
+                  md={5}
+                  lg={5}
+                  className="card-background"
+                  style={{
+                    margin: "30px 30px 0px 0px",
+                    boxShadow: "0px 0px 10px gray",
+                    borderRadius: "5%",
+                  }}
+                >
+                  <img
+                    style={{ margin: "30px" }}
+                    src={Champion}
+                    width="25%"
+                    alt=""
+                  />
+                  <br />
+                  <span
+                    style={{
+                      fontSize: "28px",
+                      fontWeight: 400,
+                      lineHeight: "32px",
+                      opacity: "1",
+                    }}
+                  >
+                    Quality Tested
+                  </span>
+                  <p
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: "29px",
+                      opacity: "0.75",
+                      color: "#444",
+                      fontStyle: "inherit",
+                      textAlign: "left",
+                    }}
+                  >
+                    We chose quality above just doing it. Our solutions make
+                    sure you appreciate the beauty of great designs
+                  </p>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
-      </Zoom>
-
-      <Zoom duration={3500}>
-        <div className="container_1">
-          <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
-            <Row style={{ paddingTop: "30px" }} justify="space-around">
-              <Col
-                xs={11}
-                sm={11}
-                md={4}
-                lg={4}
-                style={{ paddingLeft: "50px" }}
-              >
-                <div>
-                  <span
-                    className="UIheading-text"
-                    style={{ paddingTop: "29px" }}
-                  >
-                    An exceptionally <span className="weight-text">UI/UX </span>
-                    design unique experience tailored to you
-                  </span>
-                  <img
-                    style={{ margin: "12px 0px 12px 0px" }}
-                    src={MidSplash}
-                    width="120%"
-                    alt=""
-                  />
-                  <div style={{ display: "flex", height: "30px" }}>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      to="/request-a-quote"
-                    >
-                      <Button variant="contained" className="blue-btn">
-                        Get Started
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={11} sm={11} md={5} lg={5}>
-                <Row justify="space-evenly">
-                  <Col
-                    xs={9}
-                    sm={9}
-                    md={5}
-                    lg={5}
-                    className="card-background"
-                    style={{
-                      margin: "30px 30px 40px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                    }}
-                  >
-                    <img
-                      style={{ margin: "30px" }}
-                      src={Insight}
-                      width="25%"
-                      alt=""
-                    />
-                    <br />
-                    <span
-                      style={{
-                        fontSize: "28px",
-                        fontWeight: 400,
-                        lineHeight: "32px",
-                        opacity: "1",
-                      }}
-                    >
-                      Insight Driven
-                    </span>
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: "29px",
-                        opacity: "0.75",
-                        color: "#444",
-                        fontStyle: "inherit",
-                        textAlign: "left",
-                      }}
-                    >
-                      We leverage on the power of information and research to
-                      find out specific solutions to design problems
-                    </p>
-                  </Col>
-                  <Col
-                    xs={9}
-                    sm={9}
-                    md={5}
-                    lg={5}
-                    className="card-background"
-                    style={{
-                      margin: "30px 30px 40px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                    }}
-                  >
-                    <img
-                      style={{ margin: "30px" }}
-                      src={Butterfly}
-                      width="25%"
-                      alt=""
-                    />
-                    <br />
-                    <span
-                      style={{
-                        fontSize: "28px",
-                        fontWeight: 400,
-                        lineHeight: "32px",
-                        opacity: "1",
-                      }}
-                    >
-                      Elegant Design
-                    </span>
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: "29px",
-                        opacity: "0.75",
-                        color: "#444",
-                        fontStyle: "inherit",
-                        textAlign: "left",
-                      }}
-                    >
-                      We understand the impact of beautiful designs and stunning
-                      works of art. We build with style using tools like figma
-                    </p>
-                  </Col>
-                </Row>
-                <Row justify="space-evenly">
-                  <Col
-                    xs={9}
-                    sm={9}
-                    md={5}
-                    lg={5}
-                    className="card-background"
-                    style={{
-                      margin: "30px 30px 0px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                    }}
-                  >
-                    <img
-                      style={{ margin: "30px" }}
-                      src={Innovation}
-                      width="25%"
-                      alt=""
-                    />
-                    <br />
-                    <span
-                      style={{
-                        fontSize: "28px",
-                        fontWeight: 400,
-                        lineHeight: "32px",
-                        opacity: "1",
-                      }}
-                    >
-                      User Centric
-                    </span>
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: "29px",
-                        opacity: "0.75",
-                        color: "#444",
-                        fontStyle: "inherit",
-                        textAlign: "left",
-                      }}
-                    >
-                      At the center of our designs is the belief that the user
-                      is the definer of purpose. We thus create designs that
-                      improve human experience.
-                    </p>
-                  </Col>
-                  <Col
-                    xs={9}
-                    sm={9}
-                    md={5}
-                    lg={5}
-                    className="card-background"
-                    style={{
-                      margin: "30px 30px 0px 0px",
-                      boxShadow: "0px 0px 10px gray",
-                      borderRadius: "5%",
-                    }}
-                  >
-                    <img
-                      style={{ margin: "30px" }}
-                      src={Champion}
-                      width="25%"
-                      alt=""
-                    />
-                    <br />
-                    <span
-                      style={{
-                        fontSize: "28px",
-                        fontWeight: 400,
-                        lineHeight: "32px",
-                        opacity: "1",
-                      }}
-                    >
-                      Quality Tested
-                    </span>
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: "29px",
-                        opacity: "0.75",
-                        color: "#444",
-                        fontStyle: "inherit",
-                        textAlign: "left",
-                      }}
-                    >
-                      We chose quality above just doing it. Our solutions make
-                      sure you appreciate the beauty of great designs
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </Zoom>
+      </div>
 
       <div
         style={{

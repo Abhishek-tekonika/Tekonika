@@ -94,7 +94,7 @@ const Clients = (): JSX.Element => {
             <div className="col-md-4 col-sm-12">
               <img
                 className="image-logo-1"
-                style={{ width: "45%", height: "100px" }}
+                style={{ width: "45%", marginLeft:'20%',height: "100px" }}
                 src={whitehilllogo}
                 alt="yuno"
               />
@@ -122,7 +122,8 @@ const Clients = (): JSX.Element => {
                 className="image-logo"
                 src={aggio}
                 alt="aggio"
-                style={{ height: "100%", width: "140px", paddingTop: "6%" }}
+               
+                style={{ height: "100%", width:"140px",paddingTop: "6%"}}
               />
             </div>
           </div>

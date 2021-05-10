@@ -8,7 +8,7 @@ import Clients from "./Clients";
 import Card from "./Card";
 import EndSection from "./EndSection";
 import Linear from "./Linear";
-const Bounce = require("react-reveal/Bounce");
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +38,7 @@ const MidSection = (): JSX.Element => {
   const classes = useStyles();
   return (
     <div style={{ overflowX: "hidden" }}>
-      <Bounce left duration={3500}>
+     
         <Container>
           <Row
             style={{ padding: "20px", marginTop: "10%" }}
@@ -116,7 +116,7 @@ const MidSection = (): JSX.Element => {
             </Col>
           </Row>
         </Container>
-      </Bounce>
+    
 
       {/* <Slider /> */}
       <Clients />
